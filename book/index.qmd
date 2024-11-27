@@ -1,0 +1,32 @@
+# Prefacio
+
+Este libro te enseñará a manejar y comprender contenedores con herramientas modernas como **Docker** y **Podman**. Aprenderás desde los fundamentos hasta el despliegue de aplicaciones en entornos reales, pasando por la construcción de imágenes, gestión de redes y almacenamiento, todo a través de ejemplos prácticos y proyectos aplicados. Sin embargo, este no es un manual introductorio típico. Mi objetivo es ayudarte a convertirte en un profesional capaz de utilizar contenedores no solo para ejecutar aplicaciones, sino para integrarlos en procesos de desarrollo y despliegue ágiles.
+
+Los capítulos del libro están organizados en torno a tres proyectos principales, diseñados para abarcar aspectos clave de Docker y Podman. Estos proyectos no solo cubren la construcción y gestión de contenedores, sino también prácticas avanzadas como la integración con CI/CD, optimización de recursos y resolución de problemas comunes. He seleccionado estos proyectos por dos razones: primero, porque representan el rango completo de funcionalidades de estas herramientas; segundo, porque están diseñados para ayudarte a abordar los desafíos reales del desarrollo y despliegue moderno de software.
+
+Más allá de las características técnicas, los contenedores resuelven problemas logísticos importantes en el desarrollo. Permiten crear entornos reproducibles, escalar aplicaciones de manera eficiente y minimizar errores relacionados con dependencias o configuraciones. A través de este libro, no solo aprenderás a usar Docker y Podman, sino también a integrar estas habilidades en tu trabajo como desarrollador, maximizando tu productividad y mejorando tu flujo de trabajo.
+
+Este libro está dirigido a los siguientes perfiles:
+- Estudiantes y profesionales interesados en aprender sobre contenedores desde cero.
+- Desarrolladores que buscan integrar prácticas modernas de DevOps y microservicios.
+- Ingenieros que desean optimizar procesos de despliegue y escalabilidad en la nube.
+
+He diseñado este libro para que sea accesible y práctico, centrándome en conceptos aplicados y dejando de lado teorías avanzadas que pueden ser un obstáculo al inicio. Mi objetivo es proporcionarte las herramientas y el conocimiento para que puedas enfrentarte a problemas reales en el desarrollo de software.
+
+Aprender a manejar contenedores es una habilidad esencial para cualquier profesional en tecnología hoy en día. Es como pasar de usar un sistema tradicional, donde todo está predeterminado, a un sistema donde tienes la flexibilidad y el control total para crear lo que necesitas. Como dijo Greg Snow al referirse a otro contexto, los contenedores son como un vehículo todoterreno que te llevará a lugares donde las herramientas tradicionales no pueden llegar.
+
+---
+
+## Convenciones Utilizadas en Este Libro
+
+- **_Cursiva_**: Indica términos nuevos, URLs y nombres de archivos.
+- **`Texto de ancho fijo`**: Representa comandos, nombres de variables o elementos de código.
+- **`Texto en negrita`**: Muestra comandos que deben ser escritos literalmente por el lector.
+
+Para realizar comentarios o preguntas técnicas sobre este libro, por favor abre un issue en [github.com/tu-repositorio](https://github.com/tu-repositorio).
+
+---
+
+## Agradecimientos
+
+Quiero agradecer a todas las personas que me han ayudado a escribir este libro, desde mis colegas y estudiantes que han probado este contenido, hasta quienes contribuyeron con ideas y retroalimentación. También agradezco a las comunidades de Docker y Podman por proporcionar recursos invaluables y fomentar el aprendizaje continuo. Finalmente, gracias a mi familia por su apoyo incondicional durante este proceso.

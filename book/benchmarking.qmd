@@ -1,0 +1,17 @@
+# Benchmarking
+
+{{< include content/benchmarking/_setup_benchmarking.qmd >}}
+
+{{< include content/benchmarking/_data_processing.qmd >}}
+
+{{< include content/benchmarking/_from_r_object.qmd >}}
+
+{{< include content/benchmarking/_from_csv.qmd >}}
+
+{{< include content/benchmarking/_from_unique_parquet.qmd >}}
+
+{{< include content/benchmarking/_from_partitioned_parquet.qmd >}}
+
+{{< include content/benchmarking/_from_duckdb.qmd >}}
+
+{{< include content/benchmarking/_final_results.qmd >}}
