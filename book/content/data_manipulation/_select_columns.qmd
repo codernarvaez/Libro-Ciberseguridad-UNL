@@ -1,0 +1,232 @@
+## Select columns
+
+### Selecting by name
+
+The first option for selecting columns of a DataFrame is to use square brackets `[]`.  
+The second option is to use the `select()` method. In this case, it must be used with the `col()` method which allows to designate the columns to be selected with a character vector.
+
+::: {.panel-tabset}
+## polars
+
+```{r}
+#| label: select-polars
+
+# 1st option : with square brackets syntax
+pl$DataFrame(iris)[1:3,c("Petal.Length","Petal.Width")] 
+# 2nd option : with select() method
+pl$DataFrame(iris)$select(
+  pl$col(c("Petal.Length","Petal.Width"))
+)$head(3) # display the first 3 lines
+```
+
+## R base
+
+```{r}
+#| label: select-rbase
+iris[1:3,c("Petal.Length","Petal.Width")] 
+```
+
+## dplyr
+
+```{r}
+#| label: select-dplyr
+iris |>
+  select(Petal.Length,Petal.Width) |>
+  head(3)
+```
+
+## data.table
+
+```{r}
+#| label: select-datatable
+iris_dt[1:3,.(Petal.Length,Petal.Width)]
+```
+:::
+
+**Keep in mind that when:**  
+- Square brackets are used:  
+    - **Selecting only one column** from a `DataFrame`, the output is a `Series`;  
+    - Whereas **if there is more than one column selected**, the output is a `DataFrame`.  
+- `select()` method is used:  
+    - **The output is always a `DataFrame`** rather than a `Series` even if one column is selected.  
+    => If you need a `Series` you can use the `to_series()` method. See [here](#get-series-from-dataFrame).
+
+```{r}
+#| label: select-output-polars
+
+inherits(pl$DataFrame(iris)[,"Petal.Length"],"Series")
+inherits(pl$DataFrame(iris)[,"Petal.Length"],"DataFrame")
+inherits(pl$DataFrame(iris)[,c("Petal.Length","Petal.Width")],"DataFrame")
+inherits(pl$DataFrame(iris)[,c("Petal.Length","Petal.Width")],"Series")
+```
+
+With Polars if you want to obtain a result in an R data.frame, you can simply add the method `to_data_frame()` at the end of the method chaining. See [here](#from-seriesdataframes-to-vectordata.frames) for examples.
+
+::: {.callout-tip}
+Beyond the minor differences discussed above, there are **two major reasons why you should use the `select()` method over the syntax with square brackets:**  
+- When you select and transform multiple columns with `select()` method, Polars will run these selections **in parallel**;  
+- Expressions used in `select()` method can be optimised in [lazy mode](#introduction-to-lazy-mode) by the query optimizer.
+:::
+
+Finally, the `select()` method can also be used to re-order columns of a `DataFrame`.  
+For example, to re-order the columns in alphabetical order:  
+
+```{r}
+#| label: reorder-columns-select
+
+pl$DataFrame(iris)$select(
+  pl$col(sort(pl$DataFrame(iris)$columns)))$
+  head(3)
+```
+
+
+### Selecting by data type
+
+To select columns by data type from a `DataFrame`, you can pass a data type to `pl$col` expression.
+For example:
+
+::: {.panel-tabset}
+## polars
+
+```{r}
+#| label: select-datatype-polars
+
+# Select only Float64 columns
+pl$DataFrame(iris)$select(pl$col(pl$Float64))$head(3)
+# Select only numeric columns
+pl$DataFrame(iris)$select(pl$col(pl$numeric_dtypes))$head(3) 
+```
+
+## R base
+
+```{r}
+#| label: select-datatype-rbase
+
+# Select only factor columns
+as.data.frame(iris[1:3, sapply(iris, is.factor)])
+# Select only numeric columns
+iris[1:3, sapply(iris, is.numeric)]
+```
+
+## dplyr
+
+```{r}
+#| label: select-datatype-dplyr
+
+# Select only factor columns
+iris %>% 
+  select_if(is.factor)
+# Select only numeric columns
+iris %>% 
+  select_if(is.numeric)
+```
+
+## data.table
+
+```{r}
+#| label: select-datatype-datatable
+
+# Select only factor columns
+iris_dt[, .SD, .SDcols = is.factor]
+# Select only numeric columns
+iris_dt[, .SD, .SDcols = is.numeric]
+```
+:::
+
+::: {.callout-note}
+You can also select columns from a DataFrame using a name pattern. See [an example by removing a column](#removing-by-name-pattern)
+:::
+
+### Selecting with a regex
+
+To select columns with a regex from a `DataFrame`, you can pass it in `pl$col` expression.
+For example, to select all columns that starts with "Sepal" in iris dataset:  
+
+::: {.panel-tabset}
+## polars
+
+```{r}
+#| label: select-regex-polars
+
+pl$DataFrame(iris)$select(
+  pl$col("^Sepal.*$")
+)$head(3) # display the first 3 lines
+
+```
+
+## R base
+
+```{r}
+#| label: select-regex-rbase
+
+iris[, grep("^Sepal.*$", colnames(iris))]
+```
+
+## dplyr
+
+```{r}
+#| label: select-regex-dplyr
+
+iris %>%
+  select(starts_with("Sepal"))
+```
+
+## data.table
+
+```{r}
+#| label: select-regex-datatable
+
+iris_dt[, .SD, .SDcols = grep("^Sepal", colnames(iris_dt))]
+```
+:::
+
+### Selecting using lists
+
+It is also possible to select columns from a `DataFrame` using `R lists` which can be very practical depending on the case. Here's an example:
+
+```{r}
+#| label: select-lists-polars
+data(iris)
+
+l_expr = list(
+  pl$col("Petal.Length"),
+  pl$col("Species")
+)
+
+# Select only categorical columns
+pl$DataFrame(iris)$select(l_expr)$head(3) 
+```
+This way of selecting columns also works with simple R lists:
+
+```{r}
+#| label: select-simple-lists-polars
+data(iris)
+
+l_expr = list(
+  "Petal.Length",
+  "Species",
+  "Petal.Width"
+)
+
+# Select only categorical columns
+pl$DataFrame(iris)$select(l_expr)$head(3) 
+```
+
+### Selecting - other ways
+
+The selectors API of polars enables to use other methods to select columns.  
+Here's a few examples selecting the first and last column of a `DataFrame` respectively with `first()` and `last()` methods:  
+
+```{r}
+#| label: first-last-polars
+
+# Select the first column
+pl$DataFrame(iris)$select(
+  pl$first()
+)$head(3)
+
+# Select the last column
+pl$DataFrame(iris)$select(
+  pl$last()
+)$head(3)
+```

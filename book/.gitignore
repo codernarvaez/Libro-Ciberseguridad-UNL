@@ -1,0 +1,13 @@
+/.quarto/
+_book/
+*.html
+Datasets/
+*.parquet
+!examples/*.parquet
+*.rds
+data_manipulation_cache/
+first_steps_cache/
+benchmarking_cache/
+import_export_cache/
+index_cache/
+

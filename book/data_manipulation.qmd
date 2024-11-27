@@ -1,0 +1,43 @@
+# Data manipulation
+
+{{< include content/data_manipulation/_setup_data_manipulation.qmd >}}
+
+{{< include content/data_manipulation/_intro_methods.qmd >}}
+
+{{< include content/data_manipulation/_conversions.qmd >}}
+
+{{< include content/data_manipulation/_initial_informations.qmd >}}
+
+{{< include content/data_manipulation/_filter_rows.qmd >}}
+
+{{< include content/data_manipulation/_select_columns.qmd >}}
+
+{{< include content/data_manipulation/_add_columns.qmd >}}
+
+{{< include content/data_manipulation/_rename_columns.qmd >}}
+
+{{< include content/data_manipulation/_remove_columns.qmd >}}
+
+{{< include content/data_manipulation/_aggregations_by_group.qmd >}}
+
+{{< include content/data_manipulation/_sort_dataframes.qmd >}}
+
+{{< include content/data_manipulation/_join_dataframes.qmd >}}
+
+{{< include content/data_manipulation/_concatenate_dataframes.qmd >}}
+
+{{< include content/data_manipulation/_pivot_dataframes.qmd >}}
+
+{{< include content/data_manipulation/_missing_values.qmd >}}
+
+{{< include content/data_manipulation/_series_methods.qmd >}}
+
+{{< include content/data_manipulation/_dataframes_methods.qmd >}}
+
+{{< include content/data_manipulation/_strings_slice_methods.qmd >}}
+
+{{< include content/data_manipulation/_strings_starts_with_methods.qmd >}}
+
+{{< include content/data_manipulation/_strings_ends_with_methods.qmd >}}
+
+{{< include content/data_manipulation/_create_your_methods.qmd >}}

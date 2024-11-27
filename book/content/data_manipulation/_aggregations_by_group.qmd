@@ -1,0 +1,115 @@
+## Aggregation by group
+
+Another frequently used data manipulation is the aggregation of data by group. To do this, we indicate in the `group_by()` method which column will be used to group the data.frame. And the `agg()` method which specifies the expression to aggregate.
+
+The methods available for the `agg()` method are (in each group):
+
+ - `first()` get the first element
+ - `last()` get the last element
+ - `n_unique()` get the number of unique elements
+ - `count()` get the number of elements
+ - `sum()` sum the elements
+ - `min()` get the smallest element
+ - `max()` get the largest element
+ - `mean()` get the average of elements
+ - `median()` get the median
+ - `quantile()` calculate quantiles
+
+ Here's a minimal example with `sum` applied to 2 different columns:
+
+::: {.panel-tabset}
+## polars
+
+```{r}
+#| label: agg-polars
+pl$DataFrame(iris)$
+  group_by("Species")$
+  agg(pl$col(c("Petal.Length","Petal.Width"))$sum())
+```
+
+## R base
+
+```{r}
+#| label: aggregate-cbind-rbase
+aggregate(cbind(Petal.Length, Petal.Width) ~ Species, data = iris, FUN = sum)
+```
+
+## dplyr
+
+```{r}
+#| label: summarise-dplyr
+data(iris)
+iris |>
+  group_by(Species) |>
+  summarise(across(c(Petal.Length, Petal.Width), sum))
+```
+
+## data.table
+
+```{r}
+#| label: summarise-datatable
+iris_dt <- as.data.table(iris)
+iris_dt[, .(Petal.Length = sum(Petal.Length), Petal.Width = sum(Petal.Width)), by = Species]
+```
+:::
+
+::: {.callout-tip}
+Be careful! **Calling multiple aggregations on the same column produces columns of the same name** which generates an error with R.
+
+You can use the `alias()` or `suffix()` method to ensure column names are unique.
+For example:
+
+```{r}
+#| label: example-agg-with-alias
+
+pl$DataFrame(iris)$
+  group_by("Species")$
+  agg(
+    # With alias()
+    pl$col(c("Petal.Length"))$sum()$alias("Petal.Length_Sum"),
+    pl$col(c("Petal.Length"))$mean()$alias("Petal.Length_Mean"),
+    # With suffix()
+    pl$col(c("Petal.Width"))$sum()$name$suffix("_Sum"),
+    pl$col(c("Petal.Width"))$mean()$name$suffix("_Mean")
+  )
+```
+:::
+
+You can perform more advanced aggregations, for example **calculate the sum of all the floating point columns** in iris:
+
+::: {.panel-tabset}
+## polars
+
+```{r}
+#| label: agg-advanced-polars
+pl$DataFrame(iris)$
+  group_by("Species")$
+  agg(pl$col(pl$Float64)$sum())
+```
+
+## R base
+
+```{r}
+#| label: aggregate-advanced-rbase
+iris_sum_by_species_base <- aggregate(iris[, sapply(iris, is.numeric)], by = list(Species = iris$Species), FUN = sum)
+iris_sum_by_species_base
+```
+
+## dplyr
+
+```{r}
+#| label: summarise-advanced-dplyr
+iris |>
+  group_by(Species) %>%
+  summarise(across(where(is.numeric), sum))
+```
+
+## data.table
+
+```{r}
+#| label: summarise-advanced-datatable
+iris_dt <- as.data.table(iris)
+iris_sum_by_species_dt <- iris_dt[, lapply(.SD, sum), by = Species, .SDcols = sapply(iris_dt, is.numeric)]
+iris_sum_by_species_dt
+```
+:::

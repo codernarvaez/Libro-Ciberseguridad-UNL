@@ -1,0 +1,58 @@
+project:
+  type: book
+
+book:
+  title: "Ciberseguridad al Alcance de Todos"
+  author: "Cristian Narvaez"
+  favicon: maincover.png
+  description: Aprende Ciberseguridad Universitarios con ejemplos reales.
+  keyword: contenedores, podman, docker, swarm, kubernetes, containers, containers-cookbook
+  url: https://ddotta.github.io/cookbook-rpolars/
+  page-navigation: true
+  sidebar: 
+    logo: maincover.png
+    search: true
+  repo-url: https://github.com/ddotta/cookbook-rpolars/
+  repo-subdir: book
+  repo-branch: main
+  repo-actions: [edit, issue, source]
+  sharing: [facebook, twitter, linkedin]
+  downloads: [pdf]
+  image: maincover.png
+
+  chapters:
+    - index.qmd
+    - prework.qmd
+#    - data_manipulation.qmd
+#    - import_export.qmd
+#    - lazy_execution.qmd
+#    - benchmarking.qmd
+
+format:
+  html:
+    theme:
+      light: cosmo
+      dark: superhero
+    code-fold: false
+    css: custom.css
+    # mainfont: FiraCode
+  # pdf:
+  #   keep-tex: true
+  #   documentclass: scrbook
+  #   classoption: [paper=6in:9in,pagesize=pdftex,headinclude=on,footinclude=on,12pt]
+  #   include-in-header:
+  #     text: |
+  #       \usepackage{inkscape}
+  #       \usepackage{fvextra}
+  #       \DefineVerbatimEnvironment{Highlighting}{Verbatim}{breaklines,commandchars=\\\{\}}
+  #       \areaset[0.50in]{4.5in}{8in}
+  #   include-before-body:
+  #     text: |
+  #       \RecustomVerbatimEnvironment{verbatim}{Verbatim}{
+  #          showspaces = false,
+  #          showtabs = false,
+  #          breaksymbolleft={},
+  #          breaklines
+  #          % Note: setting commandchars=\\\{\} here will cause an error 
+  #       }  
+  #   fig-pos: 'H'
