@@ -24,6 +24,7 @@ book:
     - index.qmd
     - prework.qmd
     - introduccionciberespaciociberseguridad.qmd
+    - ciberseguridadEncomputacionDealtoRendimiento.qmd
 #    - data_manipulation.qmd
 #    - import_export.qmd
 #    - lazy_execution.qmd
