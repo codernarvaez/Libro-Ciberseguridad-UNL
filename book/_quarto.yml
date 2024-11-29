@@ -25,39 +25,35 @@ book:
     - prework.qmd
     - dennis_macas.qmd
     - adrian_hernandez.qmd
-    - ricardo_castro.qmd
+#    - ricardo_castro.qmd
     - luis_delgado.qmd
     - jordy_torres.qmd
-#    - data_manipulation.qmd
-#    - import_export.qmd
-#    - lazy_execution.qmd
-#    - benchmarking.qmd
 
-format:
-  html:
-    theme:
-      light: cosmo
-      dark: superhero
-    code-fold: false
-    css: custom.css
-    mainfont: FiraCode
-  pdf:
-    keep-tex: true
-    documentclass: scrbook
-    classoption: [paper=6in:9in,pagesize=pdftex,headinclude=on,footinclude=on,12pt]
-    include-in-header:
-      text: |
-        \usepackage{inkscape}
-        \usepackage{fvextra}
-        \DefineVerbatimEnvironment{Highlighting}{Verbatim}{breaklines,commandchars=\\\{\}}
-        \areaset[0.50in]{4.5in}{8in}
-    include-before-body:
-      text: |
-        \RecustomVerbatimEnvironment{verbatim}{Verbatim}{
-           showspaces = false,
-           showtabs = false,
-           breaksymbolleft={},
-           breaklines
-           % Note: setting commandchars=\\\{\} here will cause an error 
-        }  
-    fig-pos: 'H'
+# format:
+#   html:
+#     theme:
+#       light: cosmo
+#       dark: superhero
+#     code-fold: false
+#     css: custom.css
+#     mainfont: FiraCode
+#   pdf:
+#     keep-tex: true
+#     documentclass: scrbook
+#     classoption: [paper=6in:9in,pagesize=pdftex,headinclude=on,footinclude=on,12pt]
+#     include-in-header:
+#       text: |
+#         \usepackage{inkscape}
+#         \usepackage{fvextra}
+#         \DefineVerbatimEnvironment{Highlighting}{Verbatim}{breaklines,commandchars=\\\{\}}
+#         \areaset[0.50in]{4.5in}{8in}
+#     include-before-body:
+#       text: |
+#         \RecustomVerbatimEnvironment{verbatim}{Verbatim}{
+#            showspaces = false,
+#            showtabs = false,
+#            breaksymbolleft={},
+#            breaklines
+#            % Note: setting commandchars=\\\{\} here will cause an error 
+#         }  
+#     fig-pos: 'H'

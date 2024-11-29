@@ -1,11 +1,11 @@
 # Arquitecturas Jerárquicas y Gobernanza de la Seguridad
 
-{{< include content/ricado_castro/_definicionycaracteristicas.qmd >}}
+{{< include content/ricardo_castro/_definicionycaracteristicasotro.qmd >}}
 
-{{< include content/ricado_castro/_modelosgobernanza.qmd >}}
+{{< include content/ricardo_castro/_modelosgobernanza.qmd >}}
 
-{{< include content/ricado_castro/_conceptosdegobernanza.qmd >}}
+{{< include content/ricardo_castro/_conceptosdegobernanza.qmd >}}
 
-{{< include content/ricado_castro/_rolesyresponsabilidades.qmd >}}
+{{< include content/ricardo_castro/_rolesyresponsabilidades.qmd >}}
 
-{{< include content/ricado_castro/_impactoenlagobernazaygestionriesgos.qmd >}}
+{{< include content/ricardo_castro/_impactoenlagobernazaygestionriesgos.qmd >}}
