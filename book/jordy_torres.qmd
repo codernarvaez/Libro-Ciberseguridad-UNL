@@ -1,0 +1,12 @@
+# Ciberseguridad en Computación de alto rendimiento.
+{{< include content/jordy_torres/_introduccioncentrosdatosycloud.qmd >}}
+
+{{< include content/jordy_torres/_gestionyseguridaddecentrosdatoscloud.qmd >}}
+
+{{< include content/jordy_torres/_rolesyresponsabilidadesgestion.qmd >}}
+
+{{< include content/jordy_torres/_impactoenlajerarquiayseguridadenlaeficiencia.qmd >}}
+
+{{< include content/jordy_torres/_politicasyprocedimiendosparaelcontrolrecursos.qmd >}}
+
+{{< include content/jordy_torres/_laboratorio01capitulo.qmd >}}
