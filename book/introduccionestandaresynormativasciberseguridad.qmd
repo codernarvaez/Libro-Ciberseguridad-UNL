@@ -1,0 +1,12 @@
+# Introduccion a la Normativas y Estándares de Ciberseguridad
+
+La ciberseguridad se ha convertido en un pilar fundamental para garantizar la confianza en los sistemas digitales. Desde pequeñas empresas hasta gobiernos, todos dependen de la seguridad informática para proteger sus datos, operaciones y, en última instancia, la privacidad de las personas. Sin embargo, el crecimiento exponencial de las amenazas cibernéticas plantea un desafío crítico: ¿cómo establecer un marco sólido para gestionar los riesgos y proteger la información?
+
+Aquí es donde las normativas y estándares de ciberseguridad desempeñan un papel esencial. Estos lineamientos no solo proporcionan un lenguaje común para identificar, evaluar y mitigar riesgos, sino que también ayudan a las organizaciones a cumplir con requisitos legales y mantener la confianza de sus usuarios.
+
+En este libro, exploraremos el fascinante ecosistema de normativas y estándares de ciberseguridad, analizando su importancia, evolución y aplicación en el mundo real. Desde marcos globales como ISO/IEC 27001 hasta normativas específicas de sectores como el financiero y de la salud, comprenderemos cómo estos instrumentos han moldeado el panorama de la seguridad digital.
+
+
+## Las normativas ISO.
+
+Aqui describimos lo que escribimos en el libro de introducción a la ciberseguridad.

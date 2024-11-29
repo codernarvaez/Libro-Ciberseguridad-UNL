@@ -27,6 +27,7 @@ book:
     - ciberseguridadencomputaciondealtorendimiento.qmd
     - Configuraciónrolesypermisosenplataformascloud.qmd
 
+    - introduccionestandaresynormativasciberseguridad.qmd
 #    - data_manipulation.qmd
 #    - import_export.qmd
 #    - lazy_execution.qmd
