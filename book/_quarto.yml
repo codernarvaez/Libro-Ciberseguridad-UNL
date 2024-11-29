@@ -24,6 +24,9 @@ book:
     - index.qmd
     - prework.qmd
     - introduccionciberespaciociberseguridad.qmd
+    - ciberseguridadencomputaciondealtorendimiento.qmd
+    - Configuraciónrolesypermisosenplataformascloud.qmd
+
     - introduccionestandaresynormativasciberseguridad.qmd
 #    - data_manipulation.qmd
 #    - import_export.qmd
