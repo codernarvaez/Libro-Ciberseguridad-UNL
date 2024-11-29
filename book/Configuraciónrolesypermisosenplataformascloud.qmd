@@ -1,0 +1,123 @@
+---
+title: "Instalación y Configuración de FreeIPA, Katello y Foreman"
+---
+
+# Introducción
+
+Este laboratorio describe cómo instalar FreeIPA, Katello y Foreman en un entorno virtualizado. FreeIPA se usa para gestionar identidades, mientras que Katello y Foreman facilitan la gestión de configuración e infraestructura.
+
+## Requisitos previos
+
+- Sistema operativo: CentOS/RHEL 8 o 9.
+- Recursos: 4 GB RAM mínimo por VM, 2 CPUs.
+- Acceso a internet.
+- DNS configurado correctamente para los dominios.
+
+## Paso 1: Instalación de FreeIPA
+
+1. **Actualizar el sistema:**
+
+    ```bash
+    sudo dnf update -y
+    ```
+
+2. **Instalar los paquetes necesarios:**
+
+    ```bash
+    sudo dnf install -y freeipa-server freeipa-server-dns
+    ```
+
+3. **Configurar FreeIPA Server:**
+
+    ```bash
+    sudo ipa-server-install --setup-dns
+    ```
+
+    Responder a las preguntas:
+
+    - Nombre del dominio: ejemplo.local
+    - Nombre del servidor: ipa.ejemplo.local
+    - Contraseña del administrador: (proporcionar contraseña segura)
+
+4. **Habilitar y arrancar servicios:**
+
+    ```bash
+    sudo systemctl enable --now ipa
+    ```
+
+## Paso 2: Instalación de Katello
+
+1. **Agregar repositorios:**
+
+    ```bash
+    sudo dnf install -y https://yum.theforeman.org/releases/3.4/el8/x86_64/foreman-release.rpm
+    sudo dnf install -y https://fedorapeople.org/groups/katello/releases/yum/4.6/katello/el8/x86_64/katello-repos-latest.rpm
+    ```
+
+2. **Instalar Katello y sus dependencias:**
+
+    ```bash
+    sudo dnf install -y katello
+    ```
+
+3. **Configurar Katello:**
+
+    ```bash
+    sudo foreman-installer --scenario katello
+    ```
+
+4. **Acceder a la interfaz web:**
+
+    Abrir `https://<servidor-katello>` en el navegador. Usuario predeterminado: admin.
+
+## Paso 3: Instalación de Foreman
+
+1. **Instalar Foreman:**
+
+    ```bash
+    sudo dnf install -y foreman-installer
+    ```
+
+2. **Ejecutar el instalador interactivo:**
+
+    ```bash
+    sudo foreman-installer
+    ```
+
+3. **Verificar acceso a Foreman:**
+
+    Abrir `https://<servidor-foreman>`.
+
+## Paso 4: Integrar FreeIPA con Foreman
+
+1. **Configurar Foreman para usar FreeIPA:**
+
+    ```bash
+    sudo foreman-rake katello:ipa_register
+    ```
+
+2. **Configurar autenticación externa en Foreman:**
+
+    - Ir a Administer > Settings > Authentication.
+    - Configurar FreeIPA como proveedor de autenticación.
+
+## Paso 5: Crear Identidades en FreeIPA
+
+1. **Acceder a FreeIPA:**
+
+    ```bash
+    ipa user-add usuario1 --first=Nombre --last=Apellido --password
+    ```
+
+2. **Asignar roles a usuarios:**
+
+    ```bash
+    ipa role-add-member --users=usuario1 admins
+    ```
+
+3. **Verificar en Foreman:**
+
+    Confirmar que los usuarios de FreeIPA están disponibles en Foreman.
+    
+## Conclusión
+Este laboratorio cubre la instalación y configuración de FreeIPA, Katello y Foreman, facilitando la gestión centralizada de identidades y servidores. ¡Ahora puedes administrar usuarios y sistemas de manera eficiente!
