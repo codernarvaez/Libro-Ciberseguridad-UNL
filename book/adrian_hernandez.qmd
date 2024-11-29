@@ -1,0 +1,13 @@
+# introducción a Normativas y Estándares de Ciberseguridad
+
+{{< include content/adrian_hernandez/_normativayestandaresciberseguridad.qmd >}}
+
+{{< include content/adrian_hernandez/_gestionyseguridaddecentrosdatoscloud.qmd >}}
+
+{{< include content/adrian_hernandez/_rolesyresponsabilidadesgestion.qmd >}}
+
+{{< include content/adrian_hernandez/_impactoenlajerarquiayseguridadenlaeficiencia.qmd >}}
+
+{{< include content/adrian_hernandez/_politicasyprocedimiendosparaelcontrolrecursos.qmd >}}
+
+{{< include content/adrian_hernandez/_laboratorio01capitulo.qmd >}}
