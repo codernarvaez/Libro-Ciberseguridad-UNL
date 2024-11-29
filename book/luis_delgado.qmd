@@ -1,0 +1,11 @@
+# Modelos de Control de Acceso Jeráquico
+
+{{< include content/luis_delgado/_controldeaccesodiscrecional.qmd >}}
+
+{{< include content/luis_delgado/_controldeaccesoobligatorio.qmd >}}
+
+{{< include content/luis_delgado/_controldeaccesobaasdoenroles.qmd >}}
+
+{{< include content/luis_delgado/_introduccionalmodeloabac.qmd >}}
+
+{{< include content/luis_delgado/_comparacionyaplicacionesendistintosentornos.qmd >}}

@@ -2,12 +2,11 @@
 
 {{< include content/adrian_hernandez/_normativayestandaresciberseguridad.qmd >}}
 
-{{< include content/adrian_hernandez/_gestionyseguridaddecentrosdatoscloud.qmd >}}
+{{< include content/adrian_hernandez/_gpdrysusimplicacionesenprivacidaddatos.qmd >}}
 
-{{< include content/adrian_hernandez/_rolesyresponsabilidadesgestion.qmd >}}
+{{< include content/adrian_hernandez/_nistygestionderiesgos.qmd >}}
 
-{{< include content/adrian_hernandez/_impactoenlajerarquiayseguridadenlaeficiencia.qmd >}}
+{{< include content/adrian_hernandez/_principalesmarcosdeseguridadglobales.qmd >}}
 
-{{< include content/adrian_hernandez/_politicasyprocedimiendosparaelcontrolrecursos.qmd >}}
 
 {{< include content/adrian_hernandez/_laboratorio01capitulo.qmd >}}
