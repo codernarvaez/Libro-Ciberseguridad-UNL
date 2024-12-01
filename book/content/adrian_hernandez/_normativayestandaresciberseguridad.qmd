@@ -1,1 +1,159 @@
-# Datos
+::: {style="text-align: justify;"}
+Todos dependen de la seguridad informática para proteger sus datos, desde pequeñas empresas hasta gobiernos, sin embargo, el crecimiento de las amenazas cibernéticas plantea un desafío crítico: ¿cómo establecer un marco sólido para gestionar los riesgos y proteger la información?
+
+Aquí es donde las normativas y estándares de ciberseguridad desempeñan lineamientos que no solo proporcionan un lenguaje común para identificar, evaluar y mitigar riesgos, sino que también ayudan a las organizaciones a cumplir con requisitos legales y mantener la confianza de sus usuarios.
+:::
+## Las Normativas ISO.
+::: {style="text-align: justify;"}
+La Organización Internacional de Normalización (ISO), es una entidad independiente y no gubernamental, fundada en 1947 en Ginebra, Suiza. Reúne a expertos para establecer lineamientos y especificaciones aceptadas a nivel global.  Con 172 organismos nacionales y 840 comités técnicos, la ISO ha publicado más de 25.493 normas que abarcan temas técnicos, sociales y laborales, como la responsabilidad social (ISO 26000) y la seguridad en el trabajo (ISO 45001) [1],[2]. 
+:::
+### Origen y Evolución de la Norma ISO 27000 
+::: {style="text-align: justify;"}
+La serie de normas ISO 27000 se originó en el Instituto Británico de Estándares (BSI), que en 1995 publicó la primera norma técnica de seguridad, la BS 7799-1:1995, la cual proporcionaba directrices recomendadas en seguridad de la información, pero no permitía certificación. 
+
+En 1998, se publicó la segunda versión, BS 7799-2:1999, estableciendo requisitos para un Sistema de Gestión de Seguridad de la Información (SGSI), certificable por una entidad independiente [3]. 
+La norma BS 7799 fue revisada en 1999 y, en 2000, la primera parte fue adoptada por ISO e IEC como ISO/IEC 17799:2000. 
+
+En 2002, se revisó BS 7799-2 para alinearla con las normas de sistemas de gestión ISO/IEC. En 2005, una revisión más profunda transformó ISO/IEC 17799:2000 en ISO/IEC 17799:2005, mientras que BS  7799-2 se convirtió en ISO/IEC 27001:2005, marcando el inicio de la serie de normas ISO 27000 [4].
+
+En 2007, ISO/IEC 17799:2005 pasó a ser ISO/IEC 27002:2005 y se publicó ISO/IEC 27001:2007. Finalmente, en 2013, ambas normas fueron actualizadas a ISO/IEC 27001:2013 e ISO/IEC 27002:2013. Aunque una nueva versión se publicó en 2024, aún no hay suficiente información bibliográfica disponible para su uso en la propuesta de un SGSI [4]. 
+:::
+### Familia de la Norma ISO 27000
+::: {style="text-align: justify;"}
+La serie de normas ISO 27000 define los criterios necesarios para salvaguardar la información y ofrece una variedad de controles que ayudan a las organizaciones a cumplir con las leyes y normativas relacionadas con la seguridad de la información. Su objetivo principal es promover un comercio seguro entre organizaciones, ya sea en el intercambio de datos, servicios o bienes, impulsando la innovación tecnológica dentro de un marco de seguridad y gestión de riesgos [5],[6].
+:::
+#### Vocabulario Estándar
+::: {style="text-align: justify;"}
+| **Norma**  | **Alcance**  | **Descripción**  |
+|---------------|---------------|---------------|
+| ISO/IEC 27000 | Descripción general y Vocabulario | Resume los términos y la estructura de las normas ISO 27000, proporcionando definiciones y objetivos.  |
+:::
+#### Requerimientos Estándar
+::: {style="text-align: justify;"}
+| **Norma**  | **Alcance**  | **Descripción**  |
+|---------------|---------------|---------------|
+| ISO/IEC 27001 | Especificaciones para un SGSI  | Especifica requisitos para implementar y gestionar un SGSI, con un enfoque de gestión de riesgos y mejora continua.  |
+| ISO/IEC 27006  | Requisitos para los organismos que realizan auditorías y certificaciones de sistemas de gestión de seguridad de la información | Define los criterios necesarios para que las organizaciones certificadoras obtengan la acreditación para verificar el cumplimiento de la norma ISO/IEC 27001. Se aplica en conjunto con la norma ISO/IEC 17021-1 y detalla los requisitos específicos para la certificación de Sistemas de Gestión de Seguridad de la Información (SGSI). |
+| ISO/IEC 27009 | Aplicación sectorial específica de ISO/IEC 27001  | Establece requisitos para crear estándares sectoriales que amplíen y complementen ISO/IEC 27001 y 27002. |
+:::
+#### Guías Estándar
+::: {style="text-align: justify;"}
+| **Norma**  | **Alcance**  | **Descripción**  |
+|---------------|---------------|---------------|
+| ISO/IEC 27002 | Manual de buenas prácticas  | Compila buenas prácticas en seguridad de la información con 14 dominios, 35 objetivos y 114 controles. |
+| ISO/IEC 27003 | Guía de implementación de un SGSI | Ofrece directrices para implementar un SGSI, apoyando la norma ISO/IEC 27001 con instrucciones detalladas.|
+| ISO/IEC 27004 | Sistema de métricas e indicadores | Establece pautas para métricas efectivas en la evaluación del rendimiento de un SGSI.|
+| ISO/IEC 27005 | Guía de análisis y gestión de riesgos | Ofrece lineamientos y ejemplos para gestionar riesgos en sistemas de gestión de información, siguiendo ISO/IEC 27001. |
+| ISO/IEC TR 27008| Guía para auditores sobre controles de seguridad de la información | Ofrece orientación para revisar la implementación y operación de controles de sistemas de información conforme a estándares de seguridad. |
+| ISO/IEC 27013| Orientación sobre la implementación integrada de ISO/IEC 27001 e ISO/IEC 20000-1  | Establece una guía para la integración de las normas ISO/IEC-27001 (SGSI) e ISO/IEC-20000 Sistema de Gestión de Servicios (SGS) en aquellas organizaciones que implementan ambas. | 
+| ISO/IEC 27014 | Gobernanza de la seguridad de la información | Establece principios y proporciona una guía para el gobierno corporativo de la seguridad de la información, ciberseguridad y privacidad.|
+| ISO/IEC TR 27016 | Economía organizacional | Ofrece una guía para decisiones económicas en la gestión de la seguridad des la información, apoyando la dirección organizacional. |
+| ISO/IEC 27021 | Requisitos de competencia para los profesionales de sistemas de gestión de seguridad de la información | Establece los requisitos de competencia para los profesionales del SGSI que lideran o participan en el establecimiento, implementación, mantenimiento y mejora continua de uno o más procesos del SGSI.|
+:::
+#### Guías Específicas del Sector Estándar
+::: {style="text-align: justify;"}
+| **Norma**  | **Alcance**  | **Descripción**  |
+|---------------|---------------|---------------|
+| ISO / IEC 27010 | Gestión de seguridad de la información para las comunicaciones intersectoriales e interorganizacionales | Establece cómo tratar información compartida entre organizaciones, los riesgos y los controles necesarios, especialmente para infraestructuras críticas. |
+| ISO/IEC 27011| Guía de gestión de seguridad de la información específica para telecomunicaciones | Establece los principios para implantar, mantener y gestionar un SGSI en organizaciones de telecomunicaciones, indicando cómo implantar los controles de manera eficiente.| 
+| ISO/IEC 27017| Controles de Seguridad para Servicios Cloud | Se enfoca en la seguridad de la información en la nube, con controles específicos y guías basadas en ISO/IEC 27002. | 
+| ISO/IEC 27018| Código de prácticas para la protección de informacipon de identificación personal (PII) en nubes públicas que actúan como  procesadores de PII| Se centra en proteger los datos personales en la nube, estableciendo requisitos para proveedores de servicios en línea. Complementa las normas ISO/IEC-27001 e ISO/IEC-27002 al implementar procedimientos y controles para proteger datos personales en organizaciones que ofrecen servicios en la nube para terceros. | 
+| ISO/IEC 27019| Controles de seguridad de la información para la industria de servicios públicos de energía| Facilita una guía basada en la norma ISO/IEC-27002 para aplicar a las industrias vinculadas al sector de la energía, de forma que puedan implantar un SGSI.| 
+:::
+### La Norma ISO/IEC 27001
+::: {style="text-align: justify;"}
+La norma ISO 27001 explica cómo planificar, establecer, implantar, controlar y mejorar de manera continua un Sistema de Gestión de Seguridad de la Información (SGSI). Este sistema permite una gestión eficaz y la reducción de los riesgos que comprometen la confidencialidad, integridad y disponibilidad de los datos. Además, puede ser implementada para obtener la certificación en cualquier tipo de organización, ya sea con o sin fines de lucro, privada o pública, pequeña o grande. La certificación implica que una entidad de certificación independiente confirma que la seguridad de la información ha sido implementada en esa organización de acuerdo con la norma ISO 27001, lo que representa una ventaja competitiva en el mercado, al demostrar el adecuado manejo de los datos personales de clientes y de la empresa [7]. 
+:::
+#### Objetivo de la norma
+::: {style="text-align: justify;"}
+Establecer un entorno basado en la seguridad de la información a partir del análisis y evaluación de los riesgos que podrían materializarse y causar daños, tanto económicos como sociales. Con base en este análisis, se identifican los controles más adecuados para el contexto institucional, reduciendo los riesgos a niveles aceptables [8].
+:::
+#### Estructura de la Norma
+::: {style="text-align: justify;"}
+La norma ISO/IEC 27001:2013 se divide en once apartados principales y un anexo A. Los apartados 0 al 3 constituyen una introducción y, por tanto, no requieren aplicación, por otro lado, los apartados 4 al 10, denominados cláusulas, son de cumplimiento obligatorio para obtener la certificación. El anexo A presenta 114 controles de seguridad, cuya aplicabilidad debe evaluarse en el contexto organizacional.
+:::
+##### Cláusula 0: Introducción
+::: {style="text-align: justify;"}
+La norma expone de manera resumida su propósito y los requisitos necesarios para establecer y mejorar continuamente un SGSI, destacando su valor estratégico de acuerdo con las necesidades y metas organizacionales. Se enfatiza la integración del sistema con los procesos internos y la gestión de riesgos, para así garantizar la confidencialidad, integridad y disponibilidad de la información, manteniendo compatibilidad con otras normas de gestión.
+:::
+##### Cláusula 1: Alcance
+::: {style="text-align: justify;"}
+Un SGSI puede ser aplicado a cualquier organización, independientemente de su tamaño, sector o madurez en seguridad de la información. Sin embargo, su alcance debe establecerse según la cantidad de activos de información gestionados por empleados y clientes, las actividades involucradas y los recursos dedicados exclusivamente al mantenimiento y mejora continua del sistema.
+:::
+##### Cláusula 2: Referencias Normativas
+::: {style="text-align: justify;"}
+Las regulaciones específicas y obligatorias del sector en el que opere la organización han de ser consideradas para el diseño, implementación y mantenimiento del SGSI, de manera que, la empresa no se vea inmiscuida en el incumplimiento de leyes nacionales o internacionales. Asimismo, se debe recordar que se puede hacer uso de otras normas que formen parte de la familia ISO 27000 para promover una cultura basada en la seguridad de la información.
+:::
+##### Cláusula 3: Términos y Definiciones
+::: {style="text-align: justify;"}
+La norma ISO/IEC 27000 proporciona términos y definiciones clave, lo cual facilita una comprensión compartida de los requisitos, minimizando interpretaciones subjetivas entre los empleados y reduciendo ambigüedades al emplear controles de seguridad. La versión más reciente de la ISO/IEC incluye 81 términos y definiciones utilizados en la ISO 27001. Al redactar la documentación del SGSI, resulta útil incluir un glosario para quienes no estén familiarizados con la seguridad de la información.
+:::
+##### Cláusula 4: Contexto de la Organización
+::: {style="text-align: justify;"}
+La comprensión de la situación interna de la organización y su interacción con el entorno externo es clave para identificar los riesgos asociados a la seguridad de los activos de información. A nivel interno, es necesario evaluar factores como el nivel de madurez en la gestión de activos; a nivel externo, es fundamental tener en cuenta los organismos reguladores y los factores ambientales fuera del control de la organización. Este análisis permite identificar claramente a las partes interesadas relevantes y sus expectativas, delimitando el alcance del SGSI y enfocando su implementación en los recursos esenciales para garantizar el cumplimiento de los procesos organizacionales.
+:::
+##### Cláusula 5: Liderazgo
+::: {style="text-align: justify;"}
+La gerencia tiene un papel importante en la toma de decisiones para implementar y revisar el SGSI, asegurando la disponibilidad de los recursos necesarios conforme a una política de seguridad de la información de alto nivel, alineada con los objetivos de la organización y las expectativas de las partes interesadas. Asimismo, se encarga de asignar roles y responsabilidades en la gestión del SGSI, además de monitorear y evaluar informes sobre su desempeño.
+:::
+##### Cláusula 6: Planificación
+::: {style="text-align: justify;"}
+La evaluación de riesgos incrementa la probabilidad de detectar posibles amenazas, lo que facilita la toma de decisiones estratégicas basadas en su nivel de criticidad. De esta manera, se garantiza una asignación eficiente de recursos y personal especializado para abordarlas. Este proceso se respalda en controles de seguridad que deben ser evaluados para determinar su efectividad, lo cual queda registrado en la Declaración de aplicabilidad.
+:::
+##### Cláusula 7: Soporte
+::: {style="text-align: justify;"}
+Los recursos, tanto en términos de equipos e infraestructura como del factor humano, son fundamentales para llevar a cabo los procesos empresariales. En cuanto al personal, se valora su competencia, es decir, los conocimientos y habilidades necesarios para implementar controles efectivos de seguridad de la información. Además, el recurso humano debe ser sensibilizado a través de actividades de comunicación planificadas y gestionadas adecuadamente, enfocadas en los aspectos clave del SGSI.
+:::
+##### Cláusula 8: Operación
+::: {style="text-align: justify;"}
+Esta cláusula corresponde a la fase de "Hacer (Do)" en el ciclo PDCA y se refiere a la formalización de los procesos clave para la seguridad de la información. Estos procesos deben ser revisados regularmente, al menos anualmente o conforme a la criticidad y los riesgos identificados. Además, el plan de tratamiento de riesgos debe ser actualizado después de las evaluaciones técnicas, para luego ser autorizado e implementado nuevamente.
+:::
+##### Cláusula 9: Evaluación de Desempeño
+::: {style="text-align: justify;"}
+El monitoreo planificado del proceso del SGSI y de los controles de seguridad es crucial. Las auditorías internas y las revisiones de la dirección permiten evaluar el desempeño del SGSI. En el caso de las auditorías, se requiere personal capacitado en la documentación y los requisitos de la ISO 27001, así como en metodologías de seguridad informática. Las revisiones de la dirección garantizan que el SGSI se mantenga alineado con los objetivos estratégicos de la organización.
+:::
+##### Cláusula 10: Mejora
+::: {style="text-align: justify;"}
+Ningún SGSI es perfecto; sin embargo, estos sistemas de gestión evolucionan con el tiempo, aumentando su capacidad para resistir ataques a la seguridad de la información. Esto se logra al tratar las no conformidades como oportunidades de mejora mediante la aplicación de acciones correctivas, que pueden ser identificadas a través de un análisis de la causa raíz del problema.
+:::
+### Metodología PDCA
+::: {style="text-align: justify;"}
+El ciclo Planificar-Hacer-Verificar-Actuar, también conocido como ciclo Deming o ciclo de mejora continua, provee un marco sistemático para implementar un sistema de garantía de calidad desde una planificación inicial. Esta metodología, originada en los cambios posteriores a la 
+Segunda Guerra Mundial, fue impulsada por Walter A. Shewhart y luego por W. Edwards Deming, entre otros. El PDCA se ha utilizado ampliamente en diversas organizaciones, desde la industria productiva hasta la educación, para la mejora de procesos.
+Este ciclo, que se compone de cuatro fases: Planificar, Hacer, Verificar y Actuar, es fundamental en la implementación y gestión de Sistemas de Gestión de Seguridad de la Información (SGSI). Propicia un enfoque de mejora continua en cada uno de los elementos, incluyendo indicadores y métricas para cuantificar el progreso de la organización. La estructura cíclica del modelo PDCA habilita evaluar periódicamente las actividades y procesos, incorporando nuevos avances, y su aplicación es amplia, abarcando cualquier proceso o actividad institucional.
+:::
+#### (Fase – Planificar (P))
+::: {style="text-align: justify;"}
+Se diseña el Sistema de Gestión de Seguridad de la Información (SGSI), definiendo su alcance y elaborando su política de seguridad. Además, se identifican los problemas y recursos necesarios para el sistema, se establecen los requisitos de las partes interesadas y las condiciones de ejecución, se definen los objetivos, estrategias, planes de acción y políticas organizativas dentro del SGSI, junto con la identificación de riesgos y oportunidades.
+:::
+#### (Fase – Hacer (D))
+::: {style="text-align: justify;"}
+Se realizan actividades como la implementación de la política de seguridad, la metodología de análisis de riesgos y el plan de comunicación. Durante la ejecución, se registran problemas en las fases de prueba y de implementación real. Además, se asignan responsabilidades y tareas para ejecutar las estrategias y controles dentro del Sistema de Gestión de Seguridad de la Información (SGSI).
+:::
+#### (Fase – Verificar (C))
+::: {style="text-align: justify;"}
+Se revisan los resultados obtenidos durante la implementación para garantizar su alineación con los objetivos establecidos por la administración. Los procesos de gestión y los controles de seguridad se evalúan mediante auditorías internas y análisis de riesgos planificados. En esta fase, se comparan los resultados con las expectativas previstas y se toman acciones correctivas para abordar cualquier desviación. El enfoque está en identificar áreas problemáticas y en la mejora continua del Sistema de Gestión de Seguridad de la Información.
+:::
+#### (Fase – Actuar (A))
+::: {style="text-align: justify;"}
+Se implementan mejoras en el SGSI si se detecta desalineación con los objetivos establecidos. Se aplican acciones correctivas y, en algunos casos, acciones de mejora que pueden extenderse a toda la organización. Si los resultados son satisfactorios, se mantiene el enfoque original, aunque generalmente se requieren ajustes. A partir de las evaluaciones realizadas, se ejecutan acciones preventivas y correctivas para optimizar el rendimiento del sistema de gestión de seguridad de la información.
+:::
+
+## Referencias Bibliografícas
+::: {style="text-align: justify;"}
+[1] Universidad EAFIT, NORMAS ISO Y SU COBERTURA, Colombia: Universidad EAFIT, 2016.
+
+[2] ISO, (s.f). “Sobre nosotros”. [en línea]. Disponible en: https://www.iso.org/es/
+
+[3] P. Castillo, “Propuesta de Implementación de la Norma ISO 27001:2005 Grupo PCDATA TECHNOLOGIES en la ciudad de Santo Domingo 2013,” Tesis, Escuela de Graduados, Universidad APEC, Santo Domingo, República Dominicana, 2013. 
+
+[4] S. Bortnik, (2010, abr. 10). “La serie de normas ISO 27000”. [en línea]. Disponible en: https://www.welivesecurity.com/la-es/2010/04/16/la-serie-de-normas-iso-27000/
+
+[5] M. Orellana, “Elaboración de una guía de implementación de un SGSI para la corporación ecuatoriana para el desarrollo de la investigación y la academia – CEDIA,” Tesis, Carrera de Ingeniería de Sistemas, Universidad Politécnica Salesiana, Cuenca, Ecuador, 2022. 
+
+[6] Colegio Oficial Ingenieros de Telecomunicación, “Guía de Iniciación a Actividad Profesional Implantación de Sistemas de Gestión de la Seguridad de la Información (SGSI) según la norma ISO 27001,” Madrid, España. 
+
+[7] ISO, (s.f). “¿Qué es la norma ISO/IEC 27001?”. [en línea]. Disponible en: https://www.iso.org/es/contents/data/standard/08/28/82875.html
+
+[8]  CTMA Consultores, (2021, oct. 13). “¿Cuál es el objetivo de la norma ISO 27001?”. [en línea]. Disponible en: https://ctmaconsultores.com/objetivo-de-la-norma-iso-27001/ 
+:::

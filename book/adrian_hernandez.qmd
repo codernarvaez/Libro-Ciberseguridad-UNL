@@ -1,4 +1,5 @@
-# introducción a Normativas y Estándares de Ciberseguridad
+
+# Normativas y Estándares de Ciberseguridad
 
 {{< include content/adrian_hernandez/_normativayestandaresciberseguridad.qmd >}}
 
@@ -7,6 +8,5 @@
 {{< include content/adrian_hernandez/_nistygestionderiesgos.qmd >}}
 
 {{< include content/adrian_hernandez/_principalesmarcosdeseguridadglobales.qmd >}}
-
 
 {{< include content/adrian_hernandez/_laboratorio01capitulo.qmd >}}
