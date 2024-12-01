@@ -1,0 +1,153 @@
+## Principales Marcos de Seguridad Globales
+### Modelo COBIT
+COBIT es un modelo utilizado para auditar la gestión y el control de los sistemas de información y tecnología, abarcando todos los sectores de una organización, tales como administradores de TI, usuarios y auditores involucrados en el proceso. Es una herramienta de evaluación y monitoreo que pone énfasis en el control de los negocios y la seguridad de la tecnología de la información, cubriendo controles específicos de TI desde una perspectiva orientada a los negocios.
+
+Las siglas COBIT corresponden a "Objetivos de Control para Tecnología de Información y Tecnologías relacionadas" (Control Objectives for Information Systems and Related Technology). Este modelo es el producto de una investigación llevada a cabo por expertos de diversos países y fue desarrollado por ISACA (Information Systems Audit and Control Association). Lanzado en 1996, COBIT se ha consolidado como una herramienta clave en el gobierno de TI, transformando la manera en que los profesionales de tecnología realizan su trabajo. Al vincular la tecnología informática con las prácticas de control, COBIT integra y armoniza estándares globales en un recurso esencial para la gerencia, los profesionales de control y los auditores[1]
+
+COBIT es aplicable a todos los sistemas de información dentro de una empresa, incluyendo computadoras personales y redes. Está basado en la filosofía de que los recursos de TI deben ser gestionados mediante un conjunto de procesos agrupados de manera natural, con el objetivo de proporcionar la información confiable y relevante que una organización necesita para alcanzar sus objetivos.
+
+El modelo COBIT establece un marco de acción en el cual se evalúan criterios de información, como seguridad y calidad. Además, se auditan los recursos relacionados con la tecnología de la información, tales como recursos humanos, instalaciones y sistemas, y finalmente, se evalúan los procesos involucrados en la organización.
+
+#### Principios del COBIT
+
+El control en TI se enfoca en visualizar la información necesaria para respaldar los procesos de negocio, considerando que la información es el resultado de la aplicación combinada de recursos relacionados con las TI, los cuales deben ser administrados mediante procesos de TI.
+
+### Requerimientos de la información del negocio:
+Para cumplir con los objetivos del negocio, la información debe satisfacer ciertos criterios:
+
+- **Requerimientos de Calidad**: Calidad, Costo y Entrega.
+- **Requerimientos Fiduciarios**: Efectividad y Eficiencia Operacional, Confiabilidad de los Reportes Financieros y Cumplimiento de las Leyes y Regulaciones.
+
+- **EFECTIVIDAD**  
+  La información debe ser relevante y pertinente para los procesos del negocio, y debe entregarse de manera oportuna, correcta, consistente y utilizable.
+
+- **Eficiencia**  La información debe ser proporcionada mediante el uso óptimo de los recursos, buscando la forma más productiva y económica.
+
+- **Confiabilidad** La información debe ser apropiada para que la administración tome decisiones informadas y pueda gestionar la empresa y cumplir con sus responsabilidades.
+
+- **Cumplimiento**  La información debe estar en conformidad con las leyes, regulaciones y compromisos contractuales con los que la empresa está comprometida.
+
+- **Confidencialidad**  La información sensible debe ser protegida contra divulgación no autorizada.
+
+- **Integridad**  La información debe ser precisa, completa y válida conforme a las expectativas de la empresa.
+
+- **Disponibilidad**  La información debe ser accesible cuando sea requerida por los procesos del negocio, asegurando la protección de los recursos y capacidades asociadas.
+
+En COBIT, se establecen los siguientes recursos en TI necesarios para alcanzar los objetivos de negocio:
+
+1. **Datos**  Se considera toda la información relevante, tanto interna como externa, estructurada o no, incluyendo gráficos, sonidos, entre otros.
+
+2. **Aplicaciones**  Son sistemas de información que integran procedimientos manuales y sistematizados, utilizados para el procesamiento y gestión de datos.
+
+3. **Tecnología**  Incluye los recursos tecnológicos esenciales, tales como hardware, software básico, sistemas operativos, sistemas de administración de bases de datos, redes, telecomunicaciones, multimedia, entre otros.
+
+4. **Instalaciones**  on los recursos físicos necesarios para alojar y dar soporte a los sistemas de información, incluyendo centros de datos, servidores y otras infraestructuras tecnológicas.
+
+5. **Recurso Humano**  Se refiere a la habilidad, conciencia y productividad del personal encargado de planificar, adquirir, prestar servicios, dar soporte y monitorear los sistemas de información y procesos de TI.
+
+### Clasificación de los procesos de las organizaciones
+
+**Planificación y Organización:**  Este dominio abarca la estrategia y tácticas de TI, enfocándose en identificar la manera en que la tecnología de información puede contribuir de la mejor forma al logro de los objetivos del negocio. La consecución de la visión estratégica requiere planificación, comunicación y gestión desde diversas perspectivas. Además, es necesario establecer una organización e infraestructura tecnológica adecuada para respaldar estos objetivos.
+
+**Adquisión e implementación:** se refiere a la identificación, desarrollo o adquisición de soluciones de TI necesarias para implementar la estrategia. Además, cubre la implementación e integración de estas soluciones dentro de los procesos del negocio, así como los cambios y el mantenimiento realizados en los sistemas existentes para garantizar que continúen cumpliendo con los requerimientos del negocio.
+
+**Soporte y servicios:**  Este dominio aborda la entrega de los servicios requeridos para las operaciones diarias, que incluyen desde las operaciones tradicionales hasta el entrenamiento, pasando por la seguridad y la continuidad del negocio. Para proveer estos servicios, deben establecerse procesos de soporte efectivos. Este dominio también incluye el procesamiento de los datos por sistemas de aplicación, los cuales se clasifican frecuentemente como controles de aplicación.
+
+**Monitoreo:**  Es fundamental que todos los procesos sean evaluados de forma regular a lo largo del tiempo para verificar su calidad y suficiencia en relación con los requisitos de control. Este dominio se enfoca en la evaluación constante de los procesos para asegurar que cumplan con los criterios de efectividad, eficiencia, confidencialidad, integridad, disponibilidad, cumplimiento y confiabilidad.
+
+### Controles de Seguridad Crítica de CIS
+Desarrollados por el Center for Internet Security® (CIS), los Controles de Seguridad Crítica de CIS constituyen un conjunto prescriptivo y prioritario de mejores prácticas en seguridad cibernética, diseñadas para prevenir los ataques más peligrosos y de mayor alcance. Además, estos controles ayudan a las organizaciones a cumplir con los requisitos establecidos por múltiples marcos de seguridad [2].
+
+Las mejores prácticas propuestas por los controles de CIS son procesables y se enfocan en la defensa cibernética, formuladas por un grupo de expertos en tecnología de la información. Estas prácticas se basan en información obtenida de ataques reales y las defensas efectivas contra los mismos. Los controles de CIS proporcionan una guía clara y específica, permitiendo a las organizaciones alcanzar las metas y objetivos establecidos en diversos marcos jurídicos, reglamentarios y normativos, facilitando así el cumplimiento de la normativa en un entorno cibernético cada vez más complejo.
+
+#### Estructura de los controles de CIS
+Los Controles de Seguridad Críticos de CIS consisten en un conjunto de 20 recomendaciones clave para la defensa cibernética, organizadas en tres categorías principales: básicas, fundamentales y organizacionales. Cada uno de estos 20 controles se desglosa en sub-controles adicionales, proporcionando directrices detalladas para mejorar la seguridad de las organizaciones.
+
+Para ayudar a las empresas de todos los tamaños a implementar estos controles, los Controles CIS se agrupan en tres grupos de implementación (IG). Estos grupos se desarrollan con base en el perfil de riesgo de la organización y los recursos disponibles para llevar a cabo la implementación.
+
+Cada IG define un conjunto de salvaguardas (anteriormente conocidas como subcontroles CIS) que deben ser adoptadas para mitigar los ataques cibernéticos más comunes que afectan a los sistemas y redes. En la versión 8 de los CIS Controls, se encuentran un total de 153 medidas de seguridad. La implementación debe comenzar con IG1, que abarca los controles más básicos, mientras que IG2 se basa en IG1 y expande su alcance, y IG3 incluye todos los controles y salvaguardas detallados.
+
+* **Implementación Grupo 1 (IG1):**está dirigido especialmente a **organizaciones pequeñas y medianas** que cuentan con **experiencia limitada** en seguridad cibernética y manejan **datos de baja sensibilidad**. Estas empresas deben implementar las medidas de seguridad recomendadas dentro de esta categoría para establecer una defensa mínima pero efectiva contra ataques, reduciendo los riesgos asociados con la ciberseguridad. 
+* **Implementación Grupo 2 (IG2):**es esencial para las organizaciones que, debido a la naturaleza de sus operaciones, requieren una protección robusta para salvaguardar la confidencialidad y la integridad de su información sensible, reduciendo los riesgos de filtraciones o exposición no autorizada. 
+* **Implementación Grupo 3 (IG3):** están diseñados para proporcionar una protección avanzada, orientada a reducir el impacto de los ataques dirigidos de adversarios sofisticados. Estos controles son esenciales para mitigar los riesgos de ataques de día cero y otras amenazas avanzadas que pueden vulnerar las defensas de las organizaciones más maduras y con datos de alta sensibilidad.
+
+Es importante destacar que los Controles CIS no representan una solución estándar para todas las organizaciones; la implementación debe adaptarse según la madurez de la ciberseguridad de la empresa, lo que permitirá planificar y priorizar la adopción de los controles de manera efectiva.
+
+### Estándar de Seguridad de Datos de la Industria de Tarjetas de Pago
+  
+El **PCI DSS** (Payment Card Industry Data Security Standard) es un conjunto de estándares de seguridad desarrollado por el **PCI SSC** (Payment Card Industry Security Standards Council), destinado a proteger los **datos de los titulares de tarjetas** y la **información sensible de autenticación** durante su **procesamiento, almacenamiento** y/o **transmisión**. El objetivo principal del PCI DSS es garantizar que las organizaciones que manejan información de tarjetas de pago lo hagan de manera segura y conforme a las mejores prácticas de la industria.
+
+Este estándar se encuentra actualmente en su versión **4.0.1**, la cual fue publicada en junio de 2024. En su última actualización, el PCI DSS ha refinado las **prácticas de seguridad** y ha establecido controles más específicos para mitigar las amenazas más recientes en el ámbito de las transacciones electrónicas. 
+
+#### Entidades que requieren cumplimiento con el estándar
+
+El **PCI DSS** se aplica a todas las entidades que participan en el almacenamiento, procesamiento y/o transmisión de datos del titular de la tarjeta y/o datos confidenciales de autenticación de tarjetas de pago. Esto incluye una amplia gama de organizaciones, tales como:
+
+- **Comerciantes (merchants)**: Aquellos que aceptan pagos con tarjeta.
+- **Procesadores**: Entidades que procesan transacciones de tarjetas de pago.
+- **Adquirentes (acquirers)**: Instituciones financieras que trabajan con los comerciantes para procesar pagos con tarjetas.
+- **Entidades emisoras (issuers)**: Bancos u otras instituciones que emiten tarjetas de pago a los consumidores.
+- **Proveedores de servicios de pagos (service providers)**: Como pasarelas de pago, centros autorizadores, entre otros.
+
+Además, otras entidades que prestan servicios relacionados con estos entornos también pueden estar sujetas a cumplir con **PCI DSS**, incluso si no manejan directamente datos de tarjetas de pago. Algunas de estas organizaciones incluyen:
+
+- **Proveedores de servicios gestionados (MSP)**: Empresas que gestionan servicios de TI para otras organizaciones.
+- **Proveedores de infraestructura tecnológica**: Empresas que proporcionan hardware y servicios necesarios para el funcionamiento de los sistemas de pago.
+- **Proveedores de servicios en la nube (cloud)**: Empresas que ofrecen soluciones de almacenamiento y procesamiento de datos en la nube.
+- **Proveedores de servicios de centros de datos (data centers y colocation/housing)**: Proveedores de infraestructura de alojamiento de datos.
+- **Servicios de alojamiento web (web hosting)**: Empresas que ofrecen hospedaje para sitios web y servicios en línea.
+- **Servicios de externalización de personal (outsourcing)**: Empresas que gestionan recursos humanos externos para otros negocios.
+- **Servicios de seguridad física**: Empresas que gestionan la seguridad en las instalaciones físicas de las organizaciones.
+- **Proveedores de desarrollo de software**: Empresas que crean soluciones tecnológicas utilizadas en el procesamiento de datos de tarjetas de pago.
+- **Servicios de destrucción segura de documentación y/o medios de almacenamiento electrónicos**: Empresas encargadas de la eliminación de datos y soportes físicos de manera segura.
+
+En los casos mencionados, estas entidades pueden optar por someterse a evaluaciones PCI DSS a solicitud de sus clientes. De igual forma, pueden participar en las revisiones de **PCI DSS** de sus clientes o realizar evaluaciones anuales por su cuenta y proporcionar evidencia de cumplimiento a sus clientes.
+
+#### Descripción de los controles de seguridad del estándar PCI DSS
+Se organizan en seis objetivos principales para garantizar la protección de los datos del titular de la tarjeta y de la información confidencial de autenticación. A continuación, se describen los controles de seguridad clave del PCI DSS [3]:
+
+1. **Construir y mantener una red segura y sistemas de información**
+   - **Control 1**: Instalar y mantener un cortafuegos para proteger los datos del titular de la tarjeta.
+   - **Control 2**: No utilizar contraseñas predeterminadas ni otros parámetros de seguridad proporcionados por el fabricante.
+
+2. **Proteger los datos del titular de la tarjeta**
+   - **Control 3**: Proteger los datos almacenados.
+   - **Control 4**: Cifrar la transmisión de datos del titular de la tarjeta a través de redes abiertas.
+
+3. **Gestionar las vulnerabilidades**
+   - **Control 5**: Proteger todos los sistemas contra malware y actualizar los programas de seguridad regularmente.
+   - **Control 6**: Desarrollar y mantener sistemas y aplicaciones seguros.
+
+4. **Controlar el acceso a los datos del titular de la tarjeta**
+   - **Control 7**: Restringir el acceso a los datos del titular de la tarjeta según la necesidad de saber.
+   - **Control 8**: Identificar y autenticar a las personas que tienen acceso a los sistemas y datos.
+   - **Control 9**: Restringir el acceso físico a los datos del titular de la tarjeta.
+
+5. **Monitorear y probar regularmente las redes**
+   - **Control 10**: Registrar y monitorear el acceso a los datos del titular de la tarjeta.
+   - **Control 11**: Realizar pruebas regulares de seguridad para detectar vulnerabilidades.
+
+6. **Mantener una política de seguridad de la información**
+   - **Control 12**: Mantener una política de seguridad de la información.
+
+### Biblioteca de Infraestructura de Tecnologías de la Información (ITIL)
+
+El **acrónimo ITIL**  fue utilizado por primera vez en la década de 1980 por la **Agencia Central de Computación y Telecomunicaciones (CCTA)** del gobierno británico. En sus inicios, ITIL se refería a una "biblioteca de infraestructura de tecnologías de la información" que documentaba y distribuía mejores prácticas para la gestión de servicios de TI. Con el tiempo, ITIL se transformó en un término independiente, evolucionando y madurando significativamente desde su introducción como una serie de libros, llegando a más de 30 volúmenes.[4]
+
+A principios de los años 2000, ITIL se simplificó en su segunda versión, agrupando sus publicaciones en conjuntos que abordaban diferentes aspectos de la gestión de TI, los servicios y las aplicaciones. Un ejemplo de su influencia en la industria fue la creación del **Microsoft Operations Framework**, basado en ITIL.
+
+Uno de los elementos esenciales dentro de ITIL es la **Base de Datos de Gestión de la Configuración (CMDB)**. Esta base de datos actúa como la autoridad central para todos los componentes que deben ser gestionados para ofrecer un servicio de TI. Entre los activos gestionados se incluyen servicios, software, componentes de TI, hardware, usuarios y documentación. La CMDB realiza un seguimiento de la ubicación, los cambios, los atributos y las relaciones entre todos estos activos y procesos.
+
+Cumplir con los principios de ITIL no solo ayuda a identificar rápidamente la causa raíz de los problemas, sino que también proporciona la visibilidad necesaria de los sistemas y las personas para prevenir problemas futuros, mejorando la eficiencia y la efectividad en la gestión de los servicios de TI.
+
+### Enlaces de Interés:
+
+[1]	“COBIT: Modelo para Auditoría y Control de Sistemas de Información”, Edu.co. [En línea]. Disponible en: https://www.eafit.edu.co/escuelas/administracion/consultorio-contable/Documents/A%20COBIT.pdf. 
+
+[2]	ManageEngine, “¿Qué son y cómo implementar los Controles de CIS?”, Manageengine.com. [En línea]. Disponible en: https://www.manageengine.com/latam/controles-de-seguridad-critica-cis.html. 
+
+[3]	“¿Qué es PCI DSS?”, Pcihispano.com. [En línea]. Disponible en: https://www.pcihispano.com/que-es-pci-dss/. 
+
+[4]	“¿Qué es la biblioteca de infraestructura de TI (ITIL)?”, Ibm.com, 11-oct-2024. .
+
+

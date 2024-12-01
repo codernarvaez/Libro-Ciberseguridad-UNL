@@ -1,0 +1,133 @@
+## Reglamento General de Protección de Datos (GDPR)
+Es el Reglamento General de Protección de Datos establece los estandares para a recopilación, uso, tratamiento y portabilidad de los datos personales de los ciudadanos, entró en vigencia el 25 de mayo de 2028 con el objetivo de controlar el uso de los datos personales que realizan las organizaciones a fin de que sean responsables con la protección de dichos datos.[1]
+
+Está dirigido a todas las empresas, compañias o comercios que se encuentran en la Unión Europea aunque esten únicamente de forma temporal.En el caso de los **datos anónimos** y las **personas fallecidadas** el GDRP no es aplicable.
+
+Adicionalmente, si el Reglamento General de Protección de Datos es incumplido por una empresa está será acreadora a una multa que puede alcanzar una indemnización económica de hasta el 4% de la facturación total anual de la empresa o los 20 millones de euros.[2]
+
+### Prinicipios del Reglamento General de Protección de Datos (GDPR)
+
+El Reglamento General de Protección de Datos se fundamenta en 7 prinicipios [3]:
+
+* **Legalidad,equidad y transperencia:**  las organizaciones deben tener una base legal para procesar los datos y deben informar a los individuos sobre cómo se utilizarán sus datos, asegurando que el tratamiento sea justo y claro.
+* **Limitación de la Finalidad:**Los datos personales deben ser recogidos con fines determinados, explícitos y legítimos. Además, no deben ser tratados posteriormente de manera incompatible con esos fines.
+* **Minimización de Datos:**Las organizaciones deben aplicar medidas técnicas y organizativas para garantizar que solo se procesen aquellos datos que son relevantes y adecuados para el propósito específico.
+* **Exactitud:**Los responsables del tratamiento deben asegurarse de que los datos personales sean exactos y estén actualizados. Deben implementar medidas razonables para corregir o eliminar datos inexactos sin dilación, garantizando así que la información utilizada sea correcta y pertinente al propósito del tratamiento.
+* **Limitación del Plazo de Conservación:**Los datos personales no deben ser conservados más tiempo del necesario para cumplir con la finalidad para la cual fueron recogidos. Una vez alcanzados esos fines, los datos deben ser eliminados, bloqueados o anonimizados, asegurando que no se mantengan indefinidamente sin justificación.
+* **Integridad y Confidencialidad:**
+Las organizaciones están obligadas a implementar medidas técnicas y organizativas adecuadas para garantizar la integridad, disponibilidad y confidencialidad de los datos personales. Esto incluye proteger los datos contra el tratamiento ilícito, así como contra la pérdida, destrucción o daño accidental.
+* **Responsabilidad Activa:**Este principio implica que las organizaciones son responsables de cumplir con todos los principios anteriores y deben poder demostrar su cumplimiento. Esto requiere un enfoque proactivo en la gestión de datos, lo que incluye mantener registros adecuados y realizar evaluaciones de impacto sobre la protección de datos cuando sea necesario.
+
+### Información Personal
+El Reglamento General de Protección de Datos determina a los datos personales como la información vinculada a una persona como son: datos de contacto o cualquier información que permita identificar a la persona de forma directa o indirecta. A continuación se presenta la clasificación de los datos personales.
+
+#### Información Identificable
+* Nombre
+* Dirección
+* Dirección IP
+* Fotografía
+* Grabaciones de audio y video
+* Dirección de correo electrónico
+* Datos bancarios
+* Comportamiento digital (cookies, publicaciones en sitios web o redes sociales).
+* ID de dispositivo móvil
+
+### Información especial
+* Información del hogar
+* Comportamiento y actitudes
+* Información médica
+* Estado de salud
+* Religión
+* Orientación Sexual
+* Afiliación sindical
+* Datos biométricos y genéticos
+
+### Consentimiento inequívoco de los interesados
+
+La RGPD requiere el consentimiento inequívoco del interesado, es decir una clara acción afirmativa mediante una declaración por escrito o marcación de casillas en un sitio web y deberán desagregarse cuando el consentimiento sea para diferentes fines. Caso contrario, no tendrán validez las casillas ya marcadas o la no acción.
+
+### Consentimiento explicíto de los interesados
+
+El consentimiento debe ser explicado claramente y de manera transparente a los interesados en los siguientes casos:
+* Tratamiento de datos sensibles.
+* Adopción de desiciones automatizadas.
+* Transferencias internacionales.
+* Datos personales sensibles que generen conflicto entre los derechos y libertades fundamentales de las personas.
+
+### Datos de menores de edad.
+
+Los niños requieren de una protección específica, y se considera lícito cuanto tenga como mínimo **16 años**, en el caso de menores se debe contar con un consentimiento autorizado del titular de la patria potestad, y dicho tratamiento se realizará solo en la medida en que se autorizó.
+
+### Evaluación del Impacto (EIPD)
+El Reglamento General de Protección de Datos establece que las organizaciones deben realizar una evaluar el impacto en los tratamientos de datos en aquellos casos que implica un alto riesgo para los derechos y libertades de las personas físicas. Este proceso deberá realizarse previo a iniciar el tratamiento y se evaluará el origen, naturaleza, particularidad y gravedad del riesgo.
+
+El objetivo de la evaluación es reducir los riesgos para la protección de datos personles y no afectar los derehos de las personas por el tratamiento de sus datos.
+
+La evaluación del impacto se integra de seis fases:
+
+* Descripción y análisis de la necesidad de la EIPD.
+* Descipción y documentación.
+* Identificación de los riesgos.
+* Evaluación de los riesgos.
+* Gestión y medidas de los riesgos.
+* Revisión e implantación de las medidas.
+
+### Tratamiento de los datos personales
+
+En este proceso los datos personales pueden pasar por diferentes organizaciones, sin embargo, se tiene dos figuras principales:
+
+* **Responsable del tratamiento:** es la persona física o jurídica, pública o privada que decide el fin y la forma en que se tratan los datos.
+* **Encargado del tratamiento:** es la persona que conserva y trata los datos en nombre de un responsable del tratamiento.
+
+#### Condiciones para el Tratamiento de datos personales.
+
+* El interesado ha otorgado su consentimiento.
+* Los datos son escenciales para respetar una obligación contractual o legal con el interesado.
+* Los datos personales necesarios para proteger los intereses vitales del interesado.
+* Datos personales que se traten para una misión de interés público.
+* Actuación en interés legítimo de la empresa, siempre que los datos del interesado no afecten sus derechos y libertades.
+
+#### Supervisión de los datos personales
+
+El delegado de protección de datos, es una persona nombrada por la organización, quién se encarga de supervisar como se tratan los datos personales y de informar y aconsejar a los colaboradores sobre sus obligaciones, y es el punto de contacto entre la autoridad de protección de datos y los ciudadanos.
+
+EL delegado de protección de datos será nombrado cuando la empresa:
+
+* Supervise sistemáticamente a los ciudadanos o trate categorías especiales de sus datos.
+* Tenga como actividad primordial el tratamiento de datos.
+* Efectué el tratamiento de datos a gran escala.
+
+### Mantenimiento de registros
+
+La organización debe demostrar que ha actuado conforme lo establece el Reglamento General de Protección de datos y cumple todas las obligaciones aplicables. Para ello puede optar por el registro de aspectos como:
+
+* Nombre y datos de contacto de la empresa que intervenga en el tratamiento de datos.
+* Razones para el tratamiento de datos personales.
+* Descripción de las categorías de personas que proporcionan datos personales.
+* categorías de organizaciones que reciben los datos personales.
+* Transferencia de datos personales a otro país u organización.
+* Periodo de almacenamiento de datos personales.
+* Descripción de las medidas de seguridad implementadas en el tratamiento de los datos personales.
+
+### Casos de Aplicación de GDPR
+
+#### Amazon
+
+La Comisión Nacional de Protección de Datos de Luxemburgo (CNPD) emitió una multa histórica de 746 millones de euros en julio de 2021, la mayor sanción hasta la fecha bajo el GDPR.
+La multa fue el resultado de una queja presentada por más de 10,000 usuarios a través del grupo de derechos digitales La Quadrature du Net, que alegó que Amazon no había obtenido el consentimiento adecuado para el procesamiento de datos personales, especialmente en relación con su sistema de publicidad dirigida. La CNPD determinó que Amazon no cumplía con los requisitos del GDPR, específicamente en lo que respecta al consentimiento informado y explícito necesario para el tratamiento legal de datos bajo el Artículo 6 del reglamento. A pesar de que Amazon argumentó que no hubo una violación real, ya que no se expuso información personal a terceros, la CNPD enfatizó que el GDPR se centra no solo en la seguridad de los datos, sino también en la forma en que las empresas manejan y procesan la información personal. [4]
+
+#### WhatsApp
+WhatsApp fue multada con 225 millones de euros por la Comisión Irlandesa de Protección de Datos en septiembre de 2021. La investigación reveló que WhatsApp había fallado en proporcionar información clara y suficiente a los usuarios sobre cómo se procesaban sus datos personales, lo que contraviene el principio de transparencia establecido por el GDPR. La DPC determinó que WhatsApp no cumplió adecuadamente con sus obligaciones informativas, lo que llevó a la conclusión de que los usuarios no estaban suficientemente informados sobre el uso y tratamiento de sus datos. Este caso ejemplifica cómo las plataformas digitales deben ser transparentes en sus prácticas y asegura que los usuarios tengan un entendimiento claro sobre cómo se utilizan sus datos personales.
+
+
+### Enlaces de Interés:
+
+[1]	M. De, “El Reglamento General de Protección de Datos (GDPR)”, Sago.com. [En línea]. Disponible en: https://sago.com/wp-content/uploads/2022/09/Schlesinger-Groups-Approach-to-GDPR-Compliance_ES.pdf. 
+
+[2]	Cisco, “5 cosas que debes saber sobre el GDPR”, Grupogaratu.com. [En línea]. Disponible en: https://grupogaratu.com/wp-content/uploads/sites/4/2018/04/whitepaper-Nuevo-reglamento-Protección-de-Datos-UE-2018.pdf. 
+
+[3]	“Principios”, AEPD. [En línea]. Disponible en: https://www.aepd.es/derechos-y-deberes/cumple-tus-deberes/principios. 
+
+[4]	K. Svobodová, “¿Qué es la GDPR? Alcance, finalidad, multas y cómo cumplirlas”, Safetica.com, 09-mar-2022. [En línea]. Disponible en: https://www.safetica.com/es/blog/que-es-la-gdpr-alcance-finalidad-multas-y-como-cumplirlas. 
+
+
