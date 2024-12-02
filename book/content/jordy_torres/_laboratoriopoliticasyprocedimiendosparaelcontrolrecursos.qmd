@@ -1,0 +1,198 @@
+# Laboratorio: Políticas y Procedimientos para el Control de Recursos con Docker/Podman
+
+## Introducción
+
+Este laboratorio tiene como objetivo mostrar cómo aplicar políticas y procedimientos efectivos para el control de recursos en contenedores utilizando **Docker** o **Podman**. A través de este laboratorio, se aprenderá cómo gestionar el uso de recursos, controlar el acceso, y aplicar prácticas adecuadas para el monitoreo de los contenedores.
+
+## Requisitos Previos
+
+1. **Docker** o **Podman** instalado en tu sistema.
+2. **Conocimientos básicos** de contenedores y su uso.
+3. **Acceso de administrador** en el sistema donde se ejecutarán los contenedores.
+
+## Objetivos del Laboratorio
+
+- Crear y configurar contenedores de Docker/Podman.
+- Establecer políticas para el control de recursos como CPU, memoria y almacenamiento.
+- Monitorear el uso de recursos en tiempo real.
+- Definir procedimientos para la gestión de recursos de contenedores.
+
+---
+
+## Paso 1: Instalación de Docker o Podman
+
+Si aún no tienes Docker o Podman instalados, puedes seguir estos pasos para su instalación.
+
+### Instalación de Docker (en Ubuntu):
+
+
+sudo apt-get update
+sudo apt-get install docker.io
+
+
+### Instalación de Podman (en Ubuntu):
+
+
+sudo apt-get update
+sudo apt-get install podman
+
+
+---
+
+## Paso 2: Creación de un Contenedor
+
+Ahora que tenemos Docker o Podman instalados, vamos a crear un contenedor básico para probar las políticas y procedimientos.
+
+### Creación de un contenedor con Docker:
+
+
+sudo docker run -d --name contenedor_demo ubuntu:latest sleep 1000
+
+
+### Creación de un contenedor con Podman:
+
+
+sudo podman run -d --name contenedor_demo ubuntu:latest sleep 1000
+
+
+Este comando crea un contenedor con la imagen de **Ubuntu** y ejecuta un proceso que se mantendrá activo durante 1000 segundos.
+
+---
+
+## Paso 3: Establecer Políticas para el Control de Recursos
+
+### Política 1: Control de CPU y Memoria
+
+Podemos establecer límites en el uso de la CPU y la memoria de nuestros contenedores para evitar que un solo contenedor consuma demasiados recursos.
+
+#### **Docker:**
+
+
+sudo docker run -d --name contenedor_demo_limited --memory="512m" --cpus="1" ubuntu:latest sleep 1000
+
+
+- **--memory="512m"**: Establece un límite de memoria de 512 MB.
+- **--cpus="1"**: Establece un límite de CPU de 1 núcleo.
+
+#### **Podman:**
+
+
+sudo podman run -d --name contenedor_demo_limited --memory="512m" --cpus="1" ubuntu:latest sleep 1000
+
+
+### Política 2: Control de Almacenamiento
+
+El control de almacenamiento puede ser fundamental para evitar que los contenedores consuman todo el espacio disponible en el sistema.
+
+#### **Docker:**
+
+
+sudo docker run -d --name contenedor_demo_storage --storage-opt size=10G ubuntu:latest sleep 1000
+
+
+- **--storage-opt size=10G**: Limita el tamaño del almacenamiento del contenedor a 10 GB.
+
+#### **Podman:**
+
+
+sudo podman run -d --name contenedor_demo_storage --storage-opt size=10G ubuntu:latest sleep 1000
+
+
+---
+
+## Paso 4: Monitoreo de Recursos en los Contenedores
+
+### Monitoreo con Docker:
+
+Puedes usar el comando `docker stats` para monitorear el uso de los recursos de tus contenedores.
+
+
+sudo docker stats
+
+
+Este comando muestra el uso de CPU, memoria, red y disco en tiempo real para todos los contenedores activos.
+
+### Monitoreo con Podman:
+
+Podman tiene una funcionalidad similar llamada `podman stats`:
+
+
+sudo podman stats
+
+
+Este comando también proporciona información sobre el uso de recursos en tiempo real para todos los contenedores activos.
+
+---
+
+## Paso 5: Implementación de Procedimientos para la Gestión de Recursos
+
+### Procedimiento 1: Asignación y Liberación de Recursos
+
+Es importante tener procedimientos claros para la asignación y liberación de recursos. A continuación, se presenta un ejemplo de procedimiento para gestionar la asignación de recursos a contenedores.
+
+1. **Solicitud de recursos**: Los usuarios deben presentar una solicitud para la creación de contenedores con recursos específicos.
+2. **Revisión de solicitud**: Un administrador revisará la solicitud y determinará si los recursos solicitados son adecuados.
+3. **Asignación de recursos**: Se asignarán los recursos de acuerdo con las políticas de control de recursos definidas.
+4. **Liberación de recursos**: Una vez que un contenedor ya no sea necesario, los recursos serán liberados, y el contenedor será detenido y eliminado.
+
+### Procedimiento 2: Monitoreo y Alertas
+
+El monitoreo de los recursos es clave para evitar que los contenedores consuman más recursos de los necesarios.
+
+1. **Monitoreo continuo**: Utilizar `docker stats` o `podman stats` para monitorear los recursos en tiempo real.
+2. **Alertas**: Establecer alertas para notificar a los administradores cuando un contenedor esté utilizando más del 80% de la CPU o la memoria asignada.
+
+#### Ejemplo de política de alerta:
+
+| Recurso         | Umbral de alerta | Acción al superar el umbral   |
+|-----------------|------------------|-------------------------------|
+| CPU             | 80%              | Notificar al administrador    |
+| Memoria         | 80%              | Notificar al administrador    |
+| Almacenamiento  | 90%              | Notificar al administrador    |
+
+---
+
+## Paso 6: Auditoría y Control de Accesos
+
+### Procedimiento de Auditoría
+
+La auditoría es esencial para asegurar que los recursos están siendo utilizados de manera eficiente y según las políticas.
+
+1. **Registro de accesos**: Los accesos a los contenedores deben ser registrados en un archivo de auditoría.
+2. **Revisión periódica**: Los administradores deben revisar los registros de acceso y uso de recursos al menos una vez al mes.
+3. **Informe de uso**: Los administradores deben generar informes de uso de recursos y hacer recomendaciones para mejorar la eficiencia.
+
+#### Ejemplo de auditoría:
+
+| Contenedor       | CPU (%) | Memoria (MB) | Almacenamiento (GB) | Fecha de revisión |
+|------------------|---------|--------------|---------------------|-------------------|
+| contenedor_demo  | 70      | 350          | 3                   | 2024-12-01        |
+| contenedor_demo_limited | 50      | 250          | 2                   | 2024-12-01        |
+
+---
+
+## Paso 7: Procedimiento de Recuperación de Recursos
+
+En caso de que los recursos de un contenedor no estén siendo utilizados correctamente, es importante tener procedimientos claros para la recuperación de recursos.
+
+1. **Detención del contenedor**: Si un contenedor está consumiendo demasiados recursos, se debe detener inmediatamente.
+2. **Liberación de recursos**: Se deben liberar los recursos, eliminando cualquier proceso innecesario que esté ejecutándose dentro del contenedor.
+3. **Reasignación de recursos**: Si es necesario, los recursos pueden ser reasignados a otros contenedores.
+
+#### Comando para detener un contenedor:
+
+
+sudo docker stop contenedor_demo
+
+
+sudo podman stop contenedor_demo
+
+
+---
+
+## Conclusión
+
+En este laboratorio hemos cubierto las políticas y procedimientos esenciales para el control de recursos en Docker o Podman. A través de la creación de contenedores, la implementación de políticas de control de recursos, el monitoreo y la auditoría de los contenedores, y el establecimiento de procedimientos para la gestión de recursos, hemos aprendido cómo gestionar eficazmente los recursos de contenedores en un entorno de producción.
+
+Este laboratorio proporciona una base sólida para el control de recursos, lo que garantiza que los contenedores se ejecuten de manera eficiente y segura, sin sobrecargar los sistemas ni comprometer el rendimiento general.
+

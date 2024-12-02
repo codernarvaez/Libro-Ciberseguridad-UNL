@@ -1,0 +1,189 @@
+# Laboratorio: Gestión de Seguridad en la Nube con Docker
+
+## Introducción
+
+Este laboratorio le guiará a través de los pasos necesarios para implementar una serie de medidas de seguridad en la nube utilizando contenedores Docker. El enfoque estará basado en prácticas como la auditoría de servicios, el cifrado de datos, la gestión de dispositivos, y la administración de usuarios.
+
+En este laboratorio, utilizaremos Docker para crear contenedores que simularán distintos servicios en la nube. A través de estos servicios, configuraremos medidas de seguridad como auditoría, cifrado y gestión de permisos.
+
+## Prerrequisitos
+
+- Tener Docker instalado en el sistema.
+- Tener conocimientos básicos sobre Docker y contenedores.
+- Acceso a una terminal o CLI.
+
+## Paso 1: Preparar el entorno de Docker
+
+### 1.1. Instalar Docker
+
+Si aún no tienes Docker instalado, puedes hacerlo siguiendo la documentación oficial para tu sistema operativo. [Docker Installation Guide](https://docs.docker.com/get-docker/).
+
+### 1.2. Iniciar Docker
+
+Una vez instalado, asegúrate de que Docker esté en ejecución con el siguiente comando:
+
+{bash}
+sudo systemctl start docker
+sudo systemctl enable docker
+
+
+Verifica que Docker esté funcionando correctamente con:
+
+{bash}
+docker --version
+
+
+## Paso 2: Crear y Configurar un Contenedor de Servicios
+
+### 2.1. Crear un Contenedor de Aplicación Simulada
+
+En este paso, crearemos un contenedor que actuará como un servicio de nube simulado (por ejemplo, una base de datos o un servicio web).
+
+{bash}
+docker run -d --name secure-service -p 8080:80 nginx
+
+
+Este comando ejecuta un contenedor con una imagen de Nginx, que actuará como un servicio web básico.
+
+### 2.2. Configurar Seguridad Nativa del Contenedor
+
+Vamos a auditar y configurar la seguridad del contenedor:
+
+1. Revisa las configuraciones de seguridad nativas disponibles en el contenedor, como la red y los volúmenes:
+
+{bash}
+docker inspect secure-service
+
+
+2. Configura las redes privadas para el contenedor, limitando el acceso externo:
+
+{bash}
+docker network create --driver=bridge secure_network
+docker network connect secure_network secure-service
+
+
+Este comando asegura que el contenedor se conecte solo a una red privada, limitando el acceso desde el exterior.
+
+## Paso 3: Implementar Cifrado de Datos
+
+### 3.1. Crear un Volumen Cifrado
+
+Para proteger los datos almacenados, crearemos un volumen cifrado que se montará en el contenedor.
+
+1. Crea un volumen de Docker:
+
+{bash}
+docker volume create --driver local --opt type=tmpfs --opt device=tmpfs --opt o=size=100m secure_data
+
+
+2. Ejecuta el contenedor con este volumen cifrado montado:
+
+{bash}
+docker run -d --name secure-service -v secure_data:/usr/share/nginx/html -p 8080:80 nginx
+
+
+Este volumen proporcionará almacenamiento temporal cifrado para el contenedor.
+
+### 3.2. Verificar el Cifrado
+
+Puedes verificar que el volumen se haya creado correctamente con el siguiente comando:
+
+{bash}
+docker volume inspect secure_data
+
+
+Asegúrate de que los datos del volumen están protegidos por el cifrado.
+
+## Paso 4: Gestión de Dispositivos
+
+### 4.1. Asegurar el Acceso a los Contenedores
+
+Si deseas controlar qué dispositivos pueden acceder a los contenedores, es posible restringir el acceso mediante parámetros de seguridad en Docker. Utiliza opciones como `--device` para controlar el acceso a dispositivos específicos:
+
+{bash}
+docker run -d --name secure-service --device /dev/sda1:/dev/sda1 -p 8080:80 nginx
+
+
+### 4.2. Administrar Dispositivos con Docker
+
+Puedes listar los dispositivos disponibles en Docker con el siguiente comando:
+
+{bash}
+docker info | grep "Docker Root Dir"
+
+
+Esto te permitirá verificar y gestionar qué dispositivos pueden ser utilizados por los contenedores.
+
+## Paso 5: Administración de Usuarios
+
+### 5.1. Crear Roles y Permisos para Usuarios
+
+En este paso, crearemos roles y configuraremos permisos para limitar el acceso a los contenedores y servicios en la nube.
+
+1. Crear un usuario en Docker con permisos limitados:
+
+{bash}
+sudo useradd -m cloud-user
+sudo usermod -aG docker cloud-user
+
+
+2. Limitar los permisos de acceso con Docker Compose:
+
+
+version: '3'
+services:
+  secure-service:
+    image: nginx
+    volumes:
+      - secure_data:/usr/share/nginx/html
+    networks:
+      - secure_network
+    user: "cloud-user"
+volumes:
+  secure_data:
+    external: true
+networks:
+  secure_network:
+    driver: bridge
+
+
+### 5.2. Verificar la Administración de Usuarios
+
+Puedes verificar qué usuarios tienen acceso a los contenedores y realizar ajustes de permisos usando:
+
+{bash}
+docker exec -it secure-service whoami
+
+
+## Paso 6: Monitoreo y Reportes
+
+### 6.1. Implementar Monitoreo de Seguridad
+
+Usaremos herramientas como `Docker logs` para monitorear las actividades dentro del contenedor y crear informes sobre la seguridad.
+
+1. Visualizar los registros del contenedor:
+
+{bash}
+docker logs secure-service
+
+
+2. Configurar la recolección de registros centralizados con Docker Compose y herramientas como ELK stack o Prometheus para un monitoreo más detallado.
+
+## Paso 7: Gestión Integral de la Seguridad en la Nube
+
+### 7.1. Usar una Plataforma de Gestión de Seguridad
+
+Para facilitar la gestión integral, implementaremos una plataforma de monitoreo, como **Portainer** o **Rancher**, que permite visualizar y gestionar la seguridad de múltiples contenedores desde un solo lugar.
+
+1. Instalar Portainer:
+
+{bash}
+docker volume create portainer_data
+docker run -d -p 9000:9000 --name portainer --restart always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce
+
+
+2. Acceder a Portainer a través de `http://localhost:9000` para administrar y monitorear la seguridad de tus contenedores.
+
+## Conclusión
+
+Este laboratorio te ha permitido implementar medidas de seguridad en la nube utilizando Docker. Desde la configuración de seguridad nativa, pasando por el cifrado de datos, hasta la gestión de usuarios y dispositivos, has aprendido cómo proteger tus servicios en la nube. La implementación de una plataforma de gestión de seguridad integral permite una supervisión centralizada y una administración eficiente de la seguridad en un entorno de múltiples contenedores.

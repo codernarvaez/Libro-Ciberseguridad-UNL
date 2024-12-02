@@ -1,0 +1,174 @@
+
+# Laboratorio: Roles y Responsabilidades en la Gestión de la Nube usando Docker
+
+Este laboratorio tiene como objetivo demostrar cómo gestionar roles y responsabilidades dentro de un entorno de nube utilizando contenedores Docker. Se configurará un entorno con distintos roles (como Administrador de Nube, Ingeniero de Seguridad, y Administrador de Datos) dentro de un clúster de contenedores, para ilustrar las distintas responsabilidades que cada rol implica en una infraestructura basada en contenedores.
+
+### Requisitos previos:
+- **Docker** o **Podman** instalado en tu máquina.
+- Conocimientos básicos de contenedores Docker y redes.
+- Acceso a terminal (línea de comandos).
+
+---
+
+### **Objetivo del laboratorio:**
+1. Crear un entorno de nube simulado utilizando contenedores.
+2. Configurar roles y responsabilidades dentro del sistema de contenedores.
+3. Asignar tareas específicas a cada rol en la nube, como la administración de la infraestructura, la seguridad y la gestión de datos.
+
+---
+
+## **Pasos del laboratorio**
+
+### **Paso 1: Instalación de Docker**
+Si no tienes Docker o Podman instalado, sigue estos pasos:
+
+**Para Docker en Linux:**
+
+sudo apt update
+sudo apt install docker.io
+sudo systemctl enable --now docker
+
+
+**Para Podman en Linux:**
+
+sudo apt update
+sudo apt install podman
+
+
+Verifica la instalación:
+
+docker --version
+
+o
+
+podman --version
+
+
+#### **Paso 2: Crear el entorno de nube simulado**
+En este paso, crearemos un entorno con varios contenedores que simulan la infraestructura de la nube.
+
+1. Crear una red virtual para los contenedores:
+   
+   docker network create cloud-network
+   
+
+2. Crear contenedores para representar diferentes servicios (servicio web, base de datos y monitoreo):
+   - **Servicio web (Nginx):**
+     
+     docker run -d --name web-service --network cloud-network nginx
+     
+
+   - **Base de datos (MySQL):**
+     
+     docker run -d --name db-service --network cloud-network -e MYSQL_ROOT_PASSWORD=root mysql
+     
+
+   - **Servicio de monitoreo (Prometheus):**
+     
+     docker run -d --name monitoring-service --network cloud-network prom/prometheus
+     
+
+Este paso crea una pequeña infraestructura de nube simulada con contenedores que representan un servidor web, una base de datos y un servicio de monitoreo.
+
+#### **Paso 3: Configurar roles y responsabilidades**
+
+##### **3.1: Rol de Administrador de Nube**
+El Administrador de Nube es responsable de gestionar la infraestructura y supervisar el rendimiento.
+
+**Responsabilidades:**
+- Monitorear el estado del servicio web.
+- Realizar actualizaciones y mantener el servicio.
+- Proveer acceso a la infraestructura.
+
+**Comando para verificar el servicio web:**
+
+docker ps
+
+
+Verifica los logs del contenedor para revisar su rendimiento:
+
+docker logs web-service
+
+
+##### **3.2: Rol de Ingeniero de Seguridad**
+El Ingeniero de Seguridad en la nube es responsable de proteger los recursos en la nube, asegurando la comunicación segura entre los contenedores y gestionando los accesos.
+
+**Responsabilidades:**
+- Asegurar la comunicación cifrada entre los contenedores.
+- Implementar firewalls virtuales o políticas de seguridad.
+- Auditar los logs de acceso para detectar vulnerabilidades.
+
+**Comando para verificar puertos y seguridad:**
+
+docker run -d --name db-service --network cloud-network -e MYSQL_ROOT_PASSWORD=root --expose 3306 mysql
+
+Aquí, el contenedor de la base de datos solo es accesible dentro de la red `cloud-network`.
+
+Para revisar los logs del contenedor de seguridad:
+
+docker logs monitoring-service
+
+
+##### **3.3: Rol de Administrador de Datos**
+El Administrador de Datos es responsable de gestionar las bases de datos y asegurar la integridad de los datos.
+
+**Responsabilidades:**
+- Asegurar que la base de datos esté correctamente configurada.
+- Realizar copias de seguridad regulares.
+- Administrar la integridad de los datos.
+
+**Comando para acceder al contenedor de MySQL y gestionar la base de datos:**
+
+docker exec -it db-service mysql -uroot -proot
+
+
+Crear una base de datos:
+sql
+CREATE DATABASE testdb;
+
+Hacer una copia de seguridad (dump) de la base de datos:
+
+docker exec db-service mysqldump -uroot -proot testdb > backup.sql
+
+
+#### **Paso 4: Supervisión y Control**
+El servicio de monitoreo (Prometheus) será utilizado para supervisar el rendimiento de los contenedores.
+
+**Responsabilidad del Ingeniero de Seguridad y del Administrador de Nube:**
+- Usar Prometheus para monitorear el estado de los servicios.
+- Configurar alertas para notificar problemas de rendimiento o seguridad.
+
+Para acceder a Prometheus y configurar alertas, abre la interfaz web en tu navegador:
+
+http://localhost:9090
+
+
+#### **Paso 5: Despliegue de Actualizaciones y Gestión de Infraestructura**
+El Administrador de Nube es responsable de actualizar los servicios cuando sea necesario.
+
+**Comando para actualizar el contenedor de Nginx:**
+
+docker stop web-service
+docker rm web-service
+docker run -d --name web-service --network cloud-network nginx
+
+
+**Escalabilidad de contenedores (opcional):**
+Si necesitas escalar un servicio, el Administrador de Nube puede iniciar más instancias del servicio:
+
+docker run -d --name web-service-2 --network cloud-network nginx
+
+#### **Paso 6: Limpiar el entorno**
+Para finalizar el laboratorio, elimina los contenedores creados:
+
+docker rm -f web-service db-service monitoring-service web-service-2
+docker network rm cloud-network
+
+---
+
+### **Conclusión**
+
+Este laboratorio te ha permitido experimentar con la configuración y asignación de roles en la gestión de la nube utilizando contenedores Docker. Has aprendido a:
+- Crear y gestionar infraestructuras simuladas en la nube usando contenedores.
+- Asignar responsabilidades específicas a cada rol, como Administrador de Nube, Ingeniero de Seguridad y Administrador de Datos.
+- Utilizar herramientas como Prometheus para supervisar el rendimiento y asegurar los servicios en la nube.
