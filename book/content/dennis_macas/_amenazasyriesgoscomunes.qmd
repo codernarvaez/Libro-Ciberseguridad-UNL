@@ -1,0 +1,45 @@
+# Amenazas y Riesgos Comunes
+
+La seguridad está centrada en proteger los datos o activos de una organización o persona. Dependiendo del tipo de activo estos se pueden clasificar en seguridad de la información, seguridad de las TIC o ciberseguridad.
+- Seguridad de la información: está centrado en proteger los datos almacenados o transmitidos de la empresa o individuo.
+- Seguridad de las TIC: esta se centra en proteger los activos a través de la tecnología.
+
+La seguridad de la informática tiene tres pilares fundamentales; confidencialidad, disponibilidad e integridad (CID).
+
+- Confidencialidad: asegura que la información este solo accesible para los que están autorizados para verla.
+- Integridad: garantiza que los datos no sean alterados sin permiso.
+- Disponibilidad: permite el acceso solo a aquellos que tienen el acceso autorizado.
+
+Debido al avance de la tecnología los pilares de la información también abarcan tres reglas adicionales; autenticación, autorización y auditabilidad.
+- Autenticación: encargado de verificar la identidad de un dispositivo o usuario de forma unimodal (un solo factor de autenticación) o multimodal (múltiples factores de autenticación)
+- Autorización: encargado de regular el acceso a los activos o recursos de la empresa.
+-  Auditabilidad: encargado de registrar y monitorear el uso de los recursos o activos de la empresa.
+
+Un factor que también es importante es el derecho de la privacidad de los usuarios de las TIC, que es la capacidad del usuario de poder controlar quién cómo y cuándo tiempo en tercero pude acceder y usar los datos generados por el propio usuario, además de sus datos personales, en otras palabras, se necesita el consentimiento voluntario y sin ningún factor involucrado del usuario, para que sus datos sean procesados. Una de las normas mas famosas es la ley RGPD en Europa que fue implementada en el 2018.
+
+## Que son las amenazas y las vulnerabilidades
+
+Las amenazas son acciones que comprometen la seguridad y privacidad de los usuario u organizaciones, mientras que las vulnerabilidades son debilidades del sistema implementado que pueden ser explotados por las amenazas. Las amenazas se originan por tres factores; ataques cibernéticos, incidentes físicos y negligencia en la implementación de la seguridad. Debido a esto, para una implementación adecuada de la infraestructura de las TIC se tienen que identificar amenazas para una adecuada implementación de protección. Esto se denomina una política de seguridad que define mediante un análisis de riego, este análisis conlleva: analizar qué recursos se tienen que proteger, la importancia de dichos recursos, la probabilidad que tienen de ser atacados y el impacto de estas amenazas. El daño de las amenazas se mide por el costo económico que le ocasiona a las empresas o usuarios.
+
+### Malware
+
+Malware es cualquier software malicioso que fue diseñado para infectar dispositivos, dicha palabra proviene de “malicious” y “software”, siendo acuñada el 1990 por Yisrael Radai. Pero el auge de los virus fue en los años setenta, décadas antes del surgimiento de la palabra malware, pero siendo esto inofensivos en aquella época.
+
+El malware se propaga siguiendo un patrón; infección de programas o el sector de arranque del disco, luego se propagaban cuando los usuarios compartían el software en entre ellos. 
+
+## Fases de un ciberataque
+También conocido “cyber kill chain”, es un ciclo de vida que tras finalizar propaga nuevos ataques, este compuesto por siete fases:
+
+1. Reconocimiento: el atacante recopila información pública del objetivo pata evaluar si hay posibilidad de éxito.
+2. Preparación: el atacante diseña un método para el ataque, como un correo electrónico maliciosos o un archivo infecta.
+3. Distribución: el cuando el malware se distribuye.
+4. Explotación: el malware aprovecha una vulnerabilidad del sistema objetivo para infectarlo.
+5. Instalación: el malware se instala en la máquina atacada, dicha fase no es necesaria ya que algunos pueden robar información sin necesidad de instalar software.
+6. Comando y control: el atacante obtiene el control del sistema infectado, permitiendo ejecutar diferentes acciones que requiera.
+7. Acciones sobre los objetivos: el atacante accede a los datos o información deseada, además de intentar expandir el ataque a otros objetivos relacionados.
+
+
+## Referencia
+
+
+D. Arroyo Guardeño, V. Gayoso Martínez, and L. Hernández Encinas, Ciberseguridad. Editorial CSIC, 2022.

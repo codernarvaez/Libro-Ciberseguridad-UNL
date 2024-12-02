@@ -1,0 +1,21 @@
+# Introducción a la Ciberseguridad
+
+## 1. Contextualización General
+
+En un mundo cada vez más digitalizado, la tecnología se ha integrado profundamente en la vida cotidiana. Desde las interacciones personales hasta las operaciones más complejas de las empresas, la conectividad global ofrece una amplia gama de ventajas. No obstante, esta misma conectividad expone a individuos, empresas y gobiernos a una creciente variedad de amenazas cibernéticas, que evolucionan constantemente. La ciberseguridad, entendida como el conjunto de tecnologías, prácticas y políticas diseñadas para prevenir y mitigar los ataques cibernéticos, juega un papel esencial en la protección de los sistemas informáticos, los datos sensibles y los activos digitales. Según IBM, la ciberseguridad no solo protege contra amenazas tradicionales como el ransomware y el phishing, sino que también contribuye a reducir el impacto de ataques cada vez más sofisticados en la era digital moderna [IBM](https://www.ibm.com/mx-es/topics/cybersecurity).
+
+## 2. Planteamiento del Problema
+
+El aumento constante de los ciberataques ha generado un entorno de riesgo continuo, en el que las organizaciones enfrentan desafíos considerables. Las consecuencias de estos ataques pueden ser devastadoras, desde la pérdida de información confidencial hasta la interrupción de servicios esenciales. Un informe de IBM destaca que el costo promedio de una filtración de datos alcanzó los 4.88 millones de dólares en 2023, lo que representa un aumento considerable y subraya la gravedad de la situación [IBM](https://www.ibm.com/mx-es/topics/cybersecurity). Además, las organizaciones con brechas significativas en sus competencias de seguridad experimentaron pérdidas mucho mayores, lo que pone de manifiesto la urgente necesidad de soluciones más robustas.
+
+## 3. Justificación de la Importancia
+
+La ciberseguridad es fundamental para garantizar la continuidad de las operaciones digitales y proteger la integridad de los datos. El cibercrimen representa una amenaza creciente para la economía global, con un costo proyectado de 10.5 billones de dólares anuales para 2025 [IBM](https://www.ibm.com/mx-es/topics/cybersecurity). La capacidad de una organización para defenderse contra los ataques cibernéticos ya no es una simple cuestión de seguridad, sino una condición indispensable para su supervivencia en un entorno altamente competitivo y tecnológico.
+
+## 4. Objetivo o Propósito
+
+El objetivo de este análisis es explorar los desafíos actuales de la ciberseguridad, identificando las principales amenazas y las estrategias de defensa más eficaces. Además, se discutirá el impacto de tecnologías emergentes como la inteligencia artificial y la computación en la nube, así como la importancia de cerrar la brecha de competencias en ciberseguridad.
+
+## 5. Estructura del Documento
+
+En primer lugar, se presentarán las amenazas cibernéticas más comunes y su impacto en las organizaciones. A continuación, se analizarán las soluciones tecnológicas y las mejores prácticas recomendadas para fortalecer la seguridad. Finalmente, se evaluará cómo la inteligencia artificial y la automatización están transformando la manera en que se enfrenta el panorama de amenazas actual.

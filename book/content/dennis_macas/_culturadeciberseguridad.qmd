@@ -1,0 +1,44 @@
+# Cultura de la ciberseguridad
+
+La cultura de la ciberseguridad es única para una organización y no replicable para otras ya que se basa en sus características específicas en términos de tecnologías procesos y valores de las personas. Para ser eficaz, la cultura de la ciberseguridad debe considerarse parte integra de la cultura organizativa ya que puede reforzar la cohesión cultural dentro de las organizaciones y hacer que las personas se den cuenta de que la seguridad no es solo un problema del departamento de TI si no una cuestión que afecta a todos. La construcción de la cultura de la seguridad requiere adoptar una estrategia clara y un conjunto de recursos, métodos y herramientas. El objetivo es tener un enfoque cooperativo sobre tener que imponer procedimientos dado que las personas no suelen seguir normas impuestas y sobre todo que no entienden. 
+
+
+## Cultura organizacional y de ciberseguridad 
+
+Andrew Pettigrew definió la cultura organizacional como una combinación de creencias, rituales e identidades que guían el comportamiento y las decisiones dentro de una organización. 
+
+Con base a las ideas de Andrew, Shein desarrolló un modelo que distingue entre distintas versiones, valores declarados y sus posiciones profundas, destacando como estas capas forman el comportamiento organizacional. Más adelante, Cameron y Quin identificaron cuatro tipos principales de culturas, clan, adhocracia, mercado y jerarquía, cada una de las cuales conlleva sus propios beneficios y desafíos. En 2016, hofstede propuso un modelo de 6 dimensiones culturales que explica cómo las diferencias culturales influyen en la gestión y expectativas de los empleados. 
+
+
+La cultura se define como una forma significativa de resumir una serie de comportamientos. El trasfondo conceptual de la cultura se refiere a las dimensiones de los aspectos cognitivos, conductuales, actitudinales y normativos, junto con otros componentes claves como la ética del grupo, la comunicación, las costumbres, las oposiciones y las responsabilidades. Por lo tanto, el desarrollo de la cultura puede definirse como una forma de aumentar el nivel de conciencia, normas, conocimientos, actitudes, comportamientos, intenciones, creencias, valores compartidos y un marco de comportamiento ético. 
+
+
+En la ciberseguridad la cultura implica que podría convertirse en una fuerte estrategia de prevención y una forma de influir positivamente en las percepciones y hábitos de los individuos hacia un comportamiento. Este comportamiento resultante sería una capacidad y una mentalidad más sólidas para proteger la información de los activos y las personas. 
+
+
+Tomando en cuenta este aspecto, también hay que aclarar que las acciones para abordar la cultura de la seguridad varían según la empresa, por lo que son un desafío para las organizaciones, esto hace que sea necesario adaptarse a encontrarse una práctica adecuada en la línea con la cultura general de la organización. Es esencial a conocer que la definición de la cultura de seguridad aún no está definida y aun implica la defensa de la digitalización acelerada para un efecto difícil de cambiar. 
+
+
+Por lo tanto, se puede decir que la cultura de la ciberseguridad aún no tiene una definición concreta. Aunque la digitalización acelerada influye en su desarrollo, modificar este concepto es complicado.  Debido a que una de sus principales desafíos es que las culturas no se comprenden completamente y las subculturas, dentro de las distintas unidades de negocio, afectan significativamente en los negocios generales de la ciberseguridad. 
+
+
+La ciberseguridad se asocia con la cultura de riesgo, por lo que implica motivar a los empleados para seguir y procedimientos y aprender habilidades de protección es clave. Este enfoque centrado en las personas resalta la importancia de su participación activa. Pero también existe el temor de que la inseguridad se haya convertido en un problema delicado que requiere atención constante, Por lo tanto, una cultura sólida de ciberseguridad no solo depende de políticas y procedimientos, sino también. De fomentar una conciencia estratégica del riesgo y promover la responsabilidad compartida lo que influye en las actividades cotidianas de los miembros de la organización. 
+
+
+
+## Mayo riesgo en entornos hiperconectados 
+
+En entornos más interconectados, los empleados enfrentan mayores riesgos de ser víctimas de ciberataques. Por ello, las organizaciones que fomentan una cultura de ciberseguridad evitan enfoques aislados y promueven entrenamientos centrados en las competencias y conocimientos. Una cultura de ciberseguridad considera los efectos de una cultura segura sobre las percepciones y comportamientos de los empleados. Se ha destacado que la cultura dentro de una organización es clave para la gestión de la ciberseguridad y el rendimiento de su seguridad, ya que una cultura consciente de seguridad ayuda a proteger la información y los activos, y fomenta la conciencia del riesgo y las responsabilidades. Además, la práctica no escrita de las subculturas influye en los niveles organizacionales y en las acciones seguras. 
+
+Esto amplía el debate sobre cómo cada empleado puede afectar las prácticas de ciberseguridad y cómo la falta de conformidad puede generar vulnerabilidades. Así, resalta la importancia de comenzar internamente con una base sólida, políticas adecuadas y monitoreo del comportamiento. 
+
+Los controles técnicos y administrativos dentro de una función de ciberseguridad deben seguir un enfoque uniforme y confirmado. Además de la tecnología y la documentación, el aspecto humano juega un papel crucial en la aplicación exitosa de los controles y comportamientos esperados. Por lo tanto, enfrentar la cultura de ciberseguridad de manera estratégica e inculcar el compromiso de los empleados sigue siendo un desafío. 
+
+Este problema se vuelve complejo porque enfatiza las dependencias de los efectos a largo plazo sobre cómo se percibe la seguridad en el lugar de trabajo, lo que influye en la postura general de seguridad de la organización. Se asume que cultivar la cultura de ciberseguridad dentro de un entorno organizacional puede influir en el comportamiento y actitudes de los individuos. Por lo tanto, la cultura de ciberseguridad busca modificar la mentalidad grupal hacia la conciencia del riesgo y el cumplimiento de las políticas internas. 
+
+
+## Referencias
+
+I. Corradini, Building a Cybersecurity Culture in Organizations: How to Bridge the Gap Between People and Digital Technology. Springer Nature, Apr. 29, 2020.
+
+Andronache, A. (21 jul 2021). Increasing security awareness through lenses of cybersecurity culture. Nombre de la revista, volumen 15, 1.
