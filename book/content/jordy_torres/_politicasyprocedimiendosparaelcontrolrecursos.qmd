@@ -1,0 +1,146 @@
+# Políticas y Procedimientos para el Control de Recursos en Sistemas de la Información
+
+## Introducción
+
+El control de recursos en los sistemas de la información es fundamental para garantizar la seguridad, eficiencia y confiabilidad de los sistemas. Este documento establece las políticas y procedimientos necesarios para gestionar adecuadamente los recursos informáticos, con el objetivo de proteger la infraestructura tecnológica y asegurar el uso adecuado de los recursos disponibles.
+
+## Objetivos
+
+- Asegurar que los recursos tecnológicos sean utilizados de manera eficiente.
+- Garantizar que los recursos sean accesibles solo por usuarios autorizados.
+- Establecer procedimientos para la asignación, monitoreo y control de los recursos.
+
+## Alcance
+
+Este documento es aplicable a todos los recursos tecnológicos utilizados por la organización, incluidos servidores, bases de datos, aplicaciones, redes, almacenamiento y dispositivos de usuario final.
+
+## Definición de Recursos
+
+### 1. Recursos de Hardware
+Los recursos de hardware incluyen los servidores, dispositivos de almacenamiento, redes, equipos de computación, entre otros. Estos recursos deben ser monitoreados para asegurar su disponibilidad y rendimiento.
+
+**Ejemplo de recursos de hardware:**
+- Servidores de bases de datos
+- Dispositivos de almacenamiento NAS
+- Equipos de trabajo de escritorio
+
+### 2. Recursos de Software
+Los recursos de software incluyen las aplicaciones y sistemas operativos necesarios para el funcionamiento de los sistemas informáticos. Es fundamental controlar las licencias y las versiones de los software utilizados.
+
+**Ejemplo de recursos de software:**
+- Sistemas operativos: Windows, Linux
+- Aplicaciones: Microsoft Office, herramientas de desarrollo (IDE)
+- Software de seguridad: Antivirus, firewalls
+
+### 3. Recursos de Red
+Los recursos de red incluyen la infraestructura de comunicaciones, como routers, switches, cortafuegos y redes virtuales. Estos deben ser gestionados para garantizar un acceso seguro y sin interrupciones.
+
+**Ejemplo de recursos de red:**
+- Routers: Cisco, MikroTik
+- Switches: Cisco Catalyst
+- Cortafuegos: pfSense
+
+## Políticas de Control de Recursos
+
+### 1. Asignación de Recursos
+- **Autorización**: La asignación de recursos debe ser autorizada por el administrador de sistemas o el responsable del área tecnológica.
+- **Limitación de recursos**: Se deben asignar recursos de acuerdo con las necesidades específicas de los usuarios y las aplicaciones, sin exceder los límites establecidos.
+
+#### Ejemplo de criterios para la asignación de recursos:
+| Recurso        | Criterio de Asignación         | Prioridad  |
+|----------------|--------------------------------|------------|
+| Servidores     | Basado en la carga de trabajo   | Alta       |
+| Almacenamiento | Según el tamaño de los proyectos| Media      |
+| Ancho de banda| Según el tipo de tráfico        | Baja       |
+
+### 2. Monitoreo de Recursos
+- **Monitoreo de rendimiento**: Se debe implementar un sistema de monitoreo para evaluar el uso de CPU, memoria, espacio de almacenamiento y ancho de banda en tiempo real.
+- **Alertas**: Las alertas deben configurarse para notificar a los administradores cuando se alcancen los umbrales críticos de recursos.
+
+#### Ejemplo de monitoreo de recursos:
+| Recurso         | Umbral Crítico | Acción al superar el umbral      |
+|-----------------|-----------------|----------------------------------|
+| CPU             | 90%             | Notificar administrador, iniciar optimización |
+| Memoria         | 80%             | Notificar administrador, iniciar limpieza |
+| Espacio en disco| 95%             | Notificar administrador, liberar espacio |
+
+### 3. Uso Responsable de los Recursos
+- **Política de uso aceptable**: Los usuarios deben utilizar los recursos de la información únicamente para fines laborales o educativos autorizados.
+- **Auditoría**: Las actividades de los usuarios deben ser auditadas regularmente para detectar posibles abusos en el uso de los recursos.
+
+#### Ejemplo de política de uso aceptable:
+| Actividad Permitida       | Actividad No Permitida             |
+|---------------------------|------------------------------------|
+| Uso para tareas laborales  | Uso personal excesivo de recursos  |
+| Investigación académica    | Instalación de software no autorizado |
+
+### 4. Seguridad en el Uso de los Recursos
+- **Control de accesos**: Se deben aplicar medidas de control de acceso para asegurar que solo usuarios autorizados puedan acceder a los recursos críticos.
+- **Protección de datos**: Es necesario proteger los datos almacenados y en tránsito mediante cifrado y otras tecnologías de seguridad.
+
+#### Ejemplo de control de acceso:
+| Usuario    | Recurso   | Permiso           | Método de Autenticación    |
+|------------|-----------|-------------------|----------------------------|
+| Administrador | Servidor  | Control total     | Autenticación de dos factores |
+| Usuario   | Base de datos | Solo lectura   | Contraseña + Autenticación de red |
+
+### 5. Gestión de Recursos de Software
+- **Licencias**: Los software utilizados deben contar con las licencias correspondientes, y se debe llevar un registro actualizado de todas las licencias de software en uso.
+- **Actualizaciones y parches**: Se debe asegurar que todos los sistemas operativos y aplicaciones sean actualizados regularmente con los parches de seguridad más recientes.
+
+### 6. Gestión de Recursos de Red
+- **Segmentación de la red**: Se debe segmentar la red para asegurar que los recursos estén aislados según su nivel de seguridad.
+- **Monitoreo de tráfico**: El tráfico de red debe ser monitoreado para detectar posibles problemas de rendimiento o ataques de seguridad.
+
+## Procedimientos para el Control de Recursos
+
+### 1. Procedimiento de Asignación de Recursos
+- **Solicitud**: Los usuarios deben presentar una solicitud formal para el uso de recursos específicos, indicando el tipo de recurso requerido, la duración y el propósito.
+- **Revisión**: El administrador revisará la solicitud y, en función de la disponibilidad y la necesidad, aprobará o rechazará la solicitud.
+- **Asignación**: Una vez aprobada la solicitud, el administrador asignará los recursos solicitados y configurará los permisos necesarios.
+
+#### Ejemplo de procedimiento de solicitud:
+| Paso       | Acción                               | Responsable           |
+|------------|--------------------------------------|-----------------------|
+| 1          | Presentación de solicitud           | Usuario               |
+| 2          | Revisión de la solicitud            | Administrador de TI   |
+| 3          | Aprobación/denegación de recursos   | Administrador de TI   |
+| 4          | Asignación de recursos y permisos   | Administrador de TI   |
+
+### 2. Procedimiento de Monitoreo de Recursos
+- **Implementación de herramientas**: Se debe implementar una herramienta de monitoreo de recursos (por ejemplo, Nagios, Zabbix) para realizar un seguimiento de los recursos de hardware, software y red.
+- **Revisión periódica**: Los administradores deben revisar los informes de monitoreo al menos una vez al día y realizar ajustes según sea necesario.
+
+#### Ejemplo de herramientas de monitoreo:
+| Herramienta | Recurso Monitoreado   | Características     |
+|-------------|-----------------------|----------------------|
+| Nagios      | Servidores, redes     | Monitoreo en tiempo real, alertas |
+| Zabbix      | Hardware, software    | Escalabilidad, visualización de datos |
+
+### 3. Procedimiento de Seguridad y Control de Accesos
+- **Autenticación**: Todos los usuarios deben autenticar sus credenciales antes de acceder a los recursos informáticos. Se deben usar métodos de autenticación de dos factores (2FA) cuando sea posible.
+- **Revisión de accesos**: Los accesos a los recursos deben ser revisados mensualmente para asegurar que solo los usuarios autorizados tengan acceso.
+
+### 4. Procedimiento de Gestión de Software
+- **Inventario de software**: Debe mantenerse un inventario actualizado de todos los software instalados en los sistemas de la organización.
+- **Control de licencias**: Las licencias de software deben ser verificadas periódicamente para evitar el uso no autorizado o la expiración de las mismas.
+- **Instalación y actualizaciones**: Los administradores deben garantizar que todas las instalaciones y actualizaciones de software se realicen siguiendo los procedimientos establecidos.
+
+### 5. Procedimiento de Recuperación de Recursos
+- **Retorno de recursos**: Cuando los recursos ya no sean necesarios o cuando un usuario termine su tarea, debe devolver los recursos asignados.
+- **Revisión de estado**: El administrador debe revisar el estado de los recursos después de ser devueltos para asegurarse de que no se hayan producido daños o pérdidas.
+
+## Evaluación y Mejora Continua
+
+Las políticas y procedimientos establecidos deben ser evaluados regularmente para garantizar su eficacia y eficiencia. Los administradores deben recopilar retroalimentación de los usuarios y realizar mejoras según sea necesario.
+
+#### Ejemplo de evaluación de políticas:
+| Área         | Evaluación Actual | Acción Propuesta     |
+|--------------|-------------------|----------------------|
+| Asignación   | Eficiente         | Mejorar tiempos de respuesta |
+| Monitoreo    | Adecuado          | Implementar nuevas herramientas |
+
+## Conclusión
+
+La correcta gestión de los recursos tecnológicos es crucial para el buen funcionamiento de los sistemas de información. A través de políticas claras y procedimientos bien establecidos, se puede garantizar que los recursos sean utilizados de manera eficiente, segura y con el menor riesgo posible para la organización.
+

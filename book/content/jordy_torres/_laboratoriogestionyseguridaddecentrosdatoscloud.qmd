@@ -1,0 +1,176 @@
+# Laboratorio: Implementación de la Gestión de la Seguridad en la Nube con Docker
+
+
+## Introducción
+
+En este laboratorio, realizaremos una implementación práctica de las **Estrategias de Gestión de la Seguridad en la Nube** utilizando Docker. Abordaremos un enfoque básico para implementar un entorno de seguridad para aplicaciones basadas en la nube, cubriendo control de acceso, autenticación, cifrado y auditoría dentro de un entorno de contenedores.
+
+## Objetivos del Laboratorio
+
+1. Configurar un entorno básico con Docker para simular un servicio de nube.
+2. Implementar autenticación y control de acceso básico.
+3. Aplicar cifrado de datos dentro de los contenedores.
+4. Auditar la configuración de seguridad y realizar ajustes en tiempo real.
+
+## Requisitos Previos
+
+- Docker o Podman instalado en tu máquina
+- Familiaridad básica con línea de comandos y Docker
+- Conocimientos previos sobre principios de gestión de seguridad en la nube
+
+## Instalación de Docker/Podman
+
+## Verificación de Instalación
+
+docker --version
+# o
+podman --version
+
+
+::: {.callout-note}
+Puedes encontrar instrucciones de instalación en:
+- [Docker - Getting Started](https://docs.docker.com/get-docker/)
+- [Podman - Getting Started](https://podman.io/getting-started)
+:::
+
+## Creación de Contenedor con Aplicación Simulada de la Nube
+
+Usaremos Nginx como servidor web simulado para representar un servicio en la nube.
+
+## Iniciar Contenedor Nginx
+
+
+docker run -d --name nginx-cloud -p 8080:80 nginx
+
+
+### Verificar Contenedor en Ejecución
+
+
+docker ps
+
+
+::: {.callout-tip}
+Accede a `http://localhost:8080` para ver la página de bienvenida de Nginx.
+:::
+
+## Implementación de Autenticación y Control de Acceso
+
+## Crear Archivo de Contraseñas
+
+
+sudo apt-get install apache2-utils
+htpasswd -c /etc/nginx/.htpasswd usuario1
+
+
+## Configuración de Autenticación Básica en Nginx
+
+{nginx}
+server {
+    listen 80;
+    server_name localhost;
+
+    location / {
+        auth_basic "Acceso Restringido";
+        auth_basic_user_file /etc/nginx/.htpasswd;
+    }
+}
+
+
+::: {.callout-warning}
+Reinicia Nginx después de modificar la configuración:
+
+nginx -s reload
+
+:::
+
+## Cifrado de Datos y Conexiones
+
+## Generar Certificado SSL Auto-firmado
+
+
+openssl genpkey -algorithm RSA -out /etc/nginx/ssl/private.key
+openssl req -new -key /etc/nginx/ssl/private.key -out /etc/nginx/ssl/certificate.csr
+openssl x509 -req -in /etc/nginx/ssl/certificate.csr -signkey /etc/nginx/ssl/private.key -out /etc/nginx/ssl/certificate.crt
+
+
+## Configuración SSL en Nginx
+
+{nginx}
+server {
+    listen 443 ssl;
+    server_name localhost;
+
+    ssl_certificate /etc/nginx/ssl/certificate.crt;
+    ssl_certificate_key /etc/nginx/ssl/private.key;
+
+    location / {
+        auth_basic "Acceso Restringido";
+        auth_basic_user_file /etc/nginx/.htpasswd;
+    }
+}
+
+
+## Auditoría y Monitoreo de Seguridad
+
+## Instalación de Fail2Ban
+
+
+apt-get update
+apt-get install fail2ban
+
+
+## Configuración de Fail2Ban
+
+Archivo `/etc/fail2ban/jail.local`:
+
+
+[nginx-http-auth]
+enabled = true
+filter = nginx-http-auth
+action = iptables[name=NoAuthFailures, port=http, protocol=tcp]
+logpath = /var/log/nginx/*access.log
+maxretry = 3
+
+
+::: {.callout-important}
+Reiniciar Fail2Ban:
+
+systemctl restart fail2ban
+
+:::
+
+## Gestión Centralizada con Docker Compose
+
+## Archivo docker-compose.yml
+
+{yaml}
+version: '3.7'
+services:
+  nginx:
+    image: nginx
+    ports:
+      - "8080:80"
+      - "8443:443"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+      - ./ssl:/etc/nginx/ssl
+    restart: always
+
+
+## Conclusión
+
+Este laboratorio ha proporcionado una implementación práctica de estrategias de **Gestión de Seguridad en la Nube** utilizando Docker. Hemos cubierto aspectos fundamentales como:
+
+- Control de acceso
+- Cifrado de datos
+- Auditoría de seguridad
+- Automatización de la gestión de seguridad
+
+La integración de herramientas como Fail2Ban y Docker Compose permite crear infraestructuras de nube más seguras y fáciles de administrar.
+
+## Referencias
+
+- Documentación oficial de Docker
+- Documentación de Nginx
+- Guías de seguridad en contenedores
+

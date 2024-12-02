@@ -9,4 +9,8 @@
 
 {{< include content/jordy_torres/_politicasyprocedimiendosparaelcontrolrecursos.qmd >}}
 
-{{< include content/jordy_torres/_laboratorio01capitulo.qmd >}}
+{{< include content/jordy_torres/_laboratoriointroduccioncentrosdatosycloud.qmd >}}
+{{< include content/jordy_torres/_laboratoriogestionyseguridaddecentrosdatoscloud.qmd >}}
+{{< include content/jordy_torres/_laboratoriorolesyresponsabilidadesgestion.qmd >}}
+{{< include content/jordy_torres/_laboratorioimpactoenlajerarquiayseguridadenlaeficiencia.qmd >}}
+{{< include content/jordy_torres/_laboratoriopoliticasyprocedimiendosparaelcontrolrecursos.qmd >}}

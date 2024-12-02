@@ -1,0 +1,133 @@
+# Laboratorio: Impacto en los Sistemas de Gestión de Seguridad de la Información (SGSI)
+
+### **Objetivos del laboratorio:**
+1. **Comprender cómo el impacto en un SGSI puede afectar los activos de información**.
+2. **Simular y analizar un ataque o incidente en el sistema de información**.
+3. **Evaluar la efectividad de un SGSI basado en ISO 27001 para mitigar impactos**.
+4. **Ver cómo herramientas como Docker o Podman ayudan a simular estos escenarios**.
+
+### **Requisitos previos:**
+- Tener **Docker** o **Podman** instalados en el sistema.
+- Conocer los conceptos básicos de ISO 27001 y SGSI.
+- Entender los cuatro subestados de seguridad: Autenticación, Confidencialidad, Integridad y Disponibilidad (A-C-I-D).
+- Tener acceso a una terminal de comandos (Linux, macOS o Windows con WSL).
+
+---
+
+### **Laboratorio: Impacto en un SGSI con Docker**
+
+#### **Paso 1: Preparación del entorno**
+
+1. **Instalación de Docker o Podman**
+   Si aún no tienes Docker o Podman, instálalos según el sistema operativo:
+
+   **Docker:**
+   - **Linux**: `sudo apt install docker.io`
+   - **macOS**: Descarga desde [Docker Hub](https://www.docker.com/products/docker-desktop).
+   - **Windows**: Instala Docker Desktop.
+
+   **Podman:**
+   - **Linux**: `sudo apt install podman`
+   - **macOS**: `brew install podman`
+   - **Windows**: Descarga desde [Podman website](https://podman.io/).
+
+2. **Iniciar Docker o Podman:**
+   Asegúrate de que Docker o Podman esté corriendo:
+   ```bash
+   sudo systemctl start docker   # Para Docker en Linux
+   podman machine init           # Para Podman en macOS/Windows
+   ```
+
+3. **Crear un contenedor con un servicio de base de datos**:
+   Como ejemplo, simularemos que nuestra base de datos es un activo crítico de la organización. Vamos a crear un contenedor con un servicio de base de datos MySQL, que es común en sistemas empresariales.
+
+   ```bash
+   docker run -d --name db-server -e MYSQL_ROOT_PASSWORD=root mysql:latest
+   ```
+
+   Esto creará un contenedor con una base de datos MySQL. La contraseña para el usuario root es "root".
+
+#### **Paso 2: Simulación del Impacto**
+
+1. **Simular una amenaza (Ataque)**:
+   Para simular un ataque, vamos a **interrumpir el servicio de la base de datos** de manera que afecte la disponibilidad del activo. Esto simula un ataque de denegación de servicio (DoS) o una interrupción de la disponibilidad de un activo.
+
+   Detén el contenedor de MySQL (esto representa la materialización de la amenaza que afecta la disponibilidad del activo):
+
+   ```bash
+   docker stop db-server
+   ```
+
+   **Impacto**:
+   - **Disponibilidad**: El servicio de base de datos ya no está disponible. Los usuarios no pueden acceder a la información, lo que afecta directamente a las operaciones comerciales que dependen de esa base de datos.
+   - **Costo**: Si la base de datos es crítica para el negocio, esta interrupción podría generar pérdidas de ingresos y afectar la reputación de la empresa.
+
+2. **Evaluar el impacto**:
+   Según la **ISO 27001**, podemos evaluar el impacto de la pérdida de disponibilidad utilizando una escala cualitativa:
+
+   - **Gravedad**: Alta. La base de datos es crítica para las operaciones de la empresa.
+   - **Atributos afectados**: Disponibilidad.
+   - **Efecto económico**: Alta pérdida económica debido a la paralización de los servicios.
+
+3. **Mitigar el impacto**:
+   Para mitigar este tipo de impacto, podemos aplicar prácticas recomendadas de seguridad, como una **alta disponibilidad** (HA) para los servicios críticos. Vamos a reiniciar el contenedor de MySQL, lo que simula una recuperación rápida del servicio.
+
+   ```bash
+   docker start db-server
+   ```
+
+   Esto restaura la disponibilidad del servicio.
+
+#### **Paso 3: Impacto en la Confidencialidad**
+
+1. **Simular un ataque de filtración de datos (Pérdida de Confidencialidad)**:
+   Ahora vamos a simular una filtración de datos mediante la exposición de un archivo confidencial almacenado en la base de datos. Supongamos que un atacante obtiene acceso no autorizado a la base de datos.
+
+   Vamos a crear un archivo en el contenedor de MySQL con información confidencial:
+   ```bash
+   docker exec -it db-server bash
+   echo "Datos confidenciales de clientes" > /tmp/confidential_data.txt
+   ```
+
+2. **Simular una fuga de información**:
+   Ahora, el atacante (usuario malintencionado) tiene acceso a esa información confidencial. Esto representa la **violación de la confidencialidad** del activo.
+
+   **Impacto**:
+   - **Confidencialidad**: El atacante tiene acceso a datos confidenciales.
+   - **Costo**: El costo de la violación de confidencialidad podría ser la pérdida de la confianza de los clientes y la multa por incumplir las normativas de protección de datos (ej. GDPR).
+
+3. **Mitigar el impacto**:
+   La forma de mitigar este tipo de impacto sería implementar controles como el **cifrado de datos** tanto en reposo como en tránsito.
+
+   Vamos a simular la aplicación de cifrado al archivo confidencial:
+   ```bash
+   openssl enc -aes-256-cbc -salt -in /tmp/confidential_data.txt -out /tmp/confidential_data.txt.enc
+   ```
+
+   **Impacto mitigado**: Ahora, incluso si un atacante accede al archivo, no podrá leer su contenido sin la clave de cifrado.
+
+#### **Paso 4: Evaluar los Resultados**
+
+1. **Escala de impacto de ISO 27001**:
+   A través de este ejercicio, hemos simulado tres impactos en el SGSI:
+   - **Disponibilidad**: Ataque de interrupción de servicio (contener MySQL).
+   - **Confidencialidad**: Fuga de información confidencial.
+   - **Integridad**: No se simula en este laboratorio, pero sería la modificación no autorizada de los datos.
+
+2. **Escala de severidad**:
+   Se utilizaron los subestados A-C-I-D para evaluar el impacto de cada amenaza. Cada uno de estos subestados afecta a diferentes atributos de seguridad y pueden ser evaluados como **cualitativos** (pérdidas funcionales u orgánicas) o **cuantitativos** (pérdidas económicas directas).
+
+#### **Paso 5: Reporte Final y Mejores Prácticas**
+
+Al final del laboratorio, podemos generar un reporte de los impactos y las medidas tomadas para mitigar los riesgos. Este reporte debería ser documentado en el **SGSI** y debe incluir:
+1. Descripción del incidente y los impactos en los activos de información.
+2. Medidas correctivas (restauración del servicio y cifrado de datos).
+3. Recomendaciones de seguridad para prevenir futuros incidentes, como el uso de herramientas de monitorización, cifrado de datos y planes de recuperación ante desastres.
+
+---
+
+### **Conclusión**
+
+Este laboratorio demuestra cómo un **SGSI** conforme a la norma **ISO 27001** puede ayudar a identificar y mitigar los impactos en los activos de información causados por la materialización de amenazas. Mediante el uso de **Docker** o **Podman**, es posible simular estos escenarios en un entorno controlado y evaluar el impacto en la **disponibilidad** y **confidencialidad** de los activos de información.
+
+Este tipo de simulaciones son esenciales para implementar un sistema de gestión robusto que permita a las organizaciones prevenir, mitigar y responder de manera eficiente a los incidentes de seguridad de la información.
