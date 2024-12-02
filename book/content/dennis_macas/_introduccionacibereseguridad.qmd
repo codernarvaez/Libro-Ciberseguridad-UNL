@@ -1,0 +1,25 @@
+# Introducción a la Ciberseguridad  
+
+## 1. Contextualización General  
+
+Con el constate crecimiento de la tecnología el mundo es cada vez más digitalizado, esto ha ocasionado, a su vez, un aumento en la conectividad de las personas o de las empresas u organizaciones. Esto conlleva nuevos riesgos para para todos en la ciberseguridad informatica, ya que también evoluciona con la nueva tecnología. 
+
+
+Con lo mencionado anteriormente, se puede entender que la ciberseguridad es como un conjunto de tecnologías, prácticas y políticas diseñadas para prevenir y mitigar los ciberataques, desempeñando un papel vital en la protección de los sistemas informáticos, los datos sensibles y los activos digitales.[IBM](https://www.ibm.com/mx-es/topics/cybersecurity) dice que la ciberseguridad no sólo protege contra amenazas tradicionales como ransomware y phishing, sino que también ayuda a reducir el impacto de ataques cada vez más sofisticados en la era digital moderna, por lo tanto, la ciberseguridad es clave para mantener la estabilidad y la confianza en los sistemas digitales, lo que se vuelve aún más importante a medida que aumentan las amenazas.
+
+El aumento constante de los ciberataques ha generado un entorno de riesgo continuo, en el cual las organizaciones enfrentan desafíos significativos; las consecuencias de estos ataques pueden ser devastadoras, ya que van desde la pérdida de información confidencial hasta la interrupción de servicios esenciales.  
+
+Un informe de [IBM](https://www.ibm.com/mx-es/topics/cybersecurity) subraya que el costo promedio de una filtración de datos alcanzó los 4.88 millones de dólares en 2023, lo que representa un aumento considerable en comparación con años anteriores, resaltando así la gravedad de la situación. Adicionalmente, las organizaciones con brechas significativas en sus competencias de seguridad experimentaron pérdidas mucho mayores, lo que pone de manifiesto la urgente necesidad de soluciones más robustas.  
+
+A medida que los ataques se hacen más sofisticados, las empresas deben adaptarse rápidamente para protegerse.  
+
+La ciberseguridad es fundamental no solo para garantizar la continuidad de las operaciones digitales, sino también para proteger la integridad de los datos. En este sentido, el cibercrimen representa una amenaza creciente para la economía global, con un costo proyectado de 10.5 billones de dólares anuales para 2025 [[IBM](https://www.ibm.com/mx-es/topics/cybersecurity)]; este dato es alarmante, pues revela la magnitud del desafío que enfrentan las organizaciones en todo el mundo.  
+
+Es fundamental reconocer que la capacidad de una organización para defenderse contra los ataques cibernéticos ya no es solo una cuestión de seguridad, sino una condición indispensable para su supervivencia en un entorno altamente competitivo y tecnológico. A medida que la digitalización se profundiza, se hace aún más urgente fortalecer las defensas cibernéticas para evitar daños irreparables.  
+
+El objetivo de este análisis es explorar los desafíos actuales de la ciberseguridad, identificando las principales amenazas y las estrategias de defensa más eficaces. Además, se discutirán las implicaciones de las tecnologías emergentes, como la inteligencia artificial y la computación en la nube, y cómo estas tecnologías pueden tanto generar nuevas oportunidades como nuevos riesgos para la seguridad digital.  
+
+A lo largo de este estudio, se subrayará la importancia de cerrar la brecha de competencias en ciberseguridad, lo cual es fundamental para fortalecer las capacidades de respuesta ante ataques cibernéticos cada vez más sofisticados.  
+
+En primer lugar, se presentarán las amenazas cibernéticas más comunes y su impacto en las organizaciones; luego, se abordarán las soluciones tecnológicas y las mejores prácticas recomendadas para fortalecer la seguridad. Finalmente, se evaluará cómo la inteligencia artificial y la automatización están transformando la manera en que se enfrenta el panorama de amenazas actual, brindando tanto nuevos enfoques como nuevas dificultades.  
+

@@ -1,0 +1,491 @@
+# Concetos básicos y terminologías
+
+## Introducción al NIST Cybersecurity Framework
+NIST Cybersecurity Framework este marco se divide en cinco funciones principales, cada una con categorías y subcategorías que ayudan a organizar las actividades de ciberseguridad de manera sistemática:
+
+1. **Identificar (Identify):** Crear una visión completa de los activos físicos y cibernéticos, así como las vulnerabilidades y amenazas.
+2. **Proteger (Protect):** Desarrollar medidas de protección para salvaguardar los activos de la organización.
+3. **Detectar (Detect):** Establecer sistemas que identifiquen eventos y anomalías de seguridad.
+4. **Responder (Respond):** Crear planes y procedimientos para responder a incidentes de seguridad.
+5. **Recuperar (Recover):** Establecer procedimientos para restaurar los servicios y activos tras un incidente de seguridad.
+
+
+## Monitoreo y sistemas de control de acceso
+
+Los sistemas de control de acceso permiten regular el acceso a sectores de la organización, a continuación se detallan metodos conocidos:
+
+1. **Métodos Naturales de Control de Acceso:** Se refiere al uso de elementos de diseño natural, como estructuras o paisajismo, para guiar la entrada y salida de personas de un espacio.
+
+2. **Refuerzo Territorial:** Consiste en usar barreras físicas, sistemas y dispositivos para evitar la entrada no autorizada, creando una clara distinción entre áreas públicas y privadas.
+
+3. **Subsistemas de Seguridad en Infraestructura:**
+
+    - Sistemas de Control de Acceso y Monitoreo: Se encargan de regular y vigilar quién puede entrar y salir de un área.
+    - Sistemas de Videovigilancia: Utilizan cámaras para monitorear y grabar actividades dentro de un área.
+    - Sistemas de Detección de Intrusos: Detectan y reportan intentos de intrusión o actividades sospechosas.
+
+4. **Control de Acceso:** Es el proceso de restringir el acceso a personas no autorizadas para proteger los activos. Involucra tres términos clave:
+
+    - Ingreso: Derecho de una persona para entrar a una propiedad.
+    - Egreso: Derecho de salir de una propiedad.
+    - Regreso: Derecho de reingresar a una propiedad
+
+5. **Prevención del Delito a través del Diseño Ambiental (CPTED):** Estrategias de diseño que buscan disuadir a los intrusos anticipando su comportamiento y dificultando su acceso a un área.
+
+6. **Control Perimetral y Seguridad Interior:** La seguridad se extiende desde el control de la entrada (perímetro exterior) hasta el monitoreo y control del interior de las instalaciones, utilizando barreras físicas y sistemas electrónicos.
+
+7. **Políticas de Seguridad:** Son directrices que definen quién tiene acceso a qué recursos y qué pueden hacer con esos recursos. Una política de seguridad bien diseñada asegura el cumplimiento de las normas de acceso en todos los niveles.
+
+8. **Guardias de Seguridad:** Aunque los dispositivos de control de acceso son más baratos, los guardias de seguridad pueden tomar decisiones basadas en el comportamiento de las personas y proporcionar una intervención oportuna.
+
+9. **Controles de Seguridad Física**: Incluyen el uso de cerraduras, puertas con sensores, y el control manual de accesos, como los recepcionistas o los guardias de seguridad.
+
+10. **Cerraduras y Llaves:** Las cerraduras proporcionan un medio para autenticar a las personas que intentan acceder, y se utilizan con diferentes tipos de llaves, que pueden ser físicas o electrónicas.
+
+11. **Política de Control de Llaves:** Es fundamental para mantener la seguridad, asegurando que solo las personas autorizadas tengan acceso a las llaves que permiten abrir cerraduras.
+Tipos de Cerraduras:
+
+    - Cerraduras de Pestillo: Utilizan una llave para activar el mecanismo de cierre.
+    - Cerraduras Electrónicas de Solenoide: Cerraduras operadas electrónicamente que utilizan solenoides para bloquear o desbloquear una puerta.
+    - Cerraduras Cifradas: Requieren un código de acceso para desbloquear una puerta.
+
+12. **Selección de Puertas y Portones de Control de Acceso:** Se recomienda el portón deslizante Viking para el acceso al patio de carga, ya que cumple con los requisitos de tamaño y peso por el mejor precio. Los proveedores pueden acceder mediante tarjetas RFID o códigos de acceso programables.
+
+13. **Puertas de Control de Acceso para el Perímetro Exterior:**
+
+    - Puerta Peatonal del Almacén: Se sugiere un sistema Entry Vision con tarjetas de acceso programables para empleados y cerraduras de cerrojo manual para asegurar la puerta durante la noche.
+    - Puertas de Entrada al Salón de Exhibición: Cerradura de cerrojo manual que se activa solo desde el interior del salón de exhibición.
+
+14. **Actuadores de Puertas y Portones:** Para los actuadores de puertas y portones, se sugiere el modelo LiftMaster, que se puede integrar al sistema de seguridad y operar remotamente, lo cual es ideal para entregas fuera de horario.
+
+15. **Controladores de Seguridad:** Se recomienda el Leviton HAI OmniPro II por su relación calidad-precio y su capacidad para controlar hasta 176 zonas, lo que lo hace adecuado para instalaciones grandes y pequeñas.
+
+16. **Teclados de Seguridad:** Se selecciona el teclado Omni 33A00-4 porque es compatible con el controlador de seguridad seleccionado y permite un mayor control sobre las puertas del almacén y el portón deslizante.
+
+17. **Sensores de Puertas:** Para los sensores de puertas, se sugiere el modelo Gogogate con sensores magnéticos, ya que cubren tanto aplicaciones comerciales como residenciales y son adecuados para las puertas peatonales y el portón de carga.
+
+18. **Sensores para Entrada de Camiones:** Se recomienda el sensor CarSense para automatizar la apertura del portón para camiones de entrega, con la capacidad de ser activado o desactivado desde el sistema de seguridad.
+
+19. **Dispositivos de Autenticación de Acceso:** Para el acceso al almacén desde el exterior, se sugiere el Mag Door Lock Kit con tarjetas RFID, ya que ya incluye esta característica y es adecuado para controlar el acceso del personal.
+
+20. **Cerraduras de Puertas de Control de Acceso**:
+
+    - Se recomienda el Mag Door Lock Kit para la puerta peatonal del almacén.
+    - El Electronic Keyless Door Lock se utilizará para el acceso entre el almacén y el salón de exhibición.
+    - Se recomienda el Schlage B581 para asegurar las puertas exteriores del almacén y del salón durante las horas de cierre.
+
+21. **Seguridad del Perímetro Exterior**: Para asegurar el perímetro del almacén, se recomienda una combinación de cerraduras, sensores y sistemas de control, que incluyen el Mag Door Lock Kit, Schlage B581, CarSense para la entrada de camiones, y Gogogate para las puertas y portones. Además, el sistema de seguridad Leviton HAI OmniPro II controlará las zonas y actuadores. El portón deslizante Viking se selecciona por su tamaño y peso adecuado, y el acceso se controla mediante tarjetas RFID o códigos de acceso programables.
+
+## Sistema de Videovigilancia
+
+1. **Secuenciación frente a Multiplexión**
+
+La secuenciación permite utilizar varias cámaras con un solo monitor. Un conmutador puede programarse para ciclar entre todas las cámaras de un sistema de videovigilancia o para mantener cada cámara durante un tiempo especificado, generalmente en el rango de 1 a 60 segundos.
+
+Los multiplexores enrutan las imágenes del sistema de videovigilancia a un dispositivo de visualización específico y son capaces de grabar todas las imágenes de las cámaras al mismo tiempo, mostrando las imágenes en mosaico en el monitor.
+
+2. **Estrategias de Despliegue de Cámaras**
+
+El propósito de invertir en cámaras de seguridad es poder observar actividades en áreas críticas o donde se encuentran activos críticos. Además de determinar las especificaciones que deben tener las cámaras de seguridad para un rol determinado, es igual de importante trazar una estrategia de despliegue de cámaras para maximizar la inversión en videovigilancia.
+
+Para lograr esto, las cámaras deben colocarse de manera que capturen eventos importantes en todas las áreas críticas de seguridad. En particular, deben instalarse en pasillos y en lugares donde su campo de visión cubra activos importantes (equipos físicos y/o personal).
+
+3. **Monitoreo de Pasillos**
+
+Las cámaras de seguridad se instalan rutinariamente en posiciones que cubren activos y actividades importantes dentro de la instalación. Esto permite que la gerencia monitoree las actividades alrededor de esos activos importantes. Los vestíbulos de los bancos son ejemplos destacados de ambas estrategias de colocación. Las cámaras se colocan para grabar las actividades alrededor del área de estacionamiento exterior del banco, así como en los pasillos que conducen a la bóveda y oficinas, como se ilustra en la Figura 3.8. Además, la mayoría de los bancos tienen cámaras orientadas para monitorear cada estación de cajero, para observar el manejo de dinero y transacciones.
+
+4. **Monitoreo de Activos**
+
+Determinar la ubicación exacta de las cámaras depende de si se requiere una vista general o una vista detallada. Una vista general generalmente cubre un campo de visión amplio, como un estacionamiento o un piso de almacén. Por otro lado, se requiere una vista detallada para enfocarse en áreas más específicas, como las estaciones de cajero del banco mencionadas.
+
+El número de cámaras involucradas en la instalación depende de la cantidad de pasillos y activos identificados para su monitoreo. En algunos casos, esto depende del tamaño de la organización; en otros, depende del valor de los activos y la geografía física involucrada.
+
+Por ejemplo, una operación pequeña puede necesitar instalar solo una cámara para proporcionar vigilancia sobre sus activos clave. En operaciones medianas, es más común que las instalaciones involucren docenas de cámaras. En grandes organizaciones, pueden desplegarse cientos de cámaras para satisfacer sus necesidades de seguridad y vigilancia. El objetivo es cubrir de manera efectiva las áreas y activos identificados mediante procedimientos de análisis de riesgos.
+
+Después de determinar los puntos de instalación, el siguiente paso en la estrategia de despliegue es definir las especificaciones de las cámaras a utilizar en cada punto. En general, deben responderse las siguientes cuatro preguntas:
+
+¿Se requiere un campo de visión fijo o móvil?
+¿Qué tipo de visualización de imagen es necesaria?
+¿Qué nivel de definición de la imagen se requiere?
+¿Qué tipo de procesamiento y transmisión de señales es el más adecuado para la instalación?
+
+5. **Campo Fijo o Móvil**
+
+Las cámaras fijas se utilizan comúnmente para funciones de visión general. Ofrecen un campo de visión fijo, por lo que deben ajustarse para cubrir de manera efectiva el pasillo o activo deseado. Deben tener la longitud focal y el ángulo necesarios para cubrir estos elementos.
+
+Una cámara PTZ controlada remotamente se utiliza generalmente cuando se requiere una vista detallada. Sin embargo, en algunos casos, puede ser más económico instalar varias cámaras fijas en diferentes ubicaciones que montar una sola cámara PTZ, que requiere un operador para manejarla de manera efectiva.
+
+
+## Comprobación de los sistemas de detección de intrusos y reportes
+
+
+1. **Sensores de Movimiento en el Exterior**
+
+La iluminación exterior se utiliza con frecuencia para iluminar áreas oscuras o zonas a proteger mediante sensores de detección de movimiento que activan luces de seguridad para disuadir a un intruso. La iluminación exterior se utiliza solo como un elemento disuasorio y de seguridad, por lo que normalmente no está conectada al controlador de seguridad.
+
+Las áreas oscuras alrededor de las instalaciones, como zonas con árboles o arbustos, necesitan ser iluminadas con sistemas de iluminación de seguridad. Los sistemas de iluminación de seguridad utilizados durante las horas nocturnas impiden que los intrusos entren en el área circundante e intenten acceder bajo el amparo de la oscuridad. Las luces activadas por detectores de movimiento son también populares para la iluminación exterior.
+
+2. **Sensores de Detección de Vehículos**
+
+Existen varios métodos para detectar la presencia de un automóvil que entra en un área cercana a una instalación. El tipo más común de sensor utilizado para este propósito es un detector de movimiento colocado por encima de la entrada del garaje. También se pueden emplear sensores de presión para detectar un vehículo en una entrada o área de garaje.
+
+3. **Dispositivos de Haz Fotoeléctrico**
+
+Un sensor fotoeléctrico es un control óptico que detecta un haz de luz visible o invisible y responde a un cambio en la intensidad de luz recibida. Los dispositivos de haz fotoeléctrico utilizan esta característica enviando un estrecho haz de luz a través de un área de interés, como la puerta de un aparcamiento, como se muestra en la Figura 4.10. Cuando el haz de luz se interrumpe, el dispositivo fotoeléctrico activa una alarma, o en el caso de un sistema de seguridad para puertas de garaje, detiene o invierte el motor elevador de una puerta automática.
+
+4. **Dispositivos de Haz de Microondas**
+
+Este dispositivo emite microondas desde un transmisor y detecta microondas en un receptor, ya sea mediante reflexión o reducción de la intensidad del haz. El transmisor y el receptor generalmente se combinan dentro de una sola carcasa para aplicaciones interiores y en carcasas separadas para aplicaciones exteriores. Al generar energía en la región de microondas del espectro electromagnético, el detector funciona como un dispositivo activo que responde a:
+
+- Un cambio en la frecuencia por efecto Doppler: Estos dispositivos están basados en el fenómeno del Efecto Doppler, que observa cambios en la frecuencia de las ondas de energía (en este caso, microondas) en movimiento relativo a un receptor. Los detectores emiten microondas a una frecuencia específica en un entorno y luego analizan las frecuencias de las ondas reflejadas hacia él. Los cambios respecto a la frecuencia normal de recepción causan que el sensor active una señal de alarma.
+
+- Desplazamiento en la fase de frecuencia: Estos dispositivos también dependen de los cambios en las ondas de energía reflejada causados por el movimiento. Como los sensores Doppler, estos sensores emiten frecuencias específicas de microondas y miden el desplazamiento de fase de las ondas reflejadas, lo cual es directamente proporcional a la velocidad del objeto en movimiento.
+
+- Reducción en la energía recibida debido al movimiento: Estos dispositivos responden a los cambios en el nivel de energía entre un transmisor y un receptor, causados por la obstrucción parcial de la onda de energía transmitida por un objeto que se mueve en su camino.
+
+5. **Sensores de Presión**
+
+Las alfombrillas de presión son un tipo de sensor que se pueden colocar debajo de alfombras en pasillos o en escalones. Reaccionan y activan la alarma debido a la presión de los pasos, cerrando el interruptor y alertando al panel de control.
+
+6. **Teclados**
+
+La mayoría de los sistemas de detección y reporte de intrusos emplean dispositivos de teclado para programar, controlar y operar diversos dispositivos de control de acceso y gestión. Los teclados son dispositivos de entrada equipados con botones numéricos, similares a los teclados de tono de teléfono, como se muestra en la Figura 4.11. El personal de seguridad utiliza los teclados para iniciar comandos de control, como armar y desarmar el sistema o eludir una zona.
+
+7. **Llaveros y Botones de Pánico**
+
+Un llavero es un dispositivo inalámbrico similar a los que se usan para bloquear y desbloquear un vehículo. Los llaveros de entrada remota permiten al personal de seguridad armar y desarmar un sistema de seguridad con solo presionar un botón. El llavero también suele incluir una función de botón de pánico para contactar ayuda en caso de emergencia. Los botones de pánico permiten activar inmediatamente el sistema de alarma ante una situación de emergencia, como la detección de un intruso.
+
+8. **Sensores de Detección de Incendios**-
+
+Muchos sistemas de detección y reporte de intrusos incluyen una función de detección de incendios como parte integral del sistema. Sin embargo, para sistemas de seguridad más grandes o complejos, pueden utilizarse sistemas independientes de detección y reporte de incendios. Los sensores de detección de incendios comunes son los sensores de calor y los detectores de humo, que operan al detectar un aumento de temperatura o la presencia de partículas de humo.
+
+- Sensores de Calor: Detectan un rápido aumento de temperatura y activan una alarma cuando se alcanza una temperatura fija.
+
+- Detectores de Humo: Pueden usar detectores de ionización o detectores fotoeléctricos para detectar la presencia de humo.
+
+9. **Detectores de Dióxido de Carbono y Monóxido de Carbono**
+
+El dióxido de carbono (CO2) es un subproducto natural de la respiración, mientras que el monóxido de carbono (CO) es un gas tóxico mucho más peligroso. Aunque el CO2 se encuentra generalmente en el aire exterior, el CO es mortal en niveles altos. Los detectores de monóxido de carbono activan una alarma cuando detectan niveles peligrosos de este gas.
+
+10. **Dispositivos de Salida**
+
+Los sistemas de detección de intrusos físicos incluyen tres tipos básicos de dispositivos de salida: notificación visual, anunciadores audibles y mensajería remota.
+
+- Sirenas: La sirena electrónica y las luces estroboscópicas se utilizan para atraer atención en caso de alarma.
+
+- Luces Estroboscópicas: Proporcionan una señal visual de una alarma y están comúnmente instaladas en el exterior de las instalaciones.
+
+11. **Sistemas de Notificación Remota**
+
+Cuando se activa una alarma, el sistema puede utilizar una línea telefónica o comunicación celular para notificar a un servicio de monitoreo o personal de seguridad. Los sistemas de monitoreo de alarmas de terceros brindan servicios de monitoreo las 24 horas, los 7 días de la semana, para responder a diferentes tipos de condiciones de alarma.
+
+
+
+## El Modelo de Redes OSI
+
+Las redes son estructuras complejas y multifacéticas que requieren una gran interacción entre diseñadores de computadoras, diseñadores de equipos de red, fabricantes de sistemas operativos y proveedores de aplicaciones de red. Se han propuesto varias iniciativas para ofrecer modelos que sirvan de guía a estos grupos al diseñar sus productos. Aunque existen diferentes modelos jerárquicos de redes, la iniciativa más discutida es el modelo OSI (Interconexión de Sistemas Abiertos) propuesto por la Organización Internacional de Normalización (ISO).
+
+El modelo OSI nos ayuda a conceptualizar cómo se maneja la información entre dos sistemas conectados en red. Para ello, divide el flujo de trabajo de los datos en capas abstractas. Aunque las capas no son literales ni proporcionan barreras reales para el diseño de productos, ayudan a las personas a comprender el flujo y la gestión de los datos.
+
+Las capas del modelo OSI están representadas en la Figura 12.1. En la figura, cada capa a la izquierda está emparejada con un grupo de protocolos que operan dentro de ella a la derecha. Como se puede ver, muchos protocolos están en funcionamiento dentro de las arquitecturas de red.
+
+### Capa 1: Física
+
+Esta capa se encarga de los medios de transmisión utilizados para mover los datos. Las funciones asociadas con esta capa incluyen el traslado de los datos al medio de transmisión, la provisión de señales eléctricas o de luz, la compatibilidad mecánica entre el puerto de comunicación y el medio, así como la activación y desactivación de la conexión física.
+
+### Capa 2: Enlace de Datos
+
+Esta capa se ocupa del control de cómo se empaquetan y mueven los datos entre los puntos de comunicación. A este nivel, los datos se formatean en tramas adecuadas para su transmisión. Los componentes de este nivel también añaden funciones de detección y corrección de errores a las tramas, así como protocolos de acceso al medio y la información necesaria para la transmisión entre nodos específicos en el mismo segmento de red.
+
+### Capa 3: Red
+
+Los elementos de la capa de red se encargan de controlar el enrutamiento de los paquetes de datos entre diferentes nodos de comunicación, segmentos de red o tipos de medios. Esto incluye la multiplexación y demultiplexación de señales al pasar de un tipo de medio a otro, la creación y descomposición de los paquetes de mensajes, y el establecimiento, mantenimiento y terminación de conexiones.
+
+### Capa 4: Transporte
+
+Los componentes de la capa de transporte son responsables de proporcionar un flujo ordenado de datos de un extremo a otro, lo que incluye la secuenciación de los paquetes de datos y la provisión de funciones básicas de recuperación de errores y control de flujo.
+
+### Capa 5: Sesión
+
+Esta capa del modelo se dedica a establecer y gestionar las sesiones entre aplicaciones, así como proporcionar parámetros como la seguridad. Las actividades realizadas por los componentes de este nivel incluyen detener y comenzar transferencias de datos, controlar el flujo de datos entre aplicaciones y proporcionar opciones de recuperación ante fallos de red. Esta capa también maneja opciones de seguridad de transmisión, como la autenticación y los protocolos de túneles.
+
+### Capa 6: Presentación
+
+Los elementos de este nivel son responsables de controlar cómo se presenta la información al usuario en el extremo receptor. Las funciones proporcionadas por los componentes de esta capa incluyen el formato visual y la presentación de datos, el manejo de funciones de compresión y cifrado de datos, y el inicio/parada del control de sesiones.
+
+### Capa 7: Aplicación
+
+El nivel más alto de abstracción del modelo OSI se ocupa del manejo de datos para aplicaciones de usuario final en la red. Servicios como el correo electrónico y el navegador web son ejemplos de aplicaciones en las que funciona la capa de aplicación. En este nivel del modelo, se autentican los identificadores de usuario y contraseñas y se proporcionan servicios de usuario.
+
+### Paquetes de Transmisión de Datos
+
+Cuando los datos se trasladan de un nodo de comunicación a otro, los elementos asociados con cada nivel del modelo OSI agregan un encabezado al mensaje con la información necesaria para realizar la transferencia. En algunos niveles del modelo OSI, también se agrega un pequeño pie de página para crear un sobre, pero en esta discusión nos centramos en los encabezados. Los datos podrían ser texto digitalizado, números, voz, video o cualquier otro tipo de información digitalizada. Cuando se da la orden de mover los datos en el nodo de envío (por ejemplo, al presionar "Enviar" en un mensaje de correo electrónico), el proceso de empaquetado avanza como se describe en la Figura 12.2.
+
+A medida que el paquete de datos deja la aplicación, se agrega un encabezado adicional (bloque de información) al mensaje mientras pasa por las diferentes capas del OSI en su camino hacia el medio de transmisión. En el extremo receptor, el mensaje completo se lleva al nodo receptor designado, donde se examinan los encabezados de cada capa, se elimina el encabezado correspondiente y el mensaje se procesa por la capa correspondiente.
+
+Los pasos involucrados en el proceso de comunicación generalmente se realizan sin intervención del usuario que envía el mensaje. Los diferentes encabezados y actividades son funciones de la aplicación, el adaptador de red físico y todas las "capas" intermedias.
+
+### Seguridad en las Capas OSI
+
+Cada curso de redes examina el modelo OSI en términos de qué tipos de dispositivos, protocolos y funciones existen en cada nivel. Sin embargo, diferentes desafíos de ciberseguridad pueden estar presentes en cada nivel. La Tabla 12.1 muestra el enfoque de seguridad relacionado con cada capa.
+
+| Capa OSI         | Exploits posibles                         | Enfoque de seguridad           |
+|------------------|-------------------------------------------|--------------------------------|
+| Capa 1: Física   | Manipulación física/Intrusión            | Seguridad Física               |
+| Capa 2: Enlace de Datos | Escaneo de Red/Acceso Local           | Seguridad de acceso interno    |
+| Capa 3: Red      | Escaneo de Red/Dominio Completo/Interno   | Seguridad del dominio          |
+| Capa 4: Transporte| Explotación específica de software        | Seguridad de puertos           |
+| Capa 5: Sesión   | Ingeniería social - Usuarios             | Autenticación/Cifrado          |
+| Capa 6: Presentación | Ingeniería social - Administradores    | Autenticación                  |
+| Capa 7: Aplicación | Ingeniería social - Personal IT          | Autenticación/ID               |
+
+Además, puedes aplicar los tres anillos de seguridad desarrollados en capítulos anteriores a las capas del modelo OSI. El anillo exterior se establece en el punto de terminación física o de conexión de cada dispositivo, conectando los dispositivos a través de cables o ondas. La seguridad de la capa física (Capa 1) implica asegurar los medios físicos y el equipo de comunicación.
+
+El anillo interior está asociado con los componentes de la Capa 2. Estos representan la primera línea de defensa lógica. A este nivel, los datos pueden aceptarse, descartarse o reenviarse según su identidad.
+
+Finalmente, el anillo interior incluye las capas de 3 a 7, que proporcionan opciones para prevenir movimientos no autorizados a niveles superiores. Por ejemplo, los mecanismos de bloqueo de puertos asociados con los firewalls trabajan en la Capa 4. Sin embargo, los componentes de la Capa 7 son los objetivos más deseados de un ciberataque, pues buscan obtener el control de activos físicos o comprometer la operación de aplicaciones de software.
+
+## Topologías de Red
+
+Las topologías de red son estrategias de conexión física (o lógica) de Capa 1 que caen en cuatro configuraciones básicas:
+
+- Bus
+- Anillo
+- Estrella
+- Malla
+
+### Topología en Bus
+
+En la topología de bus, los nodos de la red se conectan a un enlace de comunicación central. Cada nodo tiene una dirección única a lo largo del bus que lo diferencia de los otros usuarios de la red. La información puede ser colocada en el bus por cualquier nodo, pero solo los nodos a los que va dirigida la información la procesarán.
+
+### Topología en Anillo
+
+En la topología en anillo, el bus de comunicación se convierte en un bucle cerrado. Cada nodo inspecciona la información que pasa por la red. Un repetidor, incorporado en cada adaptador de red de cada nodo, regenera los mensajes que no están dirigidos a él y los envía al siguiente nodo. Si un nodo falla, toda la red se cae, aunque se pueden crear enlaces primarios y secundarios para evitar este problema.
+
+### Topología en Estrella
+
+En una topología en estrella, la disposición lógica de la red se parece a las ramas de un árbol. Todos los nodos están conectados a una unidad central, desde donde se coordina la actividad de la red. La estación central sondea los nodos para determinar si tienen información que transferir.
+
+### Topología en Malla
+
+El diseño de la malla ofrece el esquema de conexión más básico y el esquema de gestión más extenso. En esta topología, cada nodo tiene una conexión física directa con todos los demás nodos de la red. Esta topología se utiliza en redes muy grandes como el sistema telefónico público o Internet.
+
+### Topologías Lógicas
+
+Sería fácil visualizar las conexiones de las topologías físicas descritas si los nodos simplemente se conectaran entre sí. Sin embargo, en la mayoría de las redes se emplean herramientas como la transmisión de señales y los protocolos de datos que no siguen la misma estructura física. Por lo tanto, la topología lógica describe cómo se mueven los datos a través de los medios de transmisión de red.
+
+
+## Comprensión de los Protocolos de Redes
+
+### Direccionamiento IPv6
+
+IPv6 es un protocolo de direccionamiento IP más reciente, desarrollado para hacer frente a la falta de direcciones IPv4 disponibles para acomodar los dispositivos conectados a redes actuales. En IPv6, la dirección IP se ha extendido a 128 bits, lo que permite un número extraordinario de direcciones IP. IPv6 también proporciona autenticación del remitente de un paquete y cifrado de su contenido. Desde Windows Vista, Windows 7 y versiones anteriores de distribuciones de Linux, la compatibilidad con IPv6 ha estado incluida en los sistemas operativos durante años. La industria espera que esta nueva versión de IP soporte teléfonos móviles, computadoras de automóviles y una amplia gama de otros dispositivos personales basados en IP.
+
+El esquema de direccionamiento IPv6 de 128 bits incrementa el número total de direcciones IP utilizables desde 2^32 (4,294,967,296) direcciones IPv4 hasta 2^128 o 3.4 × 10^38 direcciones IPv6. Naturalmente, 128 bits corresponden a dieciséis octetos o a ocho dígitos hexadecimales (base 16). Las direcciones IPv6 se escriben generalmente en forma de dígitos hexadecimales, separados por dos puntos, como se ilustra a continuación:
+
+**2001:0db8:00a7:0051:4dc1:635b:0000:2ffe**
+
+
+Los grupos compuestos de cuatro ceros pueden expresarse como dos puntos (::). Sin embargo, es ilegal tener más de un par de dos puntos en una dirección.
+
+**2001:0db8:00a7:0051:4dc1:635b::2ffe**
+
+
+
+Además, es común eliminar ceros iniciales o los ceros más significativos para hacer que la dirección sea más manejable:
+
+**2001:db8:a7:51:4dc1:635b:0:2ffe**
+
+
+Cuando se utiliza en una URL, una dirección IPv6 debe ir entre corchetes:
+
+**http://[2001:0db8:00a7:0051:4dc1:635b:0000:2ffe]**
+
+
+Al igual que con IPv4, las direcciones IPv6 contienen dos piezas de información: el número de redes y el número de direcciones de host disponibles dentro de esas redes. El equivalente IPv6 de la porción de red de la dirección se llama prefijo de enrutamiento o simplemente dirección de red, mientras que la porción de host se conoce como el identificador de interfaz.
+
+La porción de enrutamiento de la dirección se considera generalmente como una variable gestionada externamente, mientras que la porción de host de la dirección se administra localmente utilizando el espacio de direcciones dentro del rango de direcciones de enrutamiento. En IPv6, el tamaño mínimo para el identificador de interfaz es de 64 bits.
+
+Por lo tanto, cuando se hace referencia a la porción de red de una dirección IPv6, la primera dirección en el bloque de direcciones contiguas comenzaría con la porción de red de la dirección seguida de una cadena de ceros:
+
+
+**2001:db8:a7:0000:0000:0000:0000:0000**
+
+
+y terminaría en la dirección de red seguida de una cadena de "f16" (para 1111^2 o 15^10):
+
+
+Es común ver rangos de direcciones IPv6 escritos en notación CIDR. En IPv6, este sistema utiliza la porción del prefijo de enrutamiento de la dirección seguida del carácter barra (/) y un número decimal que representa el número de bits reservados por el prefijo. Aplicando esto al bloque de direcciones recién descrito se obtiene la siguiente notación:
+
+
+**2001:0db8:00a7:/48**
+
+
+El valor /48 se calcula tomando el número de lugares ocupados por el prefijo de enrutamiento (12) y multiplicando ese número por los 4 bits necesarios para representar cada lugar hexadecimal.
+
+### Ceros iniciales
+Los ceros iniciales se han restaurado en este ejemplo para facilitar los cálculos. Normalmente no estarían presentes en una dirección CIDR real.
+
+El formato del paquete de transmisión de IPv6 no es el mismo que el de IPv4. Por lo tanto, no son intercambiables (los dispositivos IPv4 no son compatibles directamente con los dispositivos IPv6). Los dispositivos y equipos de red más nuevos tienen capacidades de detección y conectividad preparadas para IPv6.
+
+Aunque tanto las redes IPv4 como IPv6 pueden dividirse en subredes, no existe un término equivalente para el enmascarado de subredes en IPv6.
+
+## Clases de IP Privadas
+
+Dado que Internet es básicamente una red TCP/IP gigante en la que no puede haber dos dispositivos conectados con la misma dirección, si las empresas utilizaran direcciones IP enrutables de Internet para cada sistema, el mundo habría agotado el esquema de direccionamiento IP hace muchos años.
+
+En su lugar, una red privada puede utilizar un esquema de direccionamiento IP especial, siempre que esa red no necesite ser enrutada hacia Internet. A esto se le conoce como red privada. Al configurar una red privada, se debe diseñar un esquema de direccionamiento IP para usarlo en toda la red. Aunque, técnicamente, podrías usar cualquier esquema de direccionamiento IP que desees en una red privada sin consultar a un ISP, sigue existiendo el riesgo de que cualquier conexión accidental a Internet permita que el tráfico de la red privada continúe saliendo a través de Internet.
+
+Para solucionar esto, se han reservado rangos especiales de direcciones de red en cada clase de IP para su uso en redes privadas. Esto está conforme con la RFC 1918. Estas direcciones reservadas no están registradas para nadie en Internet y, lo que es más importante, el tráfico que utiliza estos rangos privados no es enrutado públicamente. Esto significa que todos los enrutadores que gestionan el tráfico de Internet se negarán a reenviar tráfico de red que utilice esas direcciones privadas.
+
+Si estás configurando una red privada, deberías utilizar una de estas opciones de dirección en lugar de crear un esquema de direccionamiento aleatorio. El número total de clientes en la red generalmente dicta qué clase de direccionamiento IP deberías usar. Las siguientes direcciones de red privadas pueden ser utilizadas:
+
+- Una dirección IP de 10.0.0.0, con la máscara de subred de 255.0.0.0
+- Una dirección IP de 169.254.0.0, con la máscara de subred de 255.255.255.0 (la predeterminada de AIPA en Microsoft)
+- Una dirección IP de 172.(16-32).0.0, con la máscara de subred de 255.240.0.0
+- Una dirección IP de 192.168.0.0, con la máscara de subred de 255.255.0.0
+
+### Palabra sobre los rangos de direcciones
+En IPv4, el rango de direcciones 127.x.x.x es un bloque especial reservado para probar sistemas de red. El gobierno de los EE.UU. posee algunas de estas direcciones para probar la infraestructura de Internet. La dirección 127.0.0.1 está reservada para probar el bus en el sistema local.
+
+Además, recuerda que todos los hosts deben tener el mismo ID de red y máscara de subred y que no puede haber dos computadoras en tu red con la misma dirección IP cuando configures un esquema de direccionamiento IP privado.
+
+##  Ethernet
+
+Mientras que el protocolo TCP/IP ha surgido como el método dominante de empaquetado y transferencia de datos, la familia de estándares Ethernet se ha convertido en la fuerza dominante en la interfaz de hardware y señalización eléctrica, así como en el control de acceso al medio. La especificación original del estándar Ethernet fue desarrollada por Xerox en 1976 y publicada por la Asociación Electrónica e Industrial Internacional (IEEE) como el protocolo Ethernet IEEE-802.3.
+
+Las redes de área local (LAN) están diseñadas de tal manera que toda la red funcione de manera síncrona en una frecuencia. Por lo tanto, solo un conjunto de señales electrónicas puede ser colocado en la red en un momento dado. Sin embargo, los datos pueden moverse en ambas direcciones entre las ubicaciones de la red. Por definición, esto hace que las operaciones de una LAN sean de medio dúplex (es decir, la información puede viajar en ambas direcciones, pero no al mismo tiempo).
+
+En una red así, debe existir algún método para determinar qué nodo tiene el uso de los caminos de comunicación de la red y por cuánto tiempo puede tenerlo. El protocolo de acceso a la red maneja estas funciones y es necesario evitar que más de un usuario acceda al bus en cualquier momento. Si dos conjuntos de datos se colocan en la red al mismo tiempo, ocurre una colisión de datos y los datos se pierden.
+
+El método de Ethernet para el control de acceso se conoce como CSMA/CD (Carrier Sense Multiple Access with Collision Detection). Usando este protocolo, un nodo que quiere transmitir datos por la red primero escucha la LAN para determinar si está en uso. Si la LAN no está en uso, el nodo comienza a transmitir sus datos. Si la red está ocupada, el nodo espera un tiempo predeterminado hasta que la LAN se libere y luego toma el control del medio de la red.
+
+Si dos nodos transmiten datos al mismo tiempo, se detecta la colisión y ambos nodos se detienen. A continuación, ambos nodos transmiten una señal para indicar que se ha producido una colisión y deben esperar antes de volver a intentarlo.
+
+### Direccionamiento Ethernet
+
+Cada estación de trabajo conectada a una red Ethernet tiene un número de identificación único, conocido como dirección de hardware. Estas direcciones únicas permiten que cada dispositivo sea identificado de manera confiable en la red. Las direcciones de hardware para las interfaces de red Ethernet (es decir, las tarjetas de red) se asignan de forma única a nivel mundial en bloques, y las direcciones de hardware se representan en formato hexadecimal.
+
+La dirección de hardware o dirección MAC de una tarjeta de red es una secuencia de 48 bits representada como una cadena hexadecimal de 12 dígitos. Estas direcciones se escriben en seis pares de caracteres separados por dos puntos (:) o guiones (-):
+
+00:1A:2B:3C:4D:5E
+
+
+Estas direcciones MAC se asignan de forma global, pero también se utilizan como parte del proceso de configuración de redes.
+
+
+## Seguridad en la red local
+
+
+- **Dirección MAC (Media Access Control)**: Es una dirección única asignada a cada dispositivo conectado a una red. Generalmente, estas direcciones son proporcionadas por los fabricantes y se almacenan en el firmware del dispositivo.
+
+- **Ataques comunes a la capa MAC**:
+  - **MAC Spoofing**: Cambiar la dirección MAC de un dispositivo para alterar su identidad.
+  - **MAC Broadcast Flooding**: Enviar una gran cantidad de direcciones MAC diferentes a un conmutador de red, lo que llena su tabla CAM. Esto obliga al conmutador a emitir los paquetes a todos los puertos, lo que reduce la eficiencia de la red.
+
+- **Protocolos TCP/IP**: El conjunto de protocolos más utilizado en redes. **IP Spoofing** es un tipo de ataque que falsifica las direcciones IP para ocultar la identidad del atacante.
+
+- **Flooding de SYN**: Explota el proceso de "three-way handshake" de TCP/IP. El atacante envía solicitudes SYN manipuladas para ocultar su dirección IP o bloquear la respuesta del servidor, lo que puede sobrecargarlo.
+
+- **Direcciones IP**: Necesarias para identificar a los dispositivos en la red, hay dos versiones principales: IPv4 e IPv6.
+
+- **Subredes e intranets**: Un grupo de redes puede dividirse en subredes que comparten un rango de direcciones IP. Estas subredes se conectan a través de una puerta de enlace (gateway).
+
+- **Ethernet y protocolos relacionados**:
+    - La **Ethernet** es un estándar que organiza los datos en paquetes llamados tramas. Las tramas Ethernet contienen direcciones MAC de origen y destino, así como encabezados de paquetes IP y datos.
+    - Diferentes medios físicos se utilizan en Ethernet, como cables coaxiales, cables de par trenzado, fibra óptica y redes inalámbricas.
+
+- **Servidores de red**: Computadoras especializadas para operar en entornos de múltiples usuarios, que permiten acceder a recursos compartidos. Los servidores deben estar protegidos mediante firewalls y autenticación adecuada.
+
+- **Control de acceso**:
+  - **Control de acceso obligatorio (MAC)**: Determina qué usuarios o grupos pueden acceder a archivos y recursos.
+  - **Control de acceso discrecional (DAC)**: Los usuarios pueden decidir quién tiene acceso a sus recursos.
+  - **Control de acceso basado en roles (RBAC)**: Acceso basado en los roles del usuario dentro de la organización.
+
+- **Principio de menor privilegio**: Este principio establece que los usuarios deben tener solo los permisos necesarios para realizar su trabajo, limitando el daño de posibles brechas de seguridad.
+
+- **Administración de redes y auditoría**: Los administradores son responsables de implementar las políticas de seguridad y auditar los accesos para identificar posibles amenazas.
+
+- **Sistemas de detección de intrusiones (IDS)**: Son esenciales para detectar actividades sospechosas y alertar a los administradores de la red.
+
+- **Seguridad física y lógica**: Los servidores deben estar en entornos controlados para evitar el acceso físico no autorizado. Además, la configuración de la seguridad debe minimizar las vulnerabilidades sin afectar la usabilidad.
+
+- **Ataques de spoofing y flooding**: Incluyen técnicas como la **ARP Spoofing**, donde el atacante asocia su dirección MAC con una IP legítima, o ataques de **flooding** que inundan dispositivos de red con tráfico innecesario, sobrecargándolos.
+
+- **Protección de redes inalámbricas**:
+  - **WEP** (Wired Equivalent Privacy): Un estándar básico para la protección de redes inalámbricas.
+  - **WPA** (Wi-Fi Protected Access): Protocolo que mejora la seguridad con mejores algoritmos de cifrado y autenticación.
+
+- **Dispositivos de red**:
+  - **Switches**: Dispositivos que gestionan las direcciones MAC para dirigir los paquetes a los puertos correctos.
+  - **Ruteadores**: Conectan diferentes segmentos de red, basados en tablas de enrutamiento.
+
+- **Vulnerabilidades y escáneres de seguridad**: Herramientas para detectar y corregir vulnerabilidades en la red.
+
+- **Seguridad en medios físicos**: Los cables de fibra óptica ofrecen una mayor seguridad frente a las intercepciones, a diferencia de los cables de cobre.
+
+- **Sniffing de paquetes**: Es la acción de escuchar el tráfico de red, lo que permite interceptar información sensible.
+
+- **Ataques DDoS (Denegación de Servicio Distribuida)**: Consisten en inundar un servidor o red con tráfico para que no pueda ofrecer servicios.
+
+- **Ataques a la capa MAC**:
+  - **Duplicación de MAC**: El atacante usa la dirección MAC de otro dispositivo, causando que el conmutador redirija el tráfico hacia su ubicación.
+  - **Ataques de robo de puerto de conmutador**: Envían paquetes modificados para que el tráfico fluya hacia el atacante.
+
+- **Firewall y control de tráfico**: Las redes se protegen mediante firewalls, que controlan el acceso y las reglas de comunicación.
+
+- **Gateways y puentes**: Dispositivos que conectan redes con diferentes protocolos, ayudando a gestionar la comunicación entre ellas.
+
+
+## Seguridad de redes
+
+### Traducción de Direcciones de Red (NAT)
+
+La **traducción de direcciones de red (NAT)** es un proceso que mapea direcciones IP privadas de una red a direcciones IP públicas, o viceversa. Se utiliza comúnmente para permitir que dispositivos dentro de una red privada se comuniquen con el mundo exterior utilizando una única dirección IP pública. NAT puede realizarse mediante **enrutamiento basado en políticas (PBR)**, que utiliza reglas específicas para determinar cómo se realiza la traducción. Aunque NAT tiene una función de seguridad limitada, ayuda a ocultar la red interna y proporciona cierto control sobre el acceso externo.
+
+### Traducción de Direcciones de Puerto (PAT)
+
+La **traducción de direcciones de puerto (PAT)** es una extensión de NAT que permite mapear múltiples direcciones IP privadas a una única dirección IP pública. Utiliza números de puerto para diferenciar las conexiones, lo que permite que varios dispositivos compartan una misma IP pública. PAT se utiliza principalmente para conservar direcciones IP debido a la escasez de direcciones IPv4.
+
+### Inspección de Paquetes con Estado
+
+En redes modernas, **la inspección de paquetes con estado** (Stateful Packet Inspection) es una técnica de filtrado dinámico de paquetes que analiza más allá de los encabezados de los paquetes, verificando direcciones IP, números de puerto y otros parámetros. Esta técnica es fundamental para bloquear ataques como los **escaneos de puertos**, donde un atacante intenta identificar puertos abiertos para explotarlos.
+
+### Traducción de Direcciones de Red Travesal (NAT-T)
+
+Cuando se utilizan métodos de **traducción de direcciones de red (NAT)**, algunos protocolos de seguridad pueden encontrar problemas debido a la falta de información sobre el puerto durante la encriptación. **NAT-T (Network Address Translation-Traversal)** es una técnica creada para superar estas dificultades, permitiendo que los dispositivos que usan NAT o PAT se comuniquen correctamente con otros dispositivos.
+
+### Redirección de Puertos (Port Forwarding)
+
+La **redirección de puertos** permite que los paquetes que llegan a un puerto específico en una IP pública sean reenviados a un puerto determinado dentro de una red privada. A pesar de que esta técnica puede ayudar a gestionar el acceso a ciertos servicios, no debe considerarse como una medida de seguridad sólida por sí sola. Los atacantes pueden identificar fácilmente los puertos abiertos mediante un escaneo.
+
+### Seguridad a Través de la Oscuridad (Security Through Obscurity)
+
+La idea de **seguridad a través de la oscuridad** implica ocultar los puertos o servicios detrás de puertos no estándar para disuadir a los atacantes. Sin embargo, esta técnica no ofrece una verdadera seguridad, ya que los atacantes aún pueden identificar puertos abiertos mediante escaneos de puertos.
+
+### Segmentación de Redes
+
+La **segmentación de redes** implica dividir una red en subredes más pequeñas, cada una con su propio conjunto de recursos y control de acceso. Esto ayuda a limitar el acceso de intrusos y a reducir la congestión. La segmentación también puede ser crucial para cumplir con normativas de seguridad, como la **PCI-DSS** (para el manejo de datos de tarjetas de crédito) y **HIPAA** (para la protección de datos médicos).
+
+### Listas de Control de Acceso (ACL)
+
+Las **Listas de Control de Acceso (ACL)** permiten definir reglas para controlar quién puede acceder a cada segmento de una red. Se puede usar una **lista blanca** (whitelist) para permitir el acceso solo a usuarios específicos o una **lista negra** (blacklist) para denegar el acceso a ciertos usuarios. La **lista blanca** es una opción más segura.
+
+### Segmentación de Redes Virtuales (VLAN)
+
+Una **VLAN** (Red de Área Local Virtual) permite crear redes virtuales dentro de una red física, lo que simplifica la gestión de la red y mejora la segmentación. Las VLAN pueden ser configuradas en switches y routers, y se utilizan comúnmente para reducir la latencia y mejorar el rendimiento, aunque requieren soporte de hardware específico para su implementación.
+
+### Redes Definidas por Software (SDN)
+
+Las **redes definidas por software (SDN)** son un enfoque emergente que permite gestionar y controlar el tráfico de la red mediante software en lugar de hardware. Este enfoque facilita la segmentación de la red a nivel de políticas, permitiendo crear reglas de seguridad más sofisticadas.
+
+### Virtualización de Redes
+
+La **virtualización de redes** permite crear instancias virtuales de recursos de red (como servidores y switches) que funcionan de manera similar a los recursos físicos. Esto ofrece flexibilidad y escalabilidad, y permite segmentar redes de manera más eficiente a través de redes superpuestas (overlay networks).
+
+## Referecias
+
+
+C. J. Brooks, C. Grow, P. Craig, and D. Short, Cybersecurity essentials. Sybex, 2018.
+
+D. Arroyo Guardeño, V. Gayoso Martínez, and L. Hernández Encinas, Ciberseguridad. CSIC, 2020.

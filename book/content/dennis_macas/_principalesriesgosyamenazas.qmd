@@ -1,0 +1,182 @@
+# Principales riesgos y amenazas
+
+# Seguridad en Internet
+
+El hacking en sus primeras etapas era principalmente cracking, usando software que adivinaba contraseñas hasta conseguir acceso. El verdadero hacking involucraba acceso directo o la colocación de código malicioso en un disquete. Con el crecimiento exponencial de Internet, casi todas las empresas empezaron a usarlo y una gran parte de los usuarios residenciales enviaban correos electrónicos, compraban y buscaban información a diario. La velocidad de acceso y el software colaborativo mejoraron tanto que la experiencia de uso se volvió atractiva para casi todos.
+
+A medida que las redes crecían y se normalizaban, los problemas de seguridad se hacían más significativos, dando lugar a la industria de la ciberseguridad. Los hackers podían acceder a listas de direcciones de correo electrónico o adivinarlas, y enviar software malicioso que podía molestar o perjudicar a los usuarios sin que estos lo supieran. La verdadera toma de conciencia sobre la seguridad ocurrió cuando los primeros virus informáticos comenzaron a circular, demostrando cómo un solo usuario podía ejecutar código malicioso y afectar toda una red empresarial.
+
+Microsoft desarrolló un navegador web poderoso que revolucionó las comunicaciones, pero los hackers rápidamente crearon vulnerabilidades explotables en este software. A medida que las empresas adoptaban rápidamente nuevas tecnologías, era demasiado tarde para protegerse contra los nuevos ataques. La dependencia global de la interacción y la comunicación a través de Internet hizo que la seguridad en línea fuera un tema crucial.
+
+Hoy en día, existen muchas tecnologías de software y hardware que utilizan Internet, por lo que la seguridad debe ser una preocupación de todos. No podemos depender únicamente de los proveedores de sistemas operativos o aplicaciones para mantenernos seguros. Incluso los usuarios domésticos, que solo usan el correo electrónico para comunicarse con familiares, deben tener conciencia de la seguridad.
+
+## Objetivos de la Seguridad en Internet
+
+La seguridad en Internet abarca cuatro objetivos principales:
+
+1. **Entender el límite entre la red interna local y el entorno de Internet**: Esto implica conocer cómo funciona Internet para proteger los datos de accesos maliciosos.
+2. **Asegurar el hardware local**: Se trata de garantizar la seguridad física del hardware de la red.
+3. **Asegurar la red**: Implica asegurar los dispositivos que controlan la transmisión de datos, proporcionando autenticación, autorización y protección.
+4. **Proteger los datos**: Abarca la protección de los datos almacenados o transmitidos a través de la red.
+
+La ciberseguridad no es solo una disciplina, sino también un conjunto de habilidades. Aunque un poco de paranoia sobre la seguridad puede ser saludable, lo mejor es tener un plan de respaldo sólido para poder restaurar recursos de red incluso en el peor de los casos.
+
+## Conceptos Básicos de Internet
+
+Internet no es solo correo electrónico y la Web, aunque muchas personas lo piensan de esa manera. Existen otros protocolos, y se siguen creando más cada día. Para comprender completamente el entorno de Internet, es necesario conocer los tipos de actores involucrados:
+
+1. **Proveedores de servicios**
+2. **Empresas que desean anunciar y vender**
+3. **Personas y empresas que desean intercambiar información**
+4. **Usuarios que desean acceder a información o servicios**
+5. **Malhechores que quieren robar información, espiar a las personas o desactivar comunicaciones**
+
+En el caso de las empresas, también hay cinco tipos de actores a considerar:
+
+1. **Clientes potenciales** que visitan el sitio web de la empresa y pueden realizar compras.
+2. **Empleados remotos** que necesitan acceder a la red interna de la empresa a través de Internet.
+3. **Empresas confiables** con las que la empresa puede intercambiar información.
+4. **Usuarios internos** que desean acceder a servicios en Internet.
+5. **Malhechores** que intentan acceder a la red de la empresa para robar o deshabilitar comunicaciones.
+
+## Seguridad en la Red
+
+En las redes locales, los paquetes se transportan más comúnmente utilizando Ethernet, que puede soportar velocidades de hasta 10 gigabits por segundo. Existen otras tecnologías como FDDI, que se usa en redes que cubren distancias más largas.
+
+Aunque la seguridad en Internet es importante, se solapan muchos conceptos de seguridad de red, dado que Internet es solo una colección de redes interconectadas. Los conceptos de seguridad de red deben aplicarse igualmente a estos entornos interconectados.
+
+### Tráfico IP
+
+El tráfico de Internet puede dividirse en dos tipos: TCP (Transmission Control Protocol) y UDP (User Datagram Protocol). TCP es un protocolo de conexión confiable con verificación de errores, lo que lo hace más robusto pero más lento. UDP, por otro lado, es más rápido y menos complejo, pero no garantiza que los paquetes lleguen a su destino.
+
+### Unicast, Broadcast y Multicast
+
+- **Unicast**: Mensajes enviados a una sola dirección de red.
+- **Broadcast**: Mensajes enviados a todas las direcciones posibles.
+- **Multicast**: Mensajes enviados a un grupo específico de direcciones.
+
+### Puertos
+
+Los puertos son convenciones utilizadas para dirigir los mensajes a servicios específicos. Por ejemplo, el puerto 80 se utiliza para HTTP y el puerto 443 para HTTPS. Los números de puerto van del 0 al 65535, y los primeros 1024 puertos están reservados para servicios conocidos.
+
+
+
+## Ciberseguridad: Ingeniería Social y Tipos de Malware
+
+La ciberseguridad es un campo clave para proteger tanto a individuos como a organizaciones de amenazas en el entorno digital. Entre las principales amenazas que se presentan en este ámbito se encuentran los ataques de **ingeniería social** y los diversos tipos de **malware**. A continuación, se abordan ambos temas, explicando cómo funcionan y ofreciendo recomendaciones para mitigarlos.
+
+## Ingeniería Social
+
+La ingeniería social consiste en manipular psicológicamente a los usuarios para que entreguen información confidencial o realicen acciones que comprometan su seguridad, como proporcionar contraseñas o datos bancarios. A menudo, los atacantes engañan a las víctimas para que entreguen estos datos sin necesidad de vulnerar directamente los sistemas informáticos. Esta técnica resulta especialmente eficaz porque, en muchos casos, es más sencillo engañar a una persona que hackear un sistema.
+
+Un ejemplo clásico de ingeniería social es el **fraude del director ejecutivo (CEO)**, también conocido como **whaling** o "caza de ballenas". En este tipo de estafa, el atacante se hace pasar por una figura de autoridad, como el CEO de una empresa, y envía un correo electrónico a un empleado con acceso a información sensible. El mensaje, aparentemente urgente y confidencial, solicita realizar una operación financiera. Si el empleado no sospecha, puede caer en la estafa, proporcionando acceso o datos financieros.
+
+Los ataques de ingeniería social explotan las emociones y rasgos humanos, como la **vanidad**, **avaricia**, **curiosidad**, o el **temor a las autoridades**. Los medios más comunes para ejecutar estos ataques incluyen correos electrónicos, llamadas telefónicas o software malicioso que recopila información sin que la víctima se dé cuenta.
+
+### Medidas de Prevención
+
+Para evitar ser víctima de ingeniería social, se recomienda seguir estas prácticas:
+1. **Verificar la información**: No confiar en correos electrónicos o mensajes telefónicos, incluso si provienen de personas conocidas. Verificar siempre a través de otro canal de comunicación.
+2. **No aceptar ofertas no solicitadas**: Evitar participar en concursos o sorteos de los que no se haya tenido conocimiento previo.
+3. **Cautela con los enlaces**: No hacer clic en enlaces proporcionados por fuentes desconocidas o no verificadas.
+4. **No revelar contraseñas ni datos confidenciales**: Asegurarse de que la entidad que solicita información es legítima y de confianza antes de compartir cualquier dato sensible.
+
+## Tipos de Malware
+
+El malware es un software malicioso diseñado para causar daño o permitir el acceso no autorizado a sistemas informáticos. Existen diversos tipos de malware, cada uno con su propio propósito y métodos de propagación. A continuación se describen algunos de los tipos más comunes de malware.
+
+### Virus
+
+Los **virus** son programas que se adjuntan a archivos o programas legítimos y, una vez ejecutados, se propagan a otros archivos en el sistema. Un virus puede dañar archivos, robar información y afectar el rendimiento del sistema. Para prevenir infecciones por virus, se recomienda tener un **antivirus actualizado** y evitar ejecutar archivos de fuentes no confiables.
+
+### Gusanos
+
+Los **gusanos** son similares a los virus, pero tienen la capacidad de replicarse y propagarse por sí mismos, sin necesidad de un archivo o programa huésped. Pueden propagarse a través de redes y correos electrónicos. Los gusanos pueden generar un gran tráfico en las redes, lo que puede afectar el rendimiento de las redes y sistemas. Para evitar gusanos, es fundamental mantener actualizados los sistemas operativos y aplicaciones de seguridad.
+
+### Troyanos
+
+Los **troyanos** son programas maliciosos que se ocultan dentro de aplicaciones legítimas o se disfrazan de programas útiles. A menudo, los usuarios los descargan sin saber que están infectados. Una vez instalados, los troyanos pueden otorgar acceso remoto al atacante, permitiéndole robar datos o tomar el control del sistema. Para prevenirlos, es esencial descargar software únicamente de fuentes confiables.
+
+### Ransomware
+
+El **ransomware** es un tipo de malware que encripta los archivos del usuario y solicita un rescate (generalmente en criptomonedas) para devolver el acceso. Este tipo de malware ha crecido en popularidad en los últimos años y puede causar graves daños, especialmente a empresas. La prevención incluye realizar copias de seguridad frecuentes de los datos y tener un sistema de protección antivirus robusto.
+
+### Adware
+
+El **adware** es software que muestra anuncios no deseados, a menudo en forma de ventanas emergentes o banners. Si bien algunos adwares son molestos, otros pueden ser más peligrosos, ya que recopilan información sobre el usuario sin su consentimiento, lo que puede resultar en una violación de la privacidad. Utilizar bloqueadores de anuncios y evitar instalar programas de fuentes desconocidas puede ayudar a prevenir este tipo de malware.
+
+### Spyware
+
+El **spyware** es un software diseñado para espiar la actividad del usuario y recopilar información sin su conocimiento, como contraseñas, historial de navegación y datos personales. Los **keyloggers**, una forma de spyware, registran cada pulsación de tecla. Para prevenirlo, es recomendable tener un software de seguridad actualizado y tener cuidado con los sitios web que se visitan y los archivos que se descargan.
+
+### Rootkits
+
+Un **rootkit** es un conjunto de herramientas diseñadas para ocultar la presencia de malware en un sistema comprometido. Los rootkits son particularmente peligrosos porque pueden permitir a un atacante tener control total sobre el sistema sin que el usuario lo detecte. Los rootkits pueden instalarse a través de vulnerabilidades en el sistema o en programas aparentemente inocuos. Mantener el sistema operativo y las aplicaciones siempre actualizadas es la mejor manera de prevenir la instalación de rootkits.
+
+## Organizaciones de Apoyo a la Ciberseguridad
+
+Numerosas organizaciones a nivel nacional e internacional trabajan para mejorar la ciberseguridad, proporcionando recursos, formación y apoyo a usuarios y empresas. Algunas de las más destacadas son:
+
+- **Centro Criptológico Nacional (CCN)**: Encargado de garantizar la seguridad de las TIC en el sector público español, especialmente en sistemas que manejan información clasificada.
+- **Centro Nacional para la Protección de Infraestructuras y Ciberseguridad (CNPIC)**: Se ocupa de la protección de infraestructuras críticas y coordina políticas de ciberseguridad en España.
+- **Instituto Nacional de Ciberseguridad (INCIBE)**: Promueve la ciberseguridad y la confianza digital en ciudadanos, empresas y sectores estratégicos.
+- **Mando Conjunto de Ciberdefensa (MCCD)**: Responsable de la defensa cibernética en el ámbito de la seguridad nacional española.
+- **Agencia de la Unión Europea para la Ciberseguridad (ENISA)**: Trabaja en la promoción de la seguridad digital en toda la Unión Europea, proporcionando recomendaciones y políticas de ciberseguridad.
+
+
+## Principales riegos de la ciberseguridad
+
+### Vulnerabilidad de Día Cero
+Una falla de seguridad desconocida en el software que los atacantes pueden explotar antes de que se publique una solución.
+
+### Ciberatribución
+El proceso de identificar a los responsables de un ciberataque. Es complejo debido a técnicas como las *falsas banderas*, donde los atacantes se ocultan detrás de otra entidad.
+
+### Evasión de Controles de Seguridad
+Estrategias usadas por los atacantes para evitar ser detectados, como suplantar comportamientos normales o camuflar actividades maliciosas.
+
+### Minerías de Datos (MD), Aprendizaje Automático (AA) e Inteligencia Artificial (IA)
+Tecnologías que pueden ser usadas tanto para fortalecer la ciberseguridad como para eludirla, creando una dualidad de objetivos en el ciberespacio.
+
+### Aprendizaje Automático Adversario
+Técnicas que entrenan modelos de IA para que sean resistentes a modificaciones maliciosas, utilizadas para evadir los sistemas de defensa.
+
+### Fake News y Virus Informacional
+Información falsa o manipulada, que puede dividirse en:
+- **Misinformation**: Información incorrecta difundida sin intención de engañar.
+- **Disinformation**: Información falsa creada deliberadamente para engañar.
+- **Malinformation**: Información verdadera utilizada en un contexto que causa daño.
+
+### Infodemia
+Propagación de información falsa o no verificada durante la pandemia, exacerbada por el estrés y la ansiedad del público, lo que facilita los ciberataques como el phishing.
+
+### Phishing y Ransomware
+Técnicas de ataque donde los atacantes suplantan entidades legítimas para robar información o instalar malware.
+
+### Bots y Trolls
+Agentes automatizados o personas que difunden desinformación y manipulan la opinión pública en internet.
+
+### Deepfakes
+Contenidos multimedia (imágenes, videos) manipulados mediante IA para suplantar figuras públicas o crear información falsa.
+
+### Gobernanza en el Ciberespacio
+Desafíos para crear un marco adecuado para regular las actividades en el ciberespacio, dado su impacto en la vida diaria y la vulnerabilidad de los sistemas.
+
+### Simulacro y Ciberseguridad
+El ciberespacio como un entorno virtual donde las acciones y decisiones impactan en el mundo físico, pero sus limitaciones deben ser entendidas y gestionadas.
+
+### Dependencia Tecnológica Externa
+Problemas derivados de depender de tecnologías de otros países, especialmente en sectores sensibles como el biosanitario y tecnológico.
+
+### Cultura de Ciberseguridad y Alfabetización Digital
+La necesidad de educar a los usuarios para identificar riesgos y proteger su privacidad, dado que muchos ciberataques dependen de la capacidad de los atacantes para suplantar usuarios legítimos.
+
+### Privacidad como Derecho
+La protección de los datos personales como medida crucial para evitar que los atacantes se aprovechen de información sensible para realizar ataques.
+
+
+## Referencias
+
+C. J. Brooks, C. Grow, P. Craig, and D. Short, Cybersecurity essentials. Sybex, 2018.
+
+D. Arroyo Guardeño, V. Gayoso Martínez, and L. Hernández Encinas, Ciberseguridad. CSIC, 2020.
