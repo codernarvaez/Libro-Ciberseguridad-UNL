@@ -1,1 +1,101 @@
-# Prueba
+## Roles y responsabilidades
+
+### Roles Clave en la Gobernanza de la Seguridad y Arquitecturas Jerárquicas
+
+#### **Consejo Directivo (Nivel Estratégico)** 
+- **Rol:**  
+  Define la visión, misión y objetivos estratégicos relacionados con la seguridad de la organización.  
+- **Responsabilidades:**  
+  - Aprobar políticas y presupuestos de seguridad.  
+  - Monitorear la alineación de la estrategia de seguridad con los objetivos comerciales.  
+  - Supervisar el cumplimiento de normativas y regulaciones internacionales (e.g., ISO 27001, GDPR).  
+
+---
+
+#### **Comité de Gobernanza de Seguridad**  
+- **Rol:**  
+  Actúa como un grupo asesor especializado que define y prioriza los riesgos de seguridad a nivel organizacional.  
+- **Responsabilidades:**  
+  - Analizar riesgos y establecer controles estratégicos.  
+  - Garantizar la integración de marcos normativos (e.g., COBIT, NIST).  
+  - Realizar revisiones periódicas del desempeño de la seguridad.  
+
+---
+
+#### **Chief Information Security Officer (CISO)**  
+- **Rol:**  
+  Responsable de la estrategia general de seguridad de la información y de liderar equipos de seguridad a través de los niveles jerárquicos.  
+- **Responsabilidades:**  
+  - Diseñar y comunicar políticas de seguridad alineadas con la arquitectura jerárquica.  
+  - Supervisar la implementación de controles de seguridad.  
+  - Gestionar incidentes críticos y reportarlos al nivel estratégico.  
+  - Coordinar auditorías de cumplimiento normativo.  
+
+---
+
+#### **Responsable de Gestión de Riesgos (Risk Manager)**  
+- **Rol:**  
+  Identifica, evalúa y mitiga los riesgos asociados con la seguridad de la información.  
+- **Responsabilidades:**  
+  - Realizar evaluaciones de impacto en cada nivel jerárquico.  
+  - Escalar riesgos críticos al comité de gobernanza.  
+  - Supervisar el cumplimiento de estándares y regulaciones específicas de la industria.  
+
+---
+
+#### **Líder de Seguridad Operativa (Nivel Táctico)**  
+- **Rol:**  
+  Coordina y supervisa las actividades operativas relacionadas con la seguridad en la infraestructura y los procesos.  
+- **Responsabilidades:**  
+  - Implementar controles definidos por el CISO.  
+  - Gestionar el equipo de respuesta ante incidentes.  
+  - Asegurar la operación continua de herramientas y sistemas de monitoreo.  
+
+---
+
+#### **Analista de Seguridad de Información (Nivel Operativo)**  
+- **Rol:**  
+  Ejecuta actividades específicas relacionadas con la identificación y mitigación de amenazas a nivel técnico.  
+- **Responsabilidades:**  
+  - Monitorear y analizar eventos de seguridad.  
+  - Gestionar vulnerabilidades y responder a alertas críticas.  
+  - Implementar parches y actualizaciones en sistemas clave.  
+
+---
+
+#### **Equipo de Respuesta ante Incidentes (CSIRT)**  
+- **Rol:**  
+  Responde, analiza y mitiga los impactos de incidentes de seguridad en toda la organización.  
+- **Responsabilidades:**  
+  - Contener y resolver incidentes de seguridad.  
+  - Realizar análisis forenses de ciberseguridad.  
+  - Documentar incidentes y generar reportes para niveles superiores.  
+
+---
+
+#### **Usuarios Finales (Todos los Niveles)**  
+- **Rol:**  
+  Actúan como la primera línea de defensa siguiendo las políticas y procedimientos de seguridad establecidos.  
+- **Responsabilidades:**  
+  - Reportar incidentes sospechosos al equipo de seguridad.  
+  - Cumplir con las políticas de seguridad organizacional.  
+  - Participar en capacitaciones de concienciación sobre seguridad.  
+
+---
+
+### Responsabilidades por Nivel Jerárquico
+
+#### **Nivel Estratégico:**  
+- Definir la visión y estrategia de seguridad.  
+- Aprobar presupuestos y asignar recursos.  
+- Establecer indicadores clave de desempeño (KPIs) relacionados con la seguridad.  
+
+#### **Nivel Táctico:**  
+- Traducir las estrategias definidas por el nivel estratégico en políticas y procedimientos operativos.  
+- Coordinar equipos y proyectos relacionados con la implementación de controles.  
+- Supervisar la gestión de riesgos y auditorías de seguridad.  
+
+#### **Nivel Operativo:**  
+- Implementar y ejecutar controles específicos de seguridad.  
+- Monitorear sistemas y detectar anomalías.  
+- Brindar soporte técnico y responder a incidentes en tiempo real.  

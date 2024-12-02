@@ -1,1 +1,86 @@
-# Prueba
+## Conceptos de gobernanza
+
+La **gobernanza** se refiere al conjunto de principios, procesos, estructuras y prácticas que guían, regulan y supervisan la forma en que una organización o entidad alcanza sus objetivos, equilibra las necesidades de las partes interesadas y cumple con sus obligaciones éticas, legales y sociales. Es un concepto amplio que se aplica tanto en el ámbito corporativo como en el público, tecnológico, social y ambiental.
+
+
+
+### Principales Conceptos de Gobernanza
+
+#### **Gobernanza Corporativa**
+
+Se centra en la administración y control de las empresas para garantizar que las decisiones y actividades estén alineadas con los intereses de los accionistas y partes interesadas.
+
+- **Transparencia:** 
+    - Divulgación clara y precisa de información financiera y operativa.  
+- **Responsabilidad:** 
+    - Los directores y gerentes son responsables de las decisiones tomadas en nombre de la organización.  
+- **Equidad:**
+    - Trato equitativo para todos los accionistas, incluyendo minoritarios.  
+- **Cumplimiento normativo:**
+    - Alineación con regulaciones locales e internacionales.  
+
+
+
+#### **Gobernanza de TI (Tecnologías de la Información)**
+Es la integración de la tecnología en la estrategia y operación de una organización para maximizar el valor y minimizar riesgos.
+
+**Modelos más conocidos:**
+
+- **COBIT:**
+    -  Proporciona un marco para alinear los objetivos de TI con los de negocio.  
+- **ITIL:** 
+    - Mejora los servicios tecnológicos mediante un enfoque basado en procesos.  
+- **ISO/IEC 38500:** 
+    - Estándar para la gobernanza corporativa de TI.  
+
+**Características principales:**
+
+- Optimización del uso de recursos tecnológicos.  
+- Priorización de inversiones en TI para agregar valor estratégico.  
+- Garantía de cumplimiento normativo y gestión de riesgos tecnológicos.  
+
+
+
+#### **Gobernanza Ambiental, Social y Corporativa (ESG)**
+Se enfoca en cómo las organizaciones gestionan su impacto ambiental, su responsabilidad social y su gobernanza corporativa.
+
+**Áreas clave:**
+
+- **Ambiental:**
+    - Gestión de recursos naturales, reducción de emisiones y sostenibilidad.  
+- **Social:**
+    - Relaciones con empleados, comunidades y derechos humanos.  
+- **Gobernanza:**
+    - Ética empresarial, diversidad en la junta directiva y políticas anticorrupción.  
+
+
+
+#### **Gobernanza Pública**
+Se refiere a la forma en que las instituciones gubernamentales y organizaciones no gubernamentales toman decisiones, implementan políticas y gestionan recursos públicos para cumplir con los intereses de la sociedad.
+
+**Características principales:**
+
+- **Participación:**
+    - Inclusión de ciudadanos y partes interesadas en la toma de decisiones.  
+- **Eficiencia:**
+    - Uso óptimo de recursos públicos.  
+- **Transparencia:**
+    - Comunicación abierta y accesible sobre políticas y procesos.  
+- **Responsabilidad:**
+    - Responder ante los ciudadanos y otros actores por las acciones y decisiones tomadas.  
+
+
+
+#### **Gobernanza de Seguridad**
+Específicamente en el contexto de la ciberseguridad, implica la implementación de políticas, estándares y controles que protejan la información y los sistemas de una organización.
+
+**Pilares fundamentales:**
+
+- **Evaluación de riesgos:**
+    - Identificación y mitigación de vulnerabilidades.  
+- **Cumplimiento:**
+    - Asegurarse de que las medidas de seguridad cumplen con las regulaciones y estándares (ISO 27001, NIST).  
+- **Monitoreo continuo:**
+    - Supervisión de incidentes y desempeño de la seguridad.  
+- **Responsabilidad compartida:**
+    - Implicación de todos los niveles jerárquicos en la gestión de seguridad.  
