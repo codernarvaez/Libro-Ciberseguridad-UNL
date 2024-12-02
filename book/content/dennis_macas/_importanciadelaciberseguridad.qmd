@@ -1,0 +1,20 @@
+
+# Importancia de la ciberseguridad
+
+La ciberseguridad es un ámbito que se debe estudiar constantemente, ya que existen diversos factores que dificultan su implementación efectiva. Michael Hayden, exdirector de la CIA, expresó que carecía de una imagen clara sobre las implicaciones jurídicas y políticas a largo plazo de cualquier decisión relacionada con la ciberseguridad, lo que lo dejó incapaz de proceder adecuadamente.
+
+Esta falta de claridad surge, en parte, debido a la brecha generacional. Hayden mencionó que muchas personas de su entorno no tenían experiencia directa con los ordenadores. Estos "inmigrantes digitales" contrastan con los "nativos digitales", jóvenes que han crecido en contacto con la tecnología desde su infancia. Hayden señaló que incluso altos dirigentes, como el director del FBI en 2001, no usaban computadoras ni correos electrónicos. En 2013, varios jueces de la Corte Suprema de EE. UU. tampoco utilizaban el correo electrónico.
+
+## Brecha generacional y tecnológica
+
+A pesar de ser nativos digitales, los jóvenes no siempre comprenden a fondo la ciberseguridad, lo que genera una desconexión crítica entre los técnicos y los políticos. Esto crea un vacío difícil de llenar, ya que ambos grupos solo pueden opinar desde sus respectivos ámbitos de conocimiento.
+
+El problema no es exclusivo de Estados Unidos. A nivel global, algunos países carecen de tecnología clave o del conocimiento para utilizar herramientas fundamentales, como el caso de Canadá con Tor. Esta brecha tecnológica también incrementa las tensiones entre naciones.
+
+## Desafíos democráticos y evolución tecnológica
+
+La falta de conocimiento sobre ciberseguridad plantea un desafío democrático. Aunque se propongan numerosas leyes sobre este tema, muchos votantes carecen de los conocimientos necesarios para comprenderlas y apoyarlas. Además, la tecnología evoluciona a un ritmo acelerado, lo que dificulta que tanto expertos como legisladores se mantengan al día en la implementación de medidas de seguridad efectivas.
+
+## Referencia
+
+P. W. Singer and A. Friedman, Cybersecurity and Cyberwar: What Everyone Needs to Know®. Oxford University Press, 2014.
