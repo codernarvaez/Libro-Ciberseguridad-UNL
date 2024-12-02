@@ -1,0 +1,88 @@
+# Laboratorio: Diferencias entre Aplicaciones Web, Nativas e Híbridas
+
+## Objetivos
+1. Comprender las diferencias entre aplicaciones web, nativas e híbridas.
+2. Analizar sus ventajas, desventajas y casos de uso.
+3. Identificar cómo se desarrollan y sus desafíos en términos de compatibilidad, costos y experiencia de usuario.
+
+---
+
+## Introducción
+Las aplicaciones modernas pueden clasificarse en tres tipos: **web**, **nativas** e **híbridas**. Cada una tiene características propias, ventajas y limitaciones. Este laboratorio tiene como objetivo explorar sus diferencias y cómo se adaptan a diferentes escenarios de desarrollo.
+
+---
+
+## Material Necesario
+- Un ordenador con acceso a Internet.
+- Navegador web (Chrome, Firefox, Safari, etc.).
+- Dispositivo móvil con Android o iOS (para pruebas de aplicaciones nativas e híbridas).
+- Entorno de desarrollo (opcional para ejercicios prácticos).
+
+---
+
+## Procedimiento
+
+### 1. **Explorar las Aplicaciones Web**
+   - **Descripción**: Las aplicaciones web se ejecutan en el servidor y se acceden a través de un navegador web.
+   - **Ejemplo**: Accede a **Google Docs** y abre un documento para probar su funcionalidad. No es necesario instalar nada en tu dispositivo.
+   - **Prueba**: Crea un documento, edítalo y comparte el enlace con un compañero para que edite el mismo documento en tiempo real.
+
+### 2. **Explorar las Aplicaciones Nativas**
+   - **Descripción**: Las aplicaciones nativas están diseñadas específicamente para un sistema operativo y se instalan en el dispositivo.
+   - **Ejemplo**: Descarga e instala **Final Cut Pro** en un dispositivo macOS o **Adobe Photoshop** en un sistema Windows. Nota cómo la aplicación utiliza los recursos del hardware del dispositivo.
+   - **Prueba**: Crea y edita un proyecto (como un video o una imagen) utilizando las herramientas avanzadas que ofrece el software nativo.
+
+### 3. **Explorar las Aplicaciones Híbridas**
+   - **Descripción**: Las aplicaciones híbridas combinan elementos de aplicaciones web y nativas, utilizando tecnologías web dentro de un contenedor nativo.
+   - **Ejemplo**: Abre la aplicación **Instagram** en un dispositivo móvil o en el navegador. Analiza cómo se comporta la aplicación y qué elementos pueden ser híbridos (como el acceso a la cámara).
+   - **Prueba**: Realiza una foto desde la aplicación móvil y compártela, observando la interacción con el hardware del dispositivo.
+
+---
+
+## Resultados Esperados
+
+- **Aplicaciones Web**: Deberías observar que las aplicaciones web dependen de la conexión a Internet y el navegador. Su rendimiento puede estar limitado por el navegador.
+- **Aplicaciones Nativas**: Las aplicaciones nativas ofrecerán una experiencia de usuario más fluida y optimizada, aprovechando al máximo los recursos del dispositivo.
+- **Aplicaciones Híbridas**: Las aplicaciones híbridas combinarán lo mejor de ambos mundos, pero podrían experimentar algunas limitaciones en términos de rendimiento.
+
+---
+
+## Análisis de los Desafíos de Desarrollo
+1. **Compatibilidad Multiplataforma**:
+   - ¿Cómo se manejan las aplicaciones web en diferentes navegadores?
+   - ¿Qué retos presentan las aplicaciones híbridas para garantizar un rendimiento consistente en iOS y Android?
+
+2. **Costos y Recursos**:
+   - ¿Cuál es el costo de desarrollar una aplicación nativa frente a una híbrida?
+   - ¿Qué tan importante es elegir la plataforma adecuada según el presupuesto?
+
+3. **Experiencia de Usuario (UX)**:
+   - ¿Cómo afecta el rendimiento de una aplicación híbrida en comparación con una nativa?
+   - ¿Qué diferencias de UX puedes identificar entre una aplicación web, nativa y híbrida?
+
+---
+
+## Comparación de Aplicaciones
+
+| Característica     | Aplicación Web       | Aplicación Híbrida      | Aplicación Nativa       |
+|--------------------|----------------------|-------------------------|-------------------------|
+| **Acceso**         | Navegador            | Instalación, offline parcial | Instalación, offline completo |
+| **Tecnologías**    | HTML, CSS, JS        | HTML, CSS, JS + Contenedor | Swift (iOS), Kotlin (Android) |
+| **Desempeño**      | Limitado             | Medio                   | Óptimo                  |
+| **Desarrollo**     | Rápido y económico   | Más rápido que nativas  | Costoso y lento         |
+| **UX/UI**          | Depende del navegador| Similar a nativa        | Adaptada a la plataforma|
+| **Actualizaciones**| Automáticas          | Moderadamente sencillas | Requieren aprobación de tiendas de apps|
+| **Costos**         | Bajos                | Intermedios             | Altos                   |
+
+---
+
+## Conclusión
+En este laboratorio, exploramos cómo las aplicaciones web, nativas e híbridas se diferencian en términos de arquitectura, desarrollo y experiencia de usuario. Mientras que las aplicaciones web ofrecen accesibilidad universal y costos bajos, las aplicaciones nativas proporcionan el mejor rendimiento, y las híbridas ofrecen un buen compromiso entre costos y funcionalidades. La elección entre estas opciones dependerá de las necesidades específicas del proyecto y los recursos disponibles.
+
+---
+
+## Evaluación
+1. **Pregunta**: ¿Cuáles son las ventajas principales de las aplicaciones nativas sobre las híbridas?
+2. **Pregunta**: ¿En qué escenario sería más adecuado utilizar una aplicación web en lugar de una nativa?
+3. **Tarea**: Realiza una comparación de las tres aplicaciones mencionadas en este laboratorio, enfocándote en su rendimiento y accesibilidad en dispositivos de diferentes plataformas.
+

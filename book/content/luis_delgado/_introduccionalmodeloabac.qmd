@@ -1,0 +1,132 @@
+# Control de Acceso Basado en Atributos (ABAC)
+
+---
+
+## Introducción
+
+El **Control de Acceso Basado en Atributos (ABAC)** es un método avanzado de control de acceso que utiliza múltiples atributos para determinar el acceso a recursos digitales. Este enfoque dinámico y granular supera las limitaciones de los métodos tradicionales, como **RBAC** (Control de Acceso Basado en Roles), al evaluar no solo los roles, sino también el contexto en el que se realiza la solicitud.
+
+---
+
+## Conceptos Clave
+
+### Definición
+
+ABAC regula el acceso mediante atributos específicos, agrupados en cuatro categorías principales:
+
+1. **Usuario**: Información del solicitante (rol, identidad).
+2. **Recurso**: Datos o servicios a los que se desea acceder.
+3. **Acción**: Operación que se desea ejecutar (leer, escribir, borrar).
+4. **Entorno**: Condiciones contextuales (hora, ubicación).
+
+---
+
+## Categorías de Atributos
+
+### Atributos del Sujeto
+Los atributos del sujeto definen características del usuario que realiza la solicitud:
+
+- **Título de trabajo**: Determina las acciones permitidas.  
+  **Ejemplo**: Un gerente de proyecto puede aprobar presupuestos, mientras que un miembro del equipo solo puede verlos.
+  
+- **Departamento**: Restringe el acceso según la estructura organizativa.  
+  **Ejemplo**: Los empleados del departamento de finanzas pueden acceder a informes financieros, pero no a los registros de recursos humanos.
+
+- **Nivel de autorización**: Define permisos específicos según la jerarquía.  
+  **Ejemplo**: Un administrador tiene acceso completo a la base de datos, mientras que un analista solo tiene acceso de lectura.
+
+- **Ubicación**: Permite accesos condicionados a una red o región específica.  
+  **Ejemplo**: Un sistema podría permitir el acceso a recursos sensibles solo desde la red interna de la empresa.
+
+### Atributos del Recurso
+Los atributos del recurso describen las propiedades del objeto al que se desea acceder:
+
+- **Tipo de datos**: Documentos, registros, bases de datos.  
+  **Ejemplo**: Un archivo confidencial solo está disponible para usuarios autorizados con nivel de acceso adecuado.
+
+- **Nivel de sensibilidad**: Clasificación de datos (público, confidencial, secreto).  
+  **Ejemplo**: Solo los directivos pueden acceder a informes clasificados como "secreto".
+
+- **Propietario**: Usuario o departamento responsable del recurso.  
+  **Ejemplo**: Un desarrollador tiene acceso a los proyectos de código que creó, pero no a los de otros equipos.
+
+### Atributos de la Acción
+Estos atributos especifican la operación solicitada sobre el recurso:
+
+- **Leer**: Acceso de solo lectura.  
+  **Ejemplo**: Un empleado puede leer un informe de ventas, pero no editarlo.
+
+- **Escribir**: Modificación o creación de datos.  
+  **Ejemplo**: Un contador puede actualizar registros financieros.
+
+- **Eliminar**: Borrado de recursos o registros.  
+  **Ejemplo**: Solo un administrador puede eliminar cuentas de usuario.
+
+### Atributos del Entorno
+Factores contextuales que pueden afectar la decisión de acceso:
+
+- **Hora del día**: Restricciones horarias.  
+  **Ejemplo**: Acceso restringido a ciertos recursos fuera del horario laboral.
+
+- **Ubicación**: Acceso permitido solo desde ubicaciones específicas.  
+  **Ejemplo**: Acceder a una base de datos desde una oficina física, pero no desde una red pública.
+
+- **Nivel de seguridad de la red**: Evaluación de la seguridad del entorno de acceso.  
+  **Ejemplo**: Acceso denegado si la conexión se realiza desde una red no segura.
+
+---
+
+## Ventajas
+
+### Beneficios Principales
+
+- **Flexibilidad**: Permite adaptar políticas de acceso a diferentes escenarios operativos y contextuales.  
+  **Ejemplo**: Un usuario puede tener acceso restringido a ciertos datos solo cuando está conectado desde una red segura de la empresa.
+
+- **Escalabilidad**: Facilita la incorporación de nuevos usuarios, recursos y atributos sin necesidad de modificar estructuras rígidas.  
+  **Ejemplo**: Al añadir un nuevo departamento, basta con definir sus atributos para integrarlo en el sistema.
+
+- **Seguridad Mejorada**: Mitiga riesgos al evaluar condiciones dinámicas, previniendo accesos no autorizados.  
+  **Ejemplo**: Evita que un usuario acceda a recursos críticos desde una ubicación desconocida.
+
+- **Cumplimiento Normativo**: Simplifica la adherencia a regulaciones, garantizando un control más exhaustivo de la información.  
+  **Ejemplo**: Facilita el cumplimiento de normativas como **GDPR** o **HIPAA** mediante políticas basadas en atributos.
+
+### Ejemplo Práctico
+En una organización de salud, un médico podría tener acceso a los registros médicos de sus pacientes solo durante el horario laboral y desde la red interna del hospital, pero no desde una red pública. Además, el acceso a ciertos datos sensibles, como pruebas genéticas, podría estar restringido a médicos con permisos especiales.
+
+---
+
+## Desafíos
+
+### Limitaciones
+
+- **Complejidad de Implementación**: Requiere una planificación detallada para definir y gestionar atributos de manera eficiente.  
+  **Ejemplo**: En una empresa grande, definir atributos para cientos de empleados puede ser un proceso complejo.
+
+- **Gestión de Atributos**: Es crucial mantener la precisión y actualización constante de los atributos.  
+  **Ejemplo**: Si los atributos de un empleado no se actualizan tras un ascenso, podría mantener accesos no apropiados.
+
+- **Impacto en Rendimiento**: Evaluaciones en tiempo real pueden afectar el desempeño en sistemas con gran volumen de solicitudes.  
+  **Ejemplo**: Un sistema de alta demanda podría experimentar retrasos si debe evaluar múltiples atributos para cada solicitud.
+
+- **Interoperabilidad**: Integrar ABAC en sistemas heredados o múltiples plataformas puede ser un reto técnico.  
+  **Ejemplo**: Sistemas antiguos que no soportan atributos dinámicos pueden requerir desarrollos adicionales.
+
+
+## Comparación con RBAC
+
+### Diferencias Clave
+
+- **RBAC (Control Basado en Roles)**: Determina permisos según roles estáticos predefinidos.  
+  **Ejemplo**: Un empleado de recursos humanos tiene acceso a todos los perfiles de empleados.
+
+- **ABAC (Control Basado en Atributos)**: Evalúa múltiples atributos dinámicos para tomar decisiones contextuales.  
+  **Ejemplo**: El mismo empleado solo puede acceder a los perfiles de su departamento durante el horario laboral.
+
+
+### Conclusión
+
+ABAC representa una solución moderna y robusta para gestionar el control de acceso en entornos digitales complejos. Su capacidad para evaluar atributos dinámicos y contextuales ofrece una ventaja significativa en términos de flexibilidad y seguridad. Aunque la implementación de ABAC puede ser desafiante, los beneficios en términos de escalabilidad, cumplimiento normativo y prevención de accesos no autorizados superan las dificultades iniciales.
+
+En un mundo donde la protección de datos es esencial, **ABAC** se presenta como una herramienta indispensable para las organizaciones que buscan fortalecer su estrategia de seguridad.

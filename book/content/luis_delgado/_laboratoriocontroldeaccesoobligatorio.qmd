@@ -1,0 +1,103 @@
+
+# Laboratorio: Implementación del Control de Acceso Obligatorio (MAC)
+
+## Introducción
+
+En este laboratorio, aprenderemos a implementar el **Control de Acceso Obligatorio (MAC)**, un modelo de seguridad que restringe el acceso a los recursos según políticas predefinidas por una autoridad central. Este enfoque es ideal para ambientes de alto riesgo, como el gobierno, las instituciones financieras y el sector de la salud.
+
+El objetivo de este laboratorio es implementar una simulación básica del MAC utilizando etiquetas de seguridad y niveles de autorización para controlar el acceso a recursos.
+
+---
+
+## Objetivos
+
+- Entender los conceptos fundamentales del Control de Acceso Obligatorio (MAC).
+- Implementar una simulación de MAC con niveles de autorización y categorías de seguridad.
+- Comparar el MAC con otros modelos de control de acceso como DAC y RBAC.
+
+---
+
+## Requisitos previos
+
+Antes de comenzar, asegúrate de tener instalado Python 3.x en tu máquina, así como un entorno de desarrollo adecuado como **VSCode** o **Jupyter Notebooks**.
+
+---
+
+## Implementación paso a paso
+
+### Paso 1: Definir las clases principales
+
+Primero, vamos a definir las clases que representarán a los **usuarios**, **recursos** y **el sistema de acceso** en nuestro modelo de MAC.
+
+```python
+class Usuario:
+    def __init__(self, nombre, nivel_autorizacion):
+        self.nombre = nombre
+        self.nivel_autorizacion = nivel_autorizacion  # Nivel de autorización del usuario (1-5)
+
+class Recurso:
+    def __init__(self, nombre, categoria_seguridad, nivel_sensibilidad):
+        self.nombre = nombre
+        self.categoria_seguridad = categoria_seguridad  # Categoría del recurso (por ejemplo, 'Confidencial', 'Secreto')
+        self.nivel_sensibilidad = nivel_sensibilidad  # Nivel de sensibilidad (1-5)
+
+class Acceso:
+    def __init__(self, usuario, recurso, accion):
+        self.usuario = usuario
+        self.recurso = recurso
+        self.accion = accion  # La acción que se desea realizar (leer, escribir, borrar)
+
+    def evaluar_acceso(self):
+        # Comprobar si el usuario tiene el nivel de autorización adecuado
+        if self.usuario.nivel_autorizacion < self.recurso.nivel_sensibilidad:
+            return "Acceso Denegado: Nivel de autorización insuficiente."
+        # Comprobar si la categoría de seguridad coincide con el nivel del usuario
+        if self.usuario.nivel_autorizacion < self.recurso.categoria_seguridad:
+            return "Acceso Denegado: Categoría de seguridad no compatible."
+        return "Acceso Permitido."
+``` 
+## Paso 2: Crear objetos de usuario y recurso
+
+En este paso, vamos a crear instancias de los usuarios y recursos, asignando niveles de autorización y categorías de seguridad.
+
+```python
+# Crear usuarios con diferentes niveles de autorización
+usuario_1 = Usuario("Juan", 3)
+usuario_2 = Usuario("Ana", 5)
+
+# Crear recursos con diferentes niveles de sensibilidad y categorías de seguridad
+recurso_1 = Recurso("Informe Financiero", "Confidencial", 3)
+recurso_2 = Recurso("Historial de Pacientes", "Secreto", 4)
+``` 
+
+## Paso 3: Evaluar los accesos
+Ahora vamos a probar el acceso a los recursos utilizando las instancias de usuarios y recursos que hemos creado.
+```python
+# Evaluar el acceso para el usuario Juan
+acceso_juan = Acceso(usuario_1, recurso_1, "Leer")
+print(acceso_juan.evaluar_acceso())  # Debería denegar el acceso si el nivel de autorización no es suficiente
+
+# Evaluar el acceso para el usuario Ana
+acceso_ana = Acceso(usuario_2, recurso_2, "Leer")
+print(acceso_ana.evaluar_acceso())  # Debería permitir el acceso si el nivel de autorización es adecuado
+``` 
+
+
+## Paso 4: Monitorear y auditar el sistema
+Finalmente, implementaremos una simple función de auditoría que registre las solicitudes de acceso realizadas por los usuarios.
+```python
+def auditoria(acceso):
+    print(f"Auditoría: {acceso.usuario.nombre} intentó {acceso.accion} sobre {acceso.recurso.nombre}. Resultado: {acceso.evaluar_acceso()}")
+
+# Realizar auditorías
+auditoria(acceso_juan)
+auditoria(acceso_ana)
+``` 
+## Comparación entre MAC y otros métodos de control de acceso
+
+| Característica             | **MAC**                                           | **DAC (Discretionary Access Control)**       | **RBAC (Role-Based Access Control)**   |
+|----------------------------|--------------------------------------------------|---------------------------------------------|----------------------------------------|
+| **Control de acceso**       | Estrictamente controlado por una autoridad central | Controlado por los propietarios de los datos | Controlado por roles predefinidos      |
+| **Flexibilidad**            | Baja, debido a su rigidez                        | Alta, los propietarios controlan el acceso  | Media, los roles son flexibles, pero predefinidos |
+| **Seguridad**               | Alta, acceso muy restringido y controlado        | Baja, depende de la gestión de permisos por los usuarios | Media, depende de los roles establecidos |
+| **Escalabilidad**           | Baja, debido a la rigidez y planificación        | Alta, flexible pero puede ser difícil de gestionar | Alta, fácil de administrar en entornos grandes |

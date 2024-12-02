@@ -1,0 +1,153 @@
+# Laboratorio: Implementación de Control de Acceso Discrecional (DAC) en un Sistema Linux
+
+## Objetivo
+Este laboratorio tiene como objetivo implementar el modelo de **Control de Acceso Discrecional (DAC)** en un sistema Linux, permitiendo a los usuarios gestionar el acceso a sus propios archivos a través de listas de control de acceso (ACL).
+
+## Requisitos Previos
+- Un sistema operativo **Linux** con privilegios de administrador.
+- Conocimientos básicos sobre comandos de terminal y permisos en Linux.
+
+## Pasos del Laboratorio
+
+### Paso 1: Configuración Inicial
+
+1. **Verificar los permisos actuales** en un archivo:
+   Ejecuta el siguiente comando para ver los permisos de un archivo en Linux.
+
+   ```
+   ls -l archivo.txt
+   ```
+
+   Esto mostrará una salida como la siguiente:
+   
+   ```
+   -rw-r--r-- 1 usuario usuario 0 nov 29 15:00 archivo.txt
+   ```
+
+   En este caso, el propietario `usuario` tiene permisos de lectura y escritura, y los demás usuarios tienen solo permisos de lectura.
+
+### Paso 2: Habilitar las Listas de Control de Acceso (ACL)
+
+1. **Instalar el paquete de ACL**:
+   Si el sistema no tiene las ACL habilitadas, instala el paquete correspondiente.
+
+   ```
+   sudo apt-get install acl
+   ```
+
+2. **Verificar si el sistema soporta ACL**:
+   Ejecuta el siguiente comando para comprobar si ACL está habilitado en el sistema de archivos.
+
+   ```
+   sudo mount | grep acl
+   ```
+
+   Si no muestra ninguna salida, es posible que debas habilitar ACL en el sistema de archivos. Para hacerlo, edita el archivo `/etc/fstab` y agrega `acl` a la opción de montaje para la partición correspondiente.
+
+   Luego, monta de nuevo el sistema de archivos con:
+
+   ```
+   sudo mount -o remount /dev/sda1
+   ```
+
+### Paso 3: Configuración de ACL en Archivos
+
+1. **Asignar permisos a un archivo usando ACL**:
+   Para asignar permisos a un archivo específico, utilizamos el comando `setfacl`. Por ejemplo, para otorgar permisos de lectura a un usuario llamado `usuario2`, ejecuta:
+
+   ```
+   sudo setfacl -m u:usuario2:r archivo.txt
+   ```
+
+   Esto le otorga al usuario `usuario2` acceso de lectura al archivo `archivo.txt`.
+
+2. **Verificar las ACL asignadas**:
+   Para verificar las ACL configuradas en el archivo, usa el comando `getfacl`:
+
+   ```
+   getfacl archivo.txt
+   ```
+
+   Esto debería mostrar una salida similar a:
+
+   ```
+   # file: archivo.txt
+   # owner: usuario
+   # group: usuario
+   user::rw-
+   user:usuario2:r--
+   group::r--
+   mask::r--
+   other::r--
+   ```
+
+   En esta salida, se puede ver que `usuario2` tiene permisos de lectura sobre el archivo.
+
+### Paso 4: Modificar Permisos
+
+1. **Otorgar permisos de escritura** a `usuario2`:
+
+   Para otorgar permisos de escritura, usa el siguiente comando:
+
+   ```
+   sudo setfacl -m u:usuario2:rw archivo.txt
+   ```
+
+2. **Eliminar permisos de un usuario**:
+
+   Si deseas eliminar los permisos de un usuario, utiliza el siguiente comando:
+
+   ```
+   sudo setfacl -x u:usuario2 archivo.txt
+   ```
+
+   Este comando revoca cualquier permiso previamente otorgado al usuario `usuario2`.
+
+### Paso 5: Propagación de Permisos en Directorios
+
+1. **Asignar permisos recursivos en un directorio**:
+   Si deseas asignar permisos a todos los archivos dentro de un directorio, puedes usar la opción `-R` para aplicar los permisos de manera recursiva:
+
+   ```
+   sudo setfacl -R -m u:usuario2:rw /ruta/del/directorio
+   ```
+
+2. **Verificar ACL en directorios**:
+   Para ver las ACL en un directorio, utiliza el mismo comando `getfacl` pero aplicándolo al directorio:
+
+   ```
+   getfacl /ruta/del/directorio
+   ```
+
+### Paso 6: Ejemplo de Uso de ACL en un Entorno Corporativo
+
+Imagina que trabajas en una empresa de diseño gráfico, y necesitas gestionar el acceso a un archivo de proyecto importante. Utiliza las ACL para garantizar que solo ciertos usuarios puedan editar el archivo, mientras que otros solo pueden verlo:
+
+1. El propietario del archivo, `usuario1`, desea que `usuario2` pueda editar el archivo y que `usuario3` solo pueda leerlo.
+
+2. Configura los permisos con los siguientes comandos:
+
+   ```
+   sudo setfacl -m u:usuario2:rw archivo_proyecto.txt
+   sudo setfacl -m u:usuario3:r archivo_proyecto.txt
+   ```
+
+3. Verifica las ACL:
+
+   ```
+   getfacl archivo_proyecto.txt
+   ```
+
+   La salida debe mostrar que `usuario2` tiene permisos de lectura y escritura, mientras que `usuario3` tiene solo lectura.
+
+### Paso 7: Consideraciones de Seguridad
+
+1. **Evitar la propagación de permisos indebidos**: Aunque el DAC otorga control discrecional a los usuarios, es importante que gestionen cuidadosamente los permisos para evitar filtraciones de datos o errores humanos que puedan comprometer la seguridad.
+
+2. **Auditoría**: Recomendamos realizar auditorías periódicas de los permisos establecidos, especialmente en entornos de trabajo colaborativo, para garantizar que no se otorguen permisos innecesarios o peligrosos.
+
+### Conclusión
+
+El **Control de Acceso Discrecional (DAC)** permite a los usuarios gestionar sus propios permisos de acceso a los archivos y directorios, lo que ofrece una gran flexibilidad. Sin embargo, también presenta riesgos relacionados con los errores humanos y la gestión descentralizada, por lo que es importante que los usuarios sean conscientes de la importancia de la seguridad y gestionen adecuadamente sus permisos.
+
+Este laboratorio ha cubierto los conceptos básicos de DAC y su implementación en un sistema Linux, desde la instalación de herramientas necesarias hasta la configuración de permisos específicos en archivos y directorios.
