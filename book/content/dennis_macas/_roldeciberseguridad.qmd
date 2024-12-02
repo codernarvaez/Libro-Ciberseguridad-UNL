@@ -30,6 +30,79 @@ Otro aspecto crucial de la ciberseguridad en grandes empresas es el cumplimiento
 
 Cumplir con estas normativas no solo minimiza el riesgo de sanciones, sino que también proporciona una ventaja competitiva, al demostrar a los inversores y clientes que la empresa valora la seguridad de los datos. En un mundo donde la confianza del consumidor es esencial, las empresas que pueden demostrar prácticas de seguridad efectivas están mejor posicionadas para ganar y retener clientes. 
 
+## Ejercicio práctico
+
+Objetivos : Describir los permisos disponibles para NTFS. 
+- Establezca y pruebe los permisos de archivos y carpetas. 
+- Verifique los permisos configurados en las cuentas de usuario. 
+- Establezca y pruebe el cifrado a nivel de archivo/carpeta. 
+
+Recursos 
+- Sistema de ordenador de sobremesa/torre compatible con PC
+- Windows 10 instalado
+- Configuración de cuentas de TestUser en su PC/estación de trabajo
+    - Usuario: TestUser1 con contraseña: testuser1
+    - Usuario: TestUser2 con contraseña: testuser2
+- Ambas cuentas deben establecerse como usuarios estándar. 
+- AxCrypt instalado (https://www.axcrypt.net/download/).
+
+**Discusión**
+El sistema de archivos de nueva tecnología es el sistema de administración de archivos propietario y predeterminado de Microsoft para sus sistemas operativos. NTFS trajo consigo características de seguridad mejoradas, incluidas las listas de control de acceso (ACL) y el sistema de archivos de cifrado (EFS). Los permisos NTFS se pueden configurar como opciones Permitir o Denegar dentro de la lista de control de acceso asociada. Este es un ejemplo de una lista de control de acceso discrecional, en la que el usuario que se considera propietario de un archivo o carpeta elige los permisos de dicha información.
+
+En este laboratorio, administrará y probará los permisos, y explorará el cifrado a nivel de archivo con AxCrypt. Tenga en cuenta que estos procedimientos proporcionan una introducción a los permisos. Este laboratorio explorará la administración de permisos en un equipo host local. Este laboratorio no contará con permisos de uso compartido, permisos de servidor, herencia ni administración de permisos de archivos de Linux. Administrará los permisos de archivos y carpetas para un conjunto selecto de usuarios. Por último, probará varias configuraciones de permisos para comprender mejor la importancia y el poder de las ACL.
+
+
+
+## Procedimientos
+
+### Configuración y Creación de Archivos y Carpetas
+
+Para probar los permisos NTFS que se aplicarán, primero debes convertirte en el propietario de los archivos y carpetas. El propietario de un archivo puede permitir o denegar el acceso a otros usuarios.
+
+1. Enciende el equipo y, si es necesario, selecciona **Windows 10 Professional** para iniciar sesión.
+2. Inicia sesión con el usuario **TestUser1** y la contraseña **testuser1**.
+3. Haz clic derecho en el icono de Windows y selecciona **Explorador de archivos**.
+4. En el panel izquierdo, selecciona la unidad **C:**.
+5. Haz clic derecho en un espacio en blanco del panel central, selecciona **Nuevo ➣ Carpeta** y nombra la carpeta como **Permissions Test**. Presiona **Enter**.
+6. Haz doble clic en la carpeta **Permissions Test** para acceder a su contenido.
+7. Crea una nueva carpeta siguiendo los pasos anteriores y nómbrala **Perm_Test_(tus iniciales)** (por ejemplo, **Perm_Test_JD** para John Doe).
+8. Crea un documento de texto haciendo clic derecho en un espacio en blanco y seleccionando **Nuevo ➣ Documento de texto**. Nombra el archivo **test1** y presiona **Enter**.
+9. Repite el paso anterior tres veces más para crear los archivos **test2**, **test3** y **test4**.
+10. Abre cada archivo y escribe el siguiente texto: "This is a test. This is only a test." Guarda y cierra cada archivo.
+
+### Creación de Permisos de Archivo
+
+1. Haz clic derecho en **test1**, selecciona **Propiedades** y luego haz clic en la pestaña **Seguridad**.
+2. Observa y registra los permisos disponibles.
+3. Haz clic en **Editar**, luego en **Agregar** para añadir el usuario **TestUser2**.
+4. Marca la casilla **Denegar** para **Escribir** y haz clic en **Aplicar**. Confirma los cambios.
+
+### Aplicación de Cifrado a Nivel de Archivo
+
+1. Haz clic derecho en **test4**, selecciona **AxCrypt ➣ Cifrar**.
+2. Ingresa la frase de contraseña **marcraft** y verifica ingresándola nuevamente.
+3. Marca las casillas para **Recordar para descifrado** y **Usar como predeterminado**. Haz clic en **OK**.
+
+### Configuración de Permisos de Carpeta
+
+1. Haz clic derecho en la carpeta **Perm_Test_(tus iniciales)**, selecciona **Propiedades** y luego **Seguridad**.
+2. Haz clic en **Editar**, agrega **TestUser2** y configura **Denegar** para **Leer y ejecutar**.
+3. Permite la opción **Escribir** y haz clic en **Aplicar**.
+
+### Prueba de Permisos
+
+1. Cambia a **TestUser2** mediante la opción **Cambiar usuario** e intenta acceder a los archivos:
+   - **test1**: Intenta modificar el archivo.
+   - **test2**: Verifica si puedes abrir y modificar el contenido.
+   - **test3**: Intenta abrir el archivo (debería ser denegado).
+   - **test4**: Intenta descifrar el archivo (se requerirá contraseña).
+2. Cambia de nuevo a **TestUser1** para modificar los permisos, permitiendo acceso completo a **TestUser2**.
+
+
+Practica obtenida del libro Cybersecurity essentials.
+
 ## Referencia
 
 Steinberg, J. (año). Cybersecurity for Dummies. Wiley.
+
+C. J. Brooks, C. Grow, P. Craig, and D. Short, Cybersecurity essentials. Sybex, 2018.
