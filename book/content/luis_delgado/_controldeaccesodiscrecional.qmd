@@ -1,0 +1,127 @@
+# Control de Acceso Discrecional (DAC)
+
+El **Control de Acceso Discrecional** (DAC, por sus siglas en inglés) es un modelo de seguridad utilizado para gestionar quién tiene acceso a los datos en un sistema informático. A diferencia de otros modelos más estrictos, como el **Control de Acceso Obligatorio** (MAC), el DAC otorga al usuario final el control sobre la gestión de acceso a los recursos de la información. En este modelo, los usuarios son considerados los propietarios de los datos y tienen la capacidad de decidir quién puede acceder a su información, lo que hace que el DAC sea uno de los modelos menos restrictivos de control de acceso.
+
+## Principios de Seguridad en Ciberseguridad
+
+Antes de profundizar en el **DAC**, es importante entender los tres principios fundamentales para garantizar la seguridad de la información:
+
+1. **Confidencialidad**: Asegura que los datos solo estén disponibles para los usuarios autorizados y que no sean accesibles para personas no autorizadas.
+2. **Integridad**: Garantiza que los datos no sean alterados de forma no autorizada, preservando su exactitud y fiabilidad.
+3. **Accesibilidad**: Asegura que los datos estén disponibles cuando se necesiten por parte de los usuarios autorizados.
+
+El **DAC** se enfoca principalmente en el principio de **accesibilidad**, ya que asegura que los datos sean accesibles solo para los usuarios que tienen los permisos adecuados para ello. Sin embargo, también juega un papel importante en los otros dos principios de seguridad, ya que al gestionar el acceso, influye en la **confidencialidad** y la **integridad** de los datos.
+
+---
+
+## ¿Qué es el Control de Acceso Discrecional (DAC)?
+
+El **Control de Acceso Discrecional** (DAC) permite a los usuarios tener el control sobre los recursos de información a los que tienen acceso. A través del DAC, los usuarios pueden decidir, con un control discrecional, quién puede o no puede acceder a los archivos o datos que poseen. En este sentido, DAC otorga a los usuarios el poder de establecer restricciones sobre sus propios datos, lo que les da un control considerable sobre la seguridad de la información en su poder.
+
+Este enfoque permite un **modelo de acceso flexible**, ya que cada usuario puede asignar permisos a otros usuarios de acuerdo a sus necesidades. Por ejemplo, un usuario puede compartir un archivo con otro usuario específico, dándole acceso solo de lectura o de escritura, según lo considere conveniente.
+
+---
+
+## Componentes de DAC
+
+- **Propietarios de los datos**: Son los usuarios que poseen los archivos o recursos digitales y tienen la autoridad para otorgar o restringir el acceso a otros usuarios.
+- **Listas de Control de Acceso (ACL)**: Estas listas permiten a los propietarios especificar, de manera detallada, qué usuarios o grupos de usuarios pueden acceder a un archivo o recurso, y con qué tipo de permisos (lectura, escritura, ejecución, etc.).
+- **Permisos Heredados**: En algunos sistemas, los permisos establecidos en carpetas o directorios superiores se heredan por los archivos y subcarpetas dentro de ellos, facilitando la gestión de accesos en estructuras complejas.
+
+### Ejemplo de implementación en un sistema de información:
+
+En un sistema de gestión de archivos, un usuario puede establecer una ACL en un archivo compartido de la siguiente manera:
+- **Usuario A** (propietario): Permiso de lectura y escritura.
+- **Usuario B**: Permiso solo de lectura.
+- **Usuario C**: Sin acceso.
+
+Este sistema de control es común en sistemas operativos como **Windows** y **Linux**, donde los usuarios pueden gestionar sus propios archivos y decidir quién tiene acceso.
+
+---
+
+## Diferencias con el Control de Acceso Obligatorio (MAC)
+
+El **DAC** se distingue del **Control de Acceso Obligatorio** (MAC), que es un modelo mucho más estricto. Mientras que el DAC permite a los usuarios definir los permisos de acceso, el MAC impone restricciones centralizadas que no dependen de la decisión individual de los usuarios. En un sistema MAC, los permisos de acceso a los datos se asignan en función de etiquetas de seguridad y son gestionados por una autoridad central, lo que garantiza que solo los usuarios con la autorización adecuada puedan acceder a la información.
+
+### Ejemplos de Uso en DAC y MAC
+
+- **DAC**: Común en sistemas operativos como **Windows** o **Linux**, donde un usuario puede compartir archivos con otros usuarios en la misma red.
+  - *Ejemplo práctico en sistemas operativos*: En Linux, el administrador puede asignar permisos de lectura, escritura y ejecución a directorios y archivos para diferentes usuarios usando comandos como `chmod` y `chown`.
+
+- **MAC**: Utilizado en entornos como **defensa** o **banca**, donde la clasificación de datos es crítica y el acceso está estrictamente controlado.
+  - *Ejemplo práctico en seguridad militar*: Un archivo clasificado con un nivel de seguridad "alto" solo puede ser accedido por personas con el nivel de autorización correspondiente, sin importar su rol.
+
+### Diferencia clave
+- **DAC**: Control flexible otorgado a los usuarios individuales.
+- **MAC**: Control centralizado y rígido, con estrictas políticas de acceso predefinidas.
+
+---
+
+## Aplicaciones y Usos del DAC
+
+El **DAC** es útil en entornos donde se requiere un control flexible del acceso a la información. Por ejemplo:
+
+- **Entornos corporativos**: Los empleados pueden compartir archivos con sus colegas mientras mantienen un nivel básico de control sobre la información.  
+  - *Ejemplo*: En una empresa de diseño gráfico, un diseñador puede compartir archivos de proyecto con su equipo, otorgando permisos de edición solo a los miembros necesarios.
+  - *Caso de uso en un sistema de gestión documental*: Un gerente de proyectos puede dar acceso a diferentes miembros del equipo con permisos personalizados según el rol, como "solo lectura" para algunos y "edición" para otros.
+
+- **Redes locales**: Permite a los usuarios definir permisos específicos en sistemas compartidos.
+  - *Ejemplo*: En una red doméstica, los usuarios pueden compartir carpetas con otros dispositivos y controlar quién puede leer o modificar los archivos.
+  - *Caso de uso en administración de archivos de red*: En una empresa, un administrador de red puede configurar accesos a directorios de recursos compartidos, especificando permisos a diferentes usuarios según su grupo de trabajo o departamento.
+
+- **Sistemas de desarrollo colaborativo**: Facilita la colaboración entre equipos de trabajo que necesitan compartir y proteger archivos específicos.
+  - *Ejemplo*: En plataformas de desarrollo como Git, se pueden establecer permisos sobre repositorios de código para controlar quién puede contribuir o acceder a ciertos proyectos.
+  - *Caso práctico en desarrollo de software*: Un desarrollador puede establecer reglas en un repositorio Git, permitiendo que solo ciertos usuarios puedan fusionar cambios al código principal, mientras que otros solo tienen acceso para leer.
+
+- **Instituciones educativas**: Los profesores pueden gestionar recursos digitales y decidir qué estudiantes tienen acceso a materiales específicos.
+  - *Ejemplo*: Un profesor puede permitir a los estudiantes acceder a ciertos documentos, pero restringir el acceso a exámenes o recursos administrativos.
+  - *Caso de uso en gestión de clases virtuales*: En plataformas como Moodle o Google Classroom, los profesores asignan permisos de acceso a materiales, restringiendo la visualización de contenido según el rol del estudiante.
+
+---
+
+## Ventajas del DAC
+
+- **Flexibilidad**: Permite a los usuarios gestionar sus propios permisos de acceso, facilitando la colaboración.
+- **Simplicidad**: Fácil de implementar y administrar, especialmente en entornos de pequeña a mediana escala.
+- **Control personalizado**: Cada usuario puede adaptar los permisos a sus necesidades específicas.
+
+---
+
+## Desventajas del DAC
+
+- **Errores humanos**: Los usuarios pueden otorgar permisos inapropiados, comprometiendo la seguridad.
+  - *Ejemplo*: Un usuario accidentalmente otorga permisos de escritura a un archivo sensible, permitiendo que personas no autorizadas modifiquen los datos.
+- **Gestión descentralizada**: En grandes organizaciones, la falta de control centralizado puede llevar a inconsistencias y vulnerabilidades.
+  - *Caso de uso*: En una gran empresa, múltiples departamentos pueden tener permisos dispersos y poco control, lo que puede causar fallas en la seguridad.
+- **Riesgo de propagación de malware**: Un usuario con permisos excesivos podría introducir o propagar software malicioso más fácilmente.
+  - *Ejemplo*: Un usuario con acceso amplio a la red podría descargar e infectar varios sistemas sin que se detecte rápidamente.
+
+---
+
+## Consideraciones de Implementación
+
+1. **Educación del usuario**: Es fundamental capacitar a los usuarios para que comprendan la importancia de los permisos y cómo gestionarlos correctamente.
+   - *Caso de uso en empresas*: Implementar una capacitación regular sobre las mejores prácticas de seguridad informática y gestión de permisos de acceso.
+
+2. **Auditorías regulares**: Realizar revisiones periódicas de los permisos establecidos ayuda a identificar posibles vulnerabilidades o accesos inapropiados.
+   - *Ejemplo*: En una empresa de software, un auditor de seguridad puede revisar trimestralmente las ACL de los repositorios de código para detectar configuraciones de acceso inadecuadas.
+
+3. **Complemento con otros controles**: El DAC puede ser más efectivo si se combina con otros mecanismos de seguridad, como el **Control de Acceso Basado en Roles** (RBAC) o políticas de seguridad centralizadas.
+   - *Ejemplo en empresas grandes*: Usar **RBAC** para
+
+ asignar roles generales y **DAC** para gestionar accesos específicos dentro de esos roles.
+
+---
+
+## Conclusión
+
+El **Control de Acceso Discrecional** (DAC) es una opción valiosa para gestionar el acceso a la información en entornos donde la flexibilidad y la personalización son esenciales. Aunque presenta ventajas como la facilidad de implementación y la capacidad de control individual, también tiene limitaciones en términos de seguridad, especialmente en grandes organizaciones donde los errores humanos y la falta de consistencia pueden generar vulnerabilidades. Para mitigar estos riesgos, es recomendable combinar DAC con otros modelos de control de acceso, como **RBAC** y **MAC**, y aplicar buenas prácticas de seguridad como auditorías regulares y educación de los usuarios.
+
+---
+
+## Recursos Adicionales
+
+- **Guía de Implementación de ACL en Linux**: [Enlace a documento]
+- **Estudio de Casos de DAC en Empresas**: [Enlace a documento]
+- **Mejores Prácticas para la Gestión de Permisos**: [Enlace a documento]
+

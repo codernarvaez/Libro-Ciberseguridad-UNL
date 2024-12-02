@@ -1,0 +1,129 @@
+# Laboratorio: Implementación de Control de Acceso Basado en Roles (RBAC)
+
+En este laboratorio, implementaremos el modelo **Control de Acceso Basado en Roles (RBAC)**, que nos permitirá gestionar los permisos de los usuarios según su rol en la organización. A través de este enfoque, facilitaremos la administración de accesos, mejorando la seguridad y la eficiencia.
+
+## 1. Introducción
+
+El **Control de Acceso Basado en Roles (RBAC)** organiza los accesos a los sistemas mediante la asignación de permisos a roles, y posteriormente, asignando esos roles a los usuarios. Este modelo facilita la administración y mejora la seguridad al limitar lo que los usuarios pueden hacer dentro de un sistema.
+
+## 2. Principios Básicos de RBAC
+
+En este laboratorio, trabajaremos con los siguientes principios clave de RBAC:
+
+| Concepto               | Descripción                                                                                   |
+|------------------------|-----------------------------------------------------------------------------------------------|
+| **Asignación de roles**  | Los usuarios se asignan a roles específicos que definen qué acciones pueden realizar.         |
+| **Permisos predefinidos**| Los permisos asociados a cada rol son predefinidos y no se asignan de forma individualizada.  |
+| **Simplificación de gestión** | Los administradores no gestionan permisos individuales, sino roles con permisos predefinidos. |
+
+## 3. Ejemplo Práctico de RBAC
+
+Imaginemos que tenemos una organización con tres departamentos: **Ventas**, **Finanzas**, y **Recursos Humanos**. Cada departamento tiene un rol con permisos específicos.
+
+### Roles y Permisos
+
+| **Rol**                 | **Permisos**                                                                 |
+|-------------------------|-------------------------------------------------------------------------------|
+| **Empleado de Ventas**   | Consultar y editar la base de datos de clientes, ver informes de ventas.      |
+| **Contador**             | Acceder y modificar registros financieros, generar reportes contables.       |
+| **Administrador**        | Acceso completo a todos los sistemas y datos de la empresa.                   |
+
+### Paso 1: Creación de Roles
+
+Para implementar RBAC en un sistema, primero debemos definir los roles:
+
+1. **Empleado de Ventas**
+2. **Contador**
+3. **Administrador**
+
+### Paso 2: Asignación de Permisos a Roles
+
+Cada rol tendrá permisos específicos predefinidos. Por ejemplo, el rol de **Empleado de Ventas** tendrá permisos para consultar y editar la base de datos de clientes, mientras que el **Contador** podrá acceder y modificar registros financieros.
+
+## 4. Implementación Técnica
+
+### Paso 3: Crear una Base de Datos de Roles y Permisos
+
+En un sistema real, utilizaremos una base de datos para almacenar la información de roles y permisos. Esto puede ser implementado mediante tablas como las siguientes:
+
+#### Tabla de Roles
+
+```sql
+CREATE TABLE roles (
+    id INT PRIMARY KEY,
+    nombre VARCHAR(255) NOT NULL
+);
+```
+
+#### Tabla de Permisos
+
+```sql
+CREATE TABLE permisos (
+    id INT PRIMARY KEY,
+    nombre VARCHAR(255) NOT NULL
+);
+```
+
+#### Tabla de Roles-Permisos
+
+```sql
+CREATE TABLE roles_permisos (
+    rol_id INT,
+    permiso_id INT,
+    FOREIGN KEY (rol_id) REFERENCES roles(id),
+    FOREIGN KEY (permiso_id) REFERENCES permisos(id)
+);
+```
+
+### Paso 4: Asignación de Roles a Usuarios
+
+Cada usuario será asignado a uno o más roles. Esto se puede gestionar mediante una tabla de usuarios que contenga una relación con los roles correspondientes.
+
+#### Tabla de Usuarios
+
+```sql
+CREATE TABLE usuarios (
+    id INT PRIMARY KEY,
+    nombre VARCHAR(255) NOT NULL,
+    rol_id INT,
+    FOREIGN KEY (rol_id) REFERENCES roles(id)
+);
+```
+
+### Paso 5: Comprobación de Permisos al Acceder a Recursos
+
+Para garantizar que un usuario tenga acceso a un recurso, el sistema debe comprobar si el rol del usuario tiene el permiso necesario. Esto se puede realizar a través de una consulta a la base de datos que verifique la relación entre el rol del usuario y los permisos asociados.
+
+## 5. Desafíos de RBAC
+
+| Desafío | Descripción |
+|---------|-------------|
+| Acceso excesivo | Si no se gestionan bien los roles, los usuarios pueden tener más permisos de los necesarios. |
+| Estructuras complejas | En organizaciones grandes, RBAC puede volverse difícil de gestionar debido a la gran cantidad de roles. |
+| Revisión de roles | Los roles deben ser revisados periódicamente para asegurar que siguen siendo relevantes. |
+
+## 6. Comparativa con ABAC
+
+| Característica | RBAC | ABAC |
+|---------------|------|------|
+| Asignación de permisos | Basada en el rol del usuario. | Basada en atributos del usuario (cargo, ubicación, hora, etc.). |
+| Flexibilidad | Menos flexible, adecuado para estructuras simples. | Más flexible, permite control detallado de accesos. |
+| Casos de uso | Ideal para organizaciones con estructuras jerárquicas claras. | Mejor para organizaciones con necesidades de acceso dinámicas y complejas. |
+
+## 7. Ejemplos Prácticos de RBAC
+
+### Ejemplo 1: Sistema de Gestión de Documentos en una Empresa
+
+En una empresa que utiliza un sistema de gestión de documentos (DMS), se definen roles como Empleado, Gerente y Administrador. Los permisos asociados a cada rol determinan el acceso a los documentos dentro del sistema.
+
+### Ejemplo 2: Sistema de Gestión de Recursos Humanos (HRMS)
+
+En un sistema de gestión de recursos humanos, los roles Empleado, Jefe de Recursos Humanos y Administrador tienen diferentes niveles de acceso y permisos para gestionar la información de los empleados.
+
+### Ejemplo 3: Aplicación Bancaria
+
+En una aplicación bancaria, los roles como Usuario Regular, Cajero y Administrador gestionan los accesos a los servicios bancarios, asegurando que cada tipo de usuario tenga los permisos necesarios para sus funciones.
+
+## 8. Conclusión
+
+El modelo Control de Acceso Basado en Roles (RBAC) es una solución efectiva para gestionar accesos en organizaciones de todos los tamaños. Permite asignar permisos de manera centralizada y coherente, simplificando la administración de seguridad. Sin embargo, en entornos dinámicos o con necesidades de acceso más complejas, puede ser útil combinar RBAC con otros modelos, como ABAC o MAC, para lograr un control más detallado.

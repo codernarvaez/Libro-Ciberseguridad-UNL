@@ -1,0 +1,136 @@
+
+# Laboratorio: Control de Acceso Basado en Atributos (ABAC)
+
+## Introducción
+
+En este laboratorio, exploraremos el **Control de Acceso Basado en Atributos (ABAC)**, un modelo avanzado para gestionar el acceso a recursos en sistemas digitales. Este modelo se basa en la evaluación de atributos dinámicos para determinar los permisos de acceso, lo que lo hace más flexible y seguro que los modelos tradicionales como **RBAC** (Control de Acceso Basado en Roles).
+
+---
+
+## Objetivos
+
+- Comprender el concepto de ABAC y su funcionamiento.
+- Implementar un ejemplo básico de ABAC en un sistema de control de acceso.
+- Comparar ABAC con RBAC en cuanto a flexibilidad y seguridad.
+
+---
+
+## Conceptos Clave
+
+### Definición
+
+ABAC regula el acceso mediante atributos específicos, agrupados en cuatro categorías principales:
+
+1. **Usuario**: Información del solicitante (rol, identidad).
+2. **Recurso**: Datos o servicios a los que se desea acceder.
+3. **Acción**: Operación que se desea ejecutar (leer, escribir, borrar).
+4. **Entorno**: Condiciones contextuales (hora, ubicación).
+
+Estos atributos permiten una gestión de acceso más granular y contextualizada.
+
+---
+
+## Categorías de Atributos
+
+### Atributos del Sujeto
+
+Los atributos del sujeto definen características del usuario que realiza la solicitud. Algunos ejemplos incluyen:
+
+- **Título de trabajo**: Determina las acciones permitidas.  
+  **Ejemplo**: Un gerente de proyecto puede aprobar presupuestos, mientras que un miembro del equipo solo puede verlos.
+  
+- **Departamento**: Restringe el acceso según la estructura organizativa.  
+  **Ejemplo**: Los empleados del departamento de finanzas pueden acceder a informes financieros, pero no a los registros de recursos humanos.
+
+---
+
+## Atributos del Recurso
+
+Estos atributos describen las propiedades del recurso al que se desea acceder:
+
+- **Tipo de datos**: Documentos, registros, bases de datos.  
+  **Ejemplo**: Un archivo confidencial solo está disponible para usuarios autorizados con nivel de acceso adecuado.
+
+---
+
+## Atributos de la Acción
+
+Especifican la operación solicitada sobre el recurso. Ejemplos incluyen:
+
+- **Leer**: Acceso de solo lectura.  
+  **Ejemplo**: Un empleado puede leer un informe de ventas, pero no editarlo.
+
+---
+
+## Atributos del Entorno
+
+Los atributos contextuales que afectan la decisión de acceso incluyen:
+
+- **Hora del día**: Restricciones horarias.  
+  **Ejemplo**: Acceso restringido a ciertos recursos fuera del horario laboral.
+
+---
+
+## Ventajas de ABAC
+
+- **Flexibilidad**: Permite adaptar políticas de acceso a diferentes escenarios operativos y contextuales.
+- **Escalabilidad**: Facilita la incorporación de nuevos usuarios, recursos y atributos sin necesidad de modificar estructuras rígidas.
+- **Seguridad Mejorada**: Previene accesos no autorizados mediante la evaluación dinámica de atributos.
+
+---
+
+## Implementación de ABAC
+
+Para ilustrar cómo funciona ABAC, vamos a crear una simulación básica de un sistema que utiliza ABAC para controlar el acceso a recursos. Utilizaremos una estructura simple en Python para gestionar los atributos.
+
+```python
+class Usuario:
+    def __init__(self, nombre, departamento, nivel_autorizacion, ubicacion):
+        self.nombre = nombre
+        self.departamento = departamento
+        self.nivel_autorizacion = nivel_autorizacion
+        self.ubicacion = ubicacion
+
+class Recurso:
+    def __init__(self, tipo_datos, nivel_sensibilidad, propietario):
+        self.tipo_datos = tipo_datos
+        self.nivel_sensibilidad = nivel_sensibilidad
+        self.propietario = propietario
+
+class Acceso:
+    def __init__(self, usuario, recurso, accion, hora, ubicacion):
+        self.usuario = usuario
+        self.recurso = recurso
+        self.accion = accion
+        self.hora = hora
+        self.ubicacion = ubicacion
+
+    def evaluar_acceso(self):
+        if self.usuario.nivel_autorizacion < self.recurso.nivel_sensibilidad:
+            return "Acceso Denegado: Nivel de autorización insuficiente."
+        if self.hora not in range(9, 18):  # Horario laboral de 9 a 18
+            return "Acceso Denegado: Fuera del horario laboral."
+        if self.usuario.ubicacion != self.ubicacion:
+            return "Acceso Denegado: Ubicación no permitida."
+        return "Acceso Permitido."
+
+# Ejemplo de uso
+usuario = Usuario("Juan", "Finanzas", 3, "Oficina")
+recurso = Recurso("Informe Financiero", 3, "Finanzas")
+acceso = Acceso(usuario, recurso, "Leer", 10, "Oficina")
+print(acceso.evaluar_acceso())
+``` 
+
+## Comparación con RBAC 
+
+
+| Característica          | **ABAC**                                 | **RBAC**                               |
+|-------------------------|------------------------------------------|----------------------------------------|
+| **Tipo de control**     | Basado en atributos dinámicos            | Basado en roles estáticos              |
+| **Flexibilidad**        | Alta, permite múltiples atributos y contextos | Baja, solo permite roles predefinidos  |
+| **Escalabilidad**       | Alta, ya que se pueden agregar nuevos atributos sin cambios mayores | Media, puede ser necesario redefinir roles al agregar nuevos usuarios o recursos |
+| **Seguridad**           | Alta, ajusta permisos en tiempo real según el contexto | Media, depende de la definición de roles rígidos |
+
+### Conclusión
+
+El **Control de Acceso Basado en Atributos (ABAC)** es un modelo moderno y robusto que ofrece una mayor flexibilidad y seguridad en comparación con el modelo tradicional basado en roles (RBAC). Su capacidad para evaluar atributos dinámicos y contextuales permite un control de acceso más preciso, lo que mejora la protección de los recursos en entornos digitales complejos. Sin embargo, la implementación de ABAC requiere una planificación detallada para gestionar los atributos de manera eficiente.
