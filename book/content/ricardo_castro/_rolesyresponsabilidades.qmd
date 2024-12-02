@@ -99,3 +99,22 @@
 - Implementar y ejecutar controles específicos de seguridad.  
 - Monitorear sistemas y detectar anomalías.  
 - Brindar soporte técnico y responder a incidentes en tiempo real.  
+
+
+### Laboratorio 4
+
+#### **Objetivo**  
+Definir y asignar roles y responsabilidades específicos en un marco de gobernanza.
+
+#### **Actividades**  
+
+1. **Creación de un organigrama de seguridad:**  
+   - Identifica roles clave como el CISO, administradores de seguridad, analistas y usuarios finales.  
+   - Relaciona cada rol con sus responsabilidades específicas dentro de un escenario hipotético (e.g., una empresa atacada por ransomware).  
+
+2. **Establecimiento de responsabilidades:**  
+   - Divide tareas específicas (e.g., identificación de incidentes, mitigación de riesgos, escalamiento a niveles superiores).  
+   - Asegúrate de que cada participante comprenda cómo sus acciones impactan en el resultado global.  
+
+3. **Evaluación y retroalimentación:**  
+   - Realiza una revisión grupal para evaluar si los roles y responsabilidades fueron bien asignados y ejecutados.
