@@ -1,0 +1,9 @@
+::: {style="text-align: justify;"}
+En el panorama actual de la ciberseguridad, donde las amenazas evolucionan constantemente y los ataques son cada vez más sofisticados, la caza de amenazas (Threat Hunting) se ha convertido en una estrategia fundamental para la protección de los sistemas y la integridad de la información. A diferencia de los enfoques tradicionales basados en la detección reactiva de incidentes, la caza de amenazas adopta un enfoque proactivo y basado en hipótesis, permitiendo a los equipos de seguridad identificar adversarios avanzados que podrían evadir las soluciones de defensa automatizadas.
+
+Este proceso se basa en la recopilación, análisis y correlación de datos provenientes de diferentes fuentes, como registros de eventos, tráfico de red y comportamiento de usuarios. Mediante el uso de herramientas avanzadas, inteligencia de amenazas y técnicas de análisis forense, los cazadores de amenazas buscan indicadores de compromiso (IoCs) y tácticas, técnicas y procedimientos (TTPs) empleados por los atacantes, lo que permite detectar actividades maliciosas antes de que causen daños significativos.
+
+En un entorno donde la detección tradicional basada en firmas o reglas ya no es suficiente, la caza de amenazas se convierte en una pieza clave dentro de una estrategia de defensa en profundidad, mejorando la capacidad de respuesta y minimizando el tiempo de permanencia de los atacantes dentro de la infraestructura. Esta disciplina no solo fortalece la seguridad organizacional, sino que también fomenta una cultura de vigilancia continua y mejora la resiliencia frente a amenazas emergentes.
+:::
+
+## COMUNICACIÓN
