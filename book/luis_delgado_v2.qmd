@@ -1,0 +1,2 @@
+# Threat Hunting (Caza de Amenazas).
+{{< include content/luis_delgado_v2/_inicio.qmd >}}
