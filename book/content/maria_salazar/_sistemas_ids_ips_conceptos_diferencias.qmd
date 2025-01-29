@@ -1,0 +1,126 @@
+## IDS (Intrusion Detection System)
+::: {style="text-align: justify;"}
+Un Sistema de Detección de Intrusos es una herramienta de seguridad que monitorea el tráfico de red, los eventos del sistema y alerta sobre actividades sospechosas que puedan representar una amenaza para la infraestructura tecnológica de una organización.
+:::
+
+### Clasificación de IDS
+#### IDS basado en red (NIDS)
+::: {style="text-align: justify;"}
+Un NIDS (Network-based Intrusion Detection System) es un sistema que se implementa en puntos estratégicos de la infraestructura de red para analizar patrones de comportamiento sospechosos y posibles ataques antes de que lleguen a los dispositivos finales. Se caracteriza por inspeccionar paquetes de datos que circulan entre dispositivos, por ello, normalmente se coloca en switches, routers, firewalls o segmentos críticos de la red. Alguno de sus ejemplos son: Snort, Suricata, Zeek, entre otros.
+:::
+#### IDS basado en host (HIDS)
+::: {style="text-align: justify;"}
+Un HIDS (Host-based Intrusion Detection System) se instala directamente en un dispositivo (servidor, computadora, máquina virtual) para monitorear los eventos internos (registros de acceso, modificaciones de archivos y actividades en tiempo real) y detectar actividades sospechosas a nivel del sistema operativo (accesos no autorizados y ejecuciones sospechosas). Algunos ejemplos de HIDS son: OSSEC, Wazuh, Tripwire, y AIDE.
+:::
+## IPS (Intrusion Prevention System)
+::: {style="text-align: justify;"}
+Un Sistema de Prevención de Intrusos es una herramienta de seguridad diseñada para detectar y bloquear de manera activa las amenazas antes de que puedan causar daño. 
+:::
+### Clasificación de IPS
+#### IPS basado en red (NIPS)
+::: {style="text-align: justify;"}
+Un NIPS (Network-based Instrusion Prevention System) se encuentra en línea dentro del flujo de red, además, bloquea directamente los paquetes maliciosos antes que lleguen al sistema de destino, por ello es ideal para proteger redes completas frente a ataques externos.
+:::
+#### IPS basado en host (HIPS)
+::: {style="text-align: justify;"}
+Un HIPS (Host-based Intrusion Prevention System) es un sistema diseñado para proteger aplicaciones específicas contra amenazas de seguridad en tiempo real. Se instala en un dispositivo y actúa como una barrera de defensa, evitando la ejecución de acciones maliciosas dentro del sistema.
+:::
+
+## Diferencias entre un IDS e IPS
+::: {style="text-align: justify;"}
+
+Un **IDS (Sistema de Detección de Intrusos)** y un **IPS (Sistema de Prevención de Intrusos)** comparten el objetivo de identificar amenazas en una red, pero difieren en su enfoque y respuesta. Mientras que el IDS opera de manera pasiva, generando alertas y registrando eventos sospechosos sin intervenir en el tráfico, el IPS actúa de forma activa, bloqueando directamente las amenazas detectadas. Además, el IDS suele ubicarse en modo espejo dentro de la red para monitorear sin afectar el rendimiento, mientras que el IPS se instala en línea dentro del flujo de datos, lo que le permite detener ataques en tiempo real, aunque con un posible impacto en la latencia. Un IDS es útil para análisis forense y monitoreo continuo, mientras que un IPS brinda una protección más inmediata al descartar paquetes maliciosos antes de que alcancen su destino.
+
+| **Característica**  | **IDS**  | **IPS**  |
+|---------------|---------------|---------------|
+| Función principal | Detección y Alerta | Detección y Prevención|
+| Respuesta | Pasiva: Envío de alertas | Activa: Bloqueo de amenazas |
+| Ubicación | Generalmente en Modo Espejo | En línea dentro del Flujo de Red |
+| Impacto en la red | No afecta el rendimiento | Puede causar latencia |
+| Respuesta | Pasiva: Envío de alertas | Activa: Bloqueo de amenazas |
+| Ejemplo de acción | Genera logs para el análisis | Descarta paquetes maliciosos |
+| Respuesta | Pasiva: Envío de alertas | Activa: Bloqueo de amenazas |
+
+:::
+
+## Configuración Básica de un IDS/IPS
+### Instalación del IDS/IPS
+::: {style="text-align: justify;"}
+Antes de comenzar, asegúrate de actualizar los repositorios del sistema:
+
+```bash
+sudo apt update && sudo apt upgrade -y
+```
+
+Posteriormente, se instala snort mediante el comando:
+```bash
+sudo apt install snort -y
+```
+:::
+### Configuracion del IDS
+::: {style="text-align: justify;"}
+Edita el archivo de configuracion de Snort:
+
+```bash
+sudo nano /etc/snort/snort.conf
+```
+
+Definir la red local (ipvar HOME_NET) en el archivo, con el fin de poner la red para monitorear. Ejemplo:
+
+```bash
+ipvar HOME_NET 192.168.1.0/24
+```
+
+Especificar la red externa:
+
+```bash
+ipvar EXTERNAL_NET !$HOME_NET
+```
+
+Snort utiliza archivos de reglas almacenados en **/etc/snort/rules/**. Si se quisiera detectar tráfico ICMP insertariamos la siguiente regla en el archivo *local.rules*:
+
+```bash
+alert icmp any any -> $HOME_NET any (msg:"ICMP Packet Detected"; sid:1000001; rev:1;)
+```
+
+Ejecutamos Snort en modo IDS: 
+
+```bash
+sudo snort -A console -q -c /etc/snort/snort.conf -i eth0
+```
+
+:::
+### Configuracion del IPS
+::: {style="text-align: justify;"}
+Para cambiar Snort a modo IPS, debe ejecutarse en inline mode con NFQUEUE:
+
+```bash
+sudo apt install iptables -y
+```
+
+```bash
+sudo iptables -A INPUT -j NFQUEUE --queue-num 0
+sudo iptables -A OUTPUT -j NFQUEUE --queue-num 0
+```
+
+```bash
+sudo snort -Q --daq afpacket -c /etc/snort/snort.conf -i eth0
+```
+
+Ahora, Snort no solo detectará intrusiones, sino que también bloqueará tráfico malicioso.
+
+Los registros de Snort se pueden revisar en:
+```bash
+cat /var/log/snort/alert
+```
+
+También se puede integrar Snort con herramientas como Snorby, BASE o Security Onion para mejorar la visualización de alertas.
+:::
+## Referencias Bibliográficas
+::: {style="text-align: justify;"}
+[1] R. Bace and P. Mell, "Intrusion Detection Systems," NIST Special Publication 800-31, 2001.
+
+[2] S. Axelsson, "Intrusion Detection Systems: A Survey and Taxonomy," Technical Report 99-15, Dept. of Computer Engineering, Chalmers University, 2000.
+
+[3] A. Lazarevic, V. Kumar, and J. Srivastava, "Intrusion Detection: A Survey," in Managing Cyber Threats: Issues, Approaches, and Challenges, Springer, 2005, pp. 19-78.
+:::
