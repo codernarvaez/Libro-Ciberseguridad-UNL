@@ -1,0 +1,65 @@
+---
+title: "Modelos de Control de Acceso"
+format: html
+---
+
+## Modelos de Control de Acceso
+
+Los modelos de control de acceso son el núcleo que identifica cómo un usuario accede a un objeto o recurso. Estos modelos son fundamentales para definir cómo se implementan las políticas de seguridad en una organización. La elección del mejor modelo depende de la estructura de la organización, sus políticas y los riesgos asociados a la implementación.
+
+### Control de Acceso Discrecional (DAC)
+
+- **Definición:** Modelo basado en la decisión del propietario del recurso sobre quién tiene acceso y qué tipo de acceso se permite.
+- **Características:**
+  - La política es definida por el dueño del objeto.
+  - El propietario puede otorgar o revocar permisos.
+  - Se basa en identidad del usuario o permisos dirigidos por el usuario.
+  - Uso de **Listas de Control de Acceso (ACLs)** para la gestión.
+- **Funcionamiento:**
+  - Cada objeto tiene un nivel de permiso definido por su propietario.
+  - Si no se han establecido criterios, el acceso es denegado por defecto.
+  - Permite la delegación de derechos entre usuarios.
+
+### Control de Acceso Obligatorio (MAC)
+
+- **Definición:** Modelo donde el sistema define la política de acceso y los derechos son asignados por una autoridad central.
+- **Características:**
+  - Basado en clasificaciones de seguridad y niveles de sensibilidad.
+  - El sistema determina el acceso sin intervención de los usuarios.
+  - No permite que los usuarios modifiquen sus permisos ni los deleguen.
+  - Común en entornos de alta seguridad.
+- **Funcionamiento:**
+  - Se asignan etiquetas de sensibilidad a objetos como archivos y carpetas.
+  - Un administrador central controla el acceso.
+
+### Control de Acceso Basado en Roles (RBAC)
+
+- **Definición:** Modelo en el que los derechos de acceso se asignan en función de los roles que desempeñan los usuarios dentro de la organización.
+- **Características:**
+  - La política se define según las funciones laborales.
+  - Los permisos están asociados a roles como Recursos Humanos o Finanzas.
+  - Simplifica la administración de accesos.
+- **Enfoque:**
+  - Centrado en las acciones que los usuarios pueden realizar.
+  - Se implementa para mejorar la administración a través de roles específicos.
+
+### Control de Acceso Basado en Atributos (ABAC)
+
+- **Definición:** Modelo que toma decisiones de acceso basadas en atributos del sujeto, objeto, acción y contexto.
+- **Características:**
+  - Considera información sobre el usuario, la conexión y el dispositivo.
+  - Permite una gestión de acceso flexible y granular.
+  - Ejemplo de control de acceso contextual.
+- **Implementación:**
+  - Utiliza el estado actual del usuario, conexión y dispositivo para la autorización.
+  - **Control de acceso basado en la historia (HBAC):** Evalúa la actividad pasada y presente del usuario.
+
+### Otros Modelos de Control de Acceso
+
+- **Control de Acceso Basado en Reglas (RuBAC):** Definido por un conjunto de reglas establecidas por el administrador.
+- **Control de Acceso Adaptativo al Riesgo (RAdAC):** Ajusta dinámicamente la política de acceso en función del entorno de riesgo.
+
+### Consideraciones Adicionales
+
+- **Implementación:** Las empresas deben seleccionar el modelo adecuado basándose en su estructura y riesgos.
+- **Combinación de Modelos:** Se pueden combinar modelos como RBAC con MAC o DAC para optimizar la administración de acceso.
