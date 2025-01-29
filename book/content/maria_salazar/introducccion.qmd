@@ -1,0 +1,25 @@
+## Introducción a la detección y prevención de intrusos
+::: {style="text-align: justify;"}
+En la actualidad, uno de los principales objetivos es la seguridad de los dominios en línea y la exactitud de los datos.  Un obstáculo importante es identificar y prevenir a los infiltrados que aprovechan las vulnerabilidades para comprometer el acceso y la confidencialidad.  En relación con esta amenaza, diversas estrategias combinan la observación y el análisis con la inteligencia artificial para detectar comportamientos anómalos antes de que se produzcan incidentes.
+
+Los sistemas avanzados de detección de intrusiones (IDS) utilizan el reconocimiento basado en firmas y la detección de anomalías para identificar actividades sospechosas, independientemente de los registros anteriores.  Además, los sistemas de prevención de intrusiones (IPS) mejoran la seguridad bloqueando de forma autónoma los ataques conocidos, mitigando el impacto de las amenazas inmediatas.
+
+Las intrusiones van desde ataques masivos de denegación de servicio destinados a desbordar las infraestructuras hasta métodos insidiosos como el phishing, en el que los autores engañan a las personas para que revelen sus credenciales. En un grave incidente, un ransomware amenazó con impedir el acceso a los archivos comprometidos a menos que se pagara un rescate, lo que causó importantes daños a personas y organizaciones.
+
+Los avances tecnológicos han dado lugar a nuevos métodos para identificar a los intrusos, haciendo hincapié en la inteligencia artificial y el aprendizaje adaptativo. Estos modelos se utilizan en entornos comerciales y gubernamentales para analizar el tráfico de red, mejorando la precisión de la detección de intrusos y reduciendo las falsas alarmas.  Los algoritmos analizan vastos conjuntos de datos para predecir amenazas antes de que causen trastornos generalizados.
+
+Sin embargo, el éxito depende de actualizaciones constantes para hacer frente a la evolución de las estrategias de ataque. Los piratas informáticos perfeccionan sus tácticas, utilizando técnicas como el cifrado de datos o la explotación de vulnerabilidades del software.  Esto requiere una defensa proactiva, que combine las medidas de seguridad con la formación de los empleados para reconocer las señales de alerta temprana.
+
+Más allá del comercio, la prevención de intrusiones es fundamental en infraestructuras clave como las finanzas, la sanidad y las comunicaciones.  Los ataques a estos sectores pueden tener consecuencias devastadoras, desde el robo de datos hasta el fallo del sistema.  Gobiernos y empresas están aumentando la inversión en ciberseguridad y promoviendo normativas y estándares internacionales para reforzar las defensas digitales.
+
+A pesar de los avances, siguen existiendo retos importantes.  La identificación de intrusos en entornos de big data requiere una tecnología escalable y de alta velocidad que pueda procesar los datos al instante sin comprometer la eficiencia.  El intercambio de información entre organizaciones de seguridad y el acceso restringido a la inteligencia sobre amenazas dificultan el desarrollo de defensas eficaces. La cooperación público-privada es crucial para reforzar las defensas.
+
+En última instancia, detectar y prevenir las ciberamenazas es una batalla continua que requiere tecnología avanzada y una vigilancia constante.  La sofisticación de los ataques exige respuestas rápidas y eficaces, lo que pone de relieve la necesidad de soluciones innovadoras para mitigar los riesgos y mejorar la ciberseguridad en todos los sectores. La investigación y el desarrollo continuos son vitales en la lucha contra la ciberdelincuencia en evolución.
+:::
+## Referencias Bibliográficas
+::: {style="text-align: justify;"}
+[1] A. F. Okutan y M. T. Alkasassbeh, "An overview of Intrusion Detection and Prevention Systems," arXiv preprint arXiv:2004.08967, 2020.
+[2] I. Sharafaldin, A. H. Lashkari y A. A. Ghorbani, "A survey of network intrusion detection methods," arXiv preprint arXiv:2001.09697, 2020.
+[3] A. Mousavi y R. Abdi, "Ransomware detection techniques: A review," arXiv preprint arXiv:2105.08096, 2021.
+[4] Y. Zhang, P. V. Oranje y J. Li, "Attackers reveal their arsenal: An investigation of adversarial techniques in CTI reports," arXiv preprint arXiv:2401.01865, 2024.
+:::

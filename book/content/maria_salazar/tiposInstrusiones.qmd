@@ -1,0 +1,60 @@
+## Tipos de Instrusiones y técnicas de ataque
+::: {style="text-align: justify;"}
+La ciberseguridad enfrenta desafíos constantes debido a la evolución de las técnicas de ataque utilizadas por actores maliciosos que buscan comprometer la integridad, disponibilidad y confidencialidad de los sistemas. Las intrusiones en ciberseguridad pueden clasificarse en función de los métodos empleados para vulnerar sistemas, ya sea mediante ataques directos, ingeniería social o técnicas avanzadas de evasión. La identificación de estas amenazas y el conocimiento sobre las técnicas utilizadas por los atacantes son fundamentales para el desarrollo de estrategias de defensa efectivas [1].
+
+Los ataques pueden tener múltiples objetivos, desde la obtención de información confidencial hasta la interrupción de servicios críticos o el secuestro de datos mediante ransomware. En este sentido, la combinación de herramientas de seguridad con una adecuada concienciación de los usuarios resulta crucial para minimizar riesgos. A continuación, se analizan los principales tipos de intrusiones junto con las técnicas más empleadas para ejecutarlas.
+:::
+### Intrusiones por Denegación de Servicio (DoS y DDoS)
+::: {style="text-align: justify;"}
+Los ataques de denegación de servicio buscan saturar los recursos de un sistema o red, impidiendo el acceso de usuarios legítimos. En los ataques de Denegación de Servicio (DoS), un solo atacante genera tráfico masivo para colapsar un servidor. En la variante de Denegación de Servicio Distribuida (DDoS), una red de dispositivos comprometidos (botnet) es utilizada para generar el tráfico malicioso de manera distribuida [2].
+Técnicas de ataque:
+
+1. Flooding (Inundación de tráfico): Los atacantes envían grandes volúmenes de paquetes o solicitudes a los servidores para consumir su ancho de banda o capacidad de procesamiento.
+2. Ping of Death: Aprovecha la fragmentación de paquetes ICMP para reconstruir datos que superan el límite permitido, causando fallos en el sistema.
+3. Slowloris: mantiene conexiones abiertas sin finalizar, obligando al servidor a mantener múltiples conexiones simultáneamente hasta colapsar.
+
+**Ejemplo:** El ataque a Dyn en 2016 fue uno de los incidentes más impactantes relacionados con ataques DDoS. La botnet Mirai, formada por millones de dispositivos IoT, como cámaras de seguridad y routers, generó un volumen masivo de tráfico malicioso que bloqueó el acceso a servicios populares como Twitter, Netflix y Amazon. Este ataque se llevó a cabo mediante el envío de solicitudes fraudulentas utilizando técnicas de flooding y SYN Flood. La capacidad de los dispositivos IoT para formar botnets masivas destacó la falta de seguridad en estos dispositivos y llevó a revisiones de seguridad global [3].
+
+El impacto de este ataque no solo afectó la disponibilidad de servicios digitales, sino que también resaltó las consecuencias económicas. Varias empresas informaron pérdidas financieras significativas debido a la interrupción del servicio. Además, reveló la necesidad de que los fabricantes de dispositivos IoT adopten medidas de seguridad integradas y actualizables para evitar futuras explotaciones. Este incidente es ahora un ejemplo clave de cómo pequeños dispositivos pueden convertirse en poderosas armas de ataque cibernético.
+:::
+## Intrusiones por Acceso No Autorizado
+::: {style="text-align: justify;"}
+1. Phishing: Los atacantes envían correos electrónicos fraudulentos que imitan fuentes confiables para engañar a los usuarios y obtener sus credenciales. 
+2. Ataques de fuerza bruta: Prueban múltiples combinaciones de contraseñas hasta encontrar la correcta.
+3. Explotación de vulnerabilidades: Permite a los atacantes aprovechar fallos en el software para obtener acceso privilegiado. 
+**Ejemplo:** En 2013, el ataque masivo a Yahoo! comprometió más de 3 mil millones de cuentas, siendo uno de los mayores incidentes de acceso no autorizado registrado. Los atacantes aprovecharon un fallo en el sistema de autenticación y encriptación débil para obtener contraseñas y datos personales de los usuarios. Utilizando combinaciones de técnicas de phishing y fuerza bruta, lograron comprometer tanto cuentas de usuarios normales como de empleados, lo que les dio acceso a datos internos sensibles.
+
+El incidente de Yahoo! resaltó la importancia de implementar autenticación multifactorial y fortalecer el cifrado de datos sensibles. Las consecuencias fueron significativas, con demandas legales y pérdidas financieras para la compañía, que debió pagar multas millonarias y enfrentó una disminución de su reputación pública. Este caso es utilizado hoy como un referente en ciberseguridad para demostrar cómo una brecha de seguridad puede desencadenar problemas económicos y legales.
+:::
+## Intrusiones mediante Inyección de Código
+::: {style="text-align: justify;"}
+1. Inyección SQL: Se modifican consultas en bases de datos para extraer, eliminar o modificar información confidencial.
+2. Cross-Site Scripting (XSS): Los atacantes inyectan código malicioso en sitios web legítimos, afectando a los usuarios que interactúan con ellos. 
+3. Command Injection: Permite ejecutar comandos del sistema operativo en servidores comprometidos, logrando control total sobre los recursos.
+
+**Ejemplo:** En 2017, el ataque a Equifax comprometió datos de 147 millones de personas al aprovechar una vulnerabilidad en el software Apache Struts. Los atacantes lograron inyectar comandos maliciosos en los servidores de la compañía, accediendo a información sensible, como números de seguridad social y datos financieros. Este ataque persistió durante meses antes de ser detectado, lo que permitió la extracción masiva de datos.
+
+El impacto fue devastador tanto para la empresa como para los usuarios afectados, quienes enfrentaron riesgos de robo de identidad y fraude financiero. Equifax fue multada con 700 millones de dólares por no proteger adecuadamente los datos, lo que destacó la necesidad de realizar auditorías de seguridad constantes y aplicar actualizaciones de software de manera inmediata para mitigar vulnerabilidades.
+::
+
+## Ataques Persistentes Avanzados (APT)
+::: {style="text-align: justify;"}
+Los Advanced Persistent Threats (APT) son ataques dirigidos a entidades gubernamentales y grandes corporaciones, caracterizados por su sofisticación y persistencia.
+
+1. Spear Phishing: Correos personalizados para engañar a individuos clave dentro de una organización.
+
+2. Uso de malware avanzado: Software diseñado para evadir antivirus y mecanismos de detección.
+3. Movimientos laterales: Una vez dentro del sistema, los atacantes escalan privilegios y acceden a otros recursos críticos.
+
+**Ejemplo:** El ataque Stuxnet en 2010 fue uno de los APT más significativos de la historia, diseñado para sabotear el programa nuclear iraní. Este malware, introducido mediante memorias USB infectadas, se propagó hasta alcanzar los sistemas industriales Siemens utilizados en las instalaciones nucleares. Una vez dentro, alteró el funcionamiento de las centrifugadoras, lo que provocó daños físicos sin alertar a los operadores.
+
+El éxito de Stuxnet marcó el inicio de una nueva era en la ciberseguridad, donde los ataques informáticos demostraron su capacidad para afectar infraestructuras físicas críticas. Este caso motivó a muchas naciones a reforzar sus medidas de protección en infraestructuras estratégicas y destacó la necesidad de desarrollar defensas cibernéticas robustas en entornos industriales.
+:::
+## Referencias Bibliográficas
+::: {style="text-align: justify;"}
+[1] A. F. Okutan y M. T. Alkasassbeh, "An overview of Intrusion Detection and Prevention Systems," arXiv preprint arXiv:2004.08967, 2020.
+
+[2] Y. Zhang, P. V. Oranje y J. Li, "Attackers reveal their arsenal: An investigation of adversarial techniques in CTI reports," arXiv preprint arXiv:2401.01865, 2024.
+
+[3] S. Kumar y B. Das, "Using deep learning for anomaly-based intrusion detection," arXiv preprint arXiv:2012.08559, 2020.
+:::
