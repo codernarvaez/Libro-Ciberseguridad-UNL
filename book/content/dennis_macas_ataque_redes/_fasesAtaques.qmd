@@ -1,0 +1,67 @@
+
+## Fases de un Ciberataque y su Identificación
+
+Los ciberataques generalmente siguen un ciclo de vida, también conocido como "**cyber kill chain**", que consta de varias fases.  Comprender estas fases es crucial para identificar y mitigar los ataques de manera efectiva.  Es importante tener en cuenta que este ciclo no siempre es lineal, y al finalizar un ataque, los atacantes pueden estar en posición de lanzar nuevos ataques.
+
+### Fases de un Ciberataque
+
+1.  **Reconocimiento:**
+    *   El atacante recopila información sobre el objetivo, incluyendo información pública disponible en la web, redes sociales, etc., e investiga sobre la tecnología y posibles defensas cibernéticas.
+    *   Se evalúa si el ataque puede tener éxito.
+    *   Puede ser **activo**, donde el atacante interactúa directamente con el sistema objetivo, o **pasivo**, donde se obtiene información de fuentes abiertas.
+    *   Se busca información como nombres, títulos, direcciones de correo electrónico y otros datos relevantes.
+    *   En esta fase se pueden usar técnicas de **OSINT (Open Source Intelligence)**.
+2.  **Preparación:**
+    *   Se prepara el ataque elaborando el método a emplear (ej., un correo electrónico o un fichero malicioso).
+    *   Se seleccionan las **herramientas** y **técnicas** a utilizar.
+3.  **Distribución:**
+    *   Se transmite el malware elegido para el ataque.
+    *   Puede ser a través de correos electrónicos, descargas maliciosas, etc..
+4.  **Explotación:**
+    *   Se explota una vulnerabilidad detectada en el sistema objetivo, infectando el sistema.
+    *   Esta fase es cuando el sistema es **comprometido**.
+5.  **Instalación:**
+    *   Se instala el malware en la máquina atacada, si es necesario. No todos los ataques usan esta fase.
+    *   Se establece **persistencia** para poder volver al sistema atacado posteriormente.
+6.  **Movimiento Lateral:**
+    *   El atacante se mueve de un sistema a otro dentro de la red en busca de más datos y activos sensibles.
+    *   Se explora la red interna para encontrar **datos sensibles**.
+7.  **Ofuscación:**
+    *   El atacante **oculta su presencia** y tapa sus huellas para evitar ser detectado y dificultar investigaciones futuras.
+    *   Se pueden eliminar metadatos o sobrescribir marcas de tiempo.
+8.  **Denegación de Servicio (DoS):**
+    *   El atacante busca **anular temporalmente la red y su infraestructura**, impidiendo el acceso a los usuarios legítimos.
+    *   Este paso puede incluir un ataque DDoS.
+9.  **Exfiltración:**
+    *   Se extraen los datos e información que el atacante buscaba del sistema objetivo a un sistema controlado por el atacante.
+
+### Identificación de Ataques
+
+La identificación de un ataque requiere una combinación de vigilancia, herramientas de seguridad y un plan de respuesta a incidentes.  Algunos de los pasos y señales que pueden ayudar a identificar un ataque son:
+
+*   **Monitoreo de la red:**
+    *   Analizar el tráfico de la red para detectar patrones anómalos o inusuales.
+    *   Utilizar herramientas de **sniffing** para capturar el tráfico y analizar las peticiones DNS.
+    *   Detectar un **aumento en el tráfico** o en las solicitudes al sistema objetivo.
+*   **Sistemas de Detección de Intrusiones (IDS) y Sistemas de Prevención de Intrusiones (IPS):**
+    *   Implementar y monitorear sistemas IDS e IPS para detectar actividades sospechosas.
+    *   Configurar alertas para detectar ataques conocidos.
+*   **Análisis de registros (logs):**
+    *   Revisar los registros de actividad del sistema para identificar actividad sospechosa o no autorizada.
+    *   Buscar **intentos de acceso fallidos** o **cambios en la configuración** del sistema.
+*   **Herramientas de seguridad:**
+    *   Utilizar **herramientas de escaneo de vulnerabilidades** como Nessus para identificar debilidades en el sistema.
+    *   Realizar **pruebas de penetración** (pentesting) para simular ataques y evaluar la seguridad del sistema.
+*   **Conciencia del usuario:**
+    *   Capacitar a los usuarios para que puedan **identificar ataques de ingeniería social**, como phishing o correos electrónicos maliciosos.
+    *   Implementar políticas de seguridad para contraseñas.
+*   **Respuesta a Incidentes:**
+    *   Tener un **plan de respuesta a incidentes** para guiar las acciones en caso de un ataque.
+    *   Contar con un equipo forense capaz de analizar los sistemas comprometidos y recopilar evidencia.
+*   **Inteligencia de Amenazas:**
+    *   Mantenerse al día con las últimas amenazas y vulnerabilidades.
+    *   Usar fuentes de inteligencia de amenazas para identificar **posibles vectores de ataque**.
+
+### Importancia de la Identificación Temprana
+
+La detección temprana de un ataque es esencial para minimizar el daño y evitar la pérdida de información.  Un plan de respuesta a incidentes bien definido es esencial para contener y erradicar la amenaza.
