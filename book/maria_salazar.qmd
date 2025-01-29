@@ -1,4 +1,6 @@
 ::: {style="text-align: justify;"}
 # Detección y Prevención de Intrusos.
 ::: 
+{{< include content/maria_salazar/introducccion.qmd >}}
+{{< include content/maria_salazar/tiposInstrusiones.qmd >}}
 {{< include content/maria_salazar/_sistemas_ids_ips_conceptos_diferencias.qmd >}}
