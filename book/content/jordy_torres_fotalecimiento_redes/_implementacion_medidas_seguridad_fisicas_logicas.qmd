@@ -1,0 +1,76 @@
+
+## Implementación de Medidas de Seguridad Físicas y Lógicas
+
+La implementación de medidas de seguridad físicas y lógicas es fundamental para proteger los activos de una organización contra diversas amenazas. Estas medidas trabajan en conjunto para crear una defensa en profundidad que minimice los riesgos.
+
+### Medidas de Seguridad Físicas
+
+Las medidas de seguridad física se enfocan en la *protección de los activos tangibles* de una organización. Esto incluye instalaciones, equipos, hardware y otros bienes físicos.
+
+El objetivo es *prevenir el acceso no autorizado* a estos recursos, lo que podría resultar en robo, daño o uso indebido de la información.
+
+### Ejemplos de medidas de seguridad física:
+
+- **Control de acceso:** Uso de tarjetas de acceso, vigilancia por video y personal de seguridad para controlar quién ingresa a las instalaciones.
+- **Protección perimetral:** Implementación de vallas, muros y otros mecanismos para asegurar el perímetro de la propiedad.
+- **Seguridad ambiental:** Protección contra incendios, inundaciones y otras catástrofes naturales.
+- **Almacenamiento seguro:** Protección física de servidores y otros equipos sensibles.
+- **Ubicación de dispositivos:** Asegurar la ubicación física de los dispositivos para reducir las oportunidades de abuso.
+
+### Medidas de Seguridad Lógicas
+
+Las medidas de seguridad lógicas se enfocan en la *protección de los activos digitales* de una organización. Esto incluye datos, software, redes y sistemas de información.
+
+El objetivo es *prevenir el acceso no autorizado, la modificación, la destrucción o el robo de esta información*.
+
+Las medidas de seguridad lógicas también buscan *garantizar la confidencialidad, integridad y disponibilidad* de la información (CID).
+
+### Ejemplos de medidas de seguridad lógicas:
+
+- **Autenticación:** Uso de contraseñas seguras, autenticación de dos factores (2FA) y biometría para verificar la identidad de los usuarios.
+- **Control de acceso lógico:** Restricción del acceso a la información y los sistemas según el principio de privilegio mínimo, otorgando a cada usuario solo los permisos necesarios para realizar sus tareas.
+- **Cifrado:** Utilización de algoritmos de cifrado para proteger la información en tránsito y en reposo.
+- **Firewalls:** Implementación de firewalls para controlar el tráfico de red y bloquear accesos no autorizados.
+- **Sistemas de detección de intrusiones (IDS):** Monitoreo de la red en busca de actividades sospechosas y alertas para los administradores.
+- **Software antivirus y antimalware:** Instalación y actualización constante de software de seguridad.
+- **Políticas de seguridad:** Definición y aplicación de políticas de seguridad claras y comprensibles.
+- **Gestión de vulnerabilidades:** Identificación, evaluación y mitigación de vulnerabilidades en los sistemas y aplicaciones.
+- **Copias de seguridad:** Realización regular de copias de seguridad de la información.
+- **Auditoría:** Implementación de sistemas de registro y auditoría para verificar la actividad del sistema.
+
+### Implementación y Gestión
+
+- **Evaluación de riesgos:** Identificación de vulnerabilidades y amenazas a la organización.
+- **Políticas:** Documentación, comunicación y actualización de las políticas de seguridad.
+- **Capacitación:** Formación del personal en las mejores prácticas de seguridad.
+- **Monitoreo y revisión:** Evaluación continua de la efectividad de las medidas de seguridad.
+- **Pruebas:** Auditorías, escaneos de vulnerabilidad y pruebas de penetración periódicas.
+- **Defensa en profundidad:** Combinación de múltiples capas de seguridad físicas y lógicas.
+
+### Relación entre Seguridad Física y Lógica
+
+Las medidas de seguridad física y lógica son interdependientes. Por ejemplo, un sistema de control de acceso (físico) puede estar vinculado a una base de datos de usuarios (lógica). La seguridad física protege los activos lógicos (servidores), y la seguridad lógica protege la información de accesos físicos no autorizados.
+
+### Conclusión
+
+La implementación efectiva de medidas de seguridad físicas y lógicas requiere una *evaluación de riesgos completa, políticas claras, capacitación del personal y una combinación de estrategias de defensa* en profundidad. La seguridad no es solo una cuestión de tecnología, sino también de personas, procesos y una cultura de seguridad en toda la organización.
+
+
+## Bibliografia
+
+- J. R. Aguirre, *Libro electrónico de seguridad Informática y Criptografía*. Madrid, España: Universidad Politécnica de Madrid, 2006.
+- P. Aguilera, *Redes seguras (Seguridad informática)*. Madrid, España: Editex, 2011.
+- P. Beynon-Davies, *Sistemas de información: introducción a la informática en las organizaciones*. Barcelona, España: Editorial Reverté, 2015.
+- L. J. Cañon Parada, “Ataques informáticos, Ethical Hacking y conciencia de seguridad informática en niños,” Universidad Piloto, Colombia, 2015.
+- B. A. Forouzan, *Transmisión de datos y redes de comunicaciones*. McGraw-Hill, 2007.
+- J. García-Alfaro and G. Navarro-Arribas, “Prevención de ataques de Cross-Site Scripting en aplicaciones Web,” in *X Reunión Española sobre Criptología y Seguridad de la Información (RECSI)*, Universidad de Salamanca, 2008, pp. 369-377.
+- M. S. Gutiérrez, *Mecanismos De Seguridad En Redes Inalámbricas*, 2012.
+- P. A. López, *Seguridad informática*. Madrid, España: Editex, 2010.
+- Y. Marrero Travieso, “La Criptografía como elemento de la seguridad informática,” *Acimed*, vol. 11, no. 6, 2003.
+- L. Moreno, *El Modelo OSI*, 2003.
+- P. G. Pérez, *Ethical Hacking: Teoría y práctica para la realización de un pentesting*. 0xWORD Computing, 2015.
+- S. Rodríguez, *Ciberseguridad práctica: Servidores y estaciones de trabajo* [Archivo de video], 2018. Disponible en: https://www.video2brain.com/mx/cursos/ciberseguridad-practica-servidores-y-estaciones-de-trabajo
+- J. C. Santos, *Seguridad y alta disponibilidad*. Bogotá, Colombia: Ra-ma Editorial, 2014.
+- E. C. Tejada, *Auditoría de seguridad informática. IFCT0109*. Antequera, España: IC Editorial, 2015.
+- W. M. Abad Parrales, et al., *Ciberseguridad práctica aplicada a las redes, servidores y navegadores web*.
+- D. Arroyo Guardeño, V. Gayoso Martínez, L. Hernández Encinas, *Ciberseguridad*. Consejo Superior de Investigaciones Científicas, 2020.
