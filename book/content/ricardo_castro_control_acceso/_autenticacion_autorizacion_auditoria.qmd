@@ -1,0 +1,49 @@
+
+
+## Conceptos Clave de AAA
+
+AAA (también conocido como "triple A") se refiere a un marco de seguridad que involucra tres componentes esenciales: autenticación, autorización y auditoría. Estos tres componentes son fundamentales para la gestión de acceso y la seguridad en sistemas informáticos.
+
+### Autenticación
+
+- **Definición:** Proceso de confirmar la identidad de un usuario, sistema o dispositivo.
+- **Propósito:** Verificar si un sujeto (usuario o recurso tecnológico) es realmente quien dice ser.
+- **Factores de Autenticación:**
+  - **Algo que sabes:** Contraseña o PIN.
+  - **Algo que tienes:** Tarjeta inteligente, token, pendrive.
+  - **Algo que eres:** Huella digital, reconocimiento del iris, geometría de la mano, voz o escritura.
+- **Tipos de Autenticación:**
+  - **Unimodal:** Uso de un solo factor de autenticación.
+  - **Multimodal o Multifactor (MFA):** Uso de varios factores para mayor seguridad.
+- **Proceso:** Aplicable tanto a usuarios humanos como a sistemas y dispositivos.
+- **Ejemplo:** Uso de credenciales para votar o pasaporte para ingresar a un país.
+- **Autenticación en la Red:** Uso de servidores de autenticación con protocolos como RADIUS o EAP. Kerberos se utiliza como servicio de autenticación en sistemas informáticos.
+
+### Autorización
+
+- **Definición:** Proceso de decidir si se permite o deniega el acceso de un sujeto a un objeto o recurso.
+- **Propósito:** Determinar qué acciones puede realizar un usuario o dispositivo tras su autenticación.
+- **Políticas de Autorización:** Definen qué acciones y recursos pueden ser accedidos por identidades autenticadas.
+
+### Auditoría (Accounting)
+
+- **Definición:** Proceso de registrar y monitorear acciones realizadas por usuarios autorizados.
+- **Propósito:** Validar el correcto funcionamiento de los sistemas de información, identificar fallas de seguridad y depurar responsabilidades.
+- **Registros:** Generación de archivos de registro conocidos como "audit trails".
+- **Análisis de Registros:** Permite detectar patrones de actividad inusuales o sospechosos.
+
+### Importancia de AAA
+
+- **Marco de Seguridad:** AAA proporciona un enfoque integral para la gestión de acceso.
+- **Seguridad en Redes:** Control de acceso, aplicación de políticas y monitoreo de uso.
+- **Complementariedad:** Cada componente trabaja en conjunto para garantizar seguridad y responsabilidad.
+
+### Relación entre los Componentes
+
+- **Secuencia:**
+  1. **Autenticación:** Verificación de identidad.
+  2. **Autorización:** Definición de permisos y acciones.
+  3. **Auditoría:** Registro y monitoreo de actividades.
+- **Interdependencia:** Cada componente refuerza la seguridad y gestión de acceso efectiva.
+
+AAA es un marco esencial para garantizar la protección de sistemas informáticos, asegurando un control de acceso eficiente y transparente.
