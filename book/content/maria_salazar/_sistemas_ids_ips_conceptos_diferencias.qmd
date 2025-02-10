@@ -1,3 +1,4 @@
+
 ## IDS (Intrusion Detection System)
 ::: {style="text-align: justify;"}
 Un Sistema de Detección de Intrusos es una herramienta de seguridad que monitorea el tráfico de red, los eventos del sistema y alerta sobre actividades sospechosas que puedan representar una amenaza para la infraestructura tecnológica de una organización.
