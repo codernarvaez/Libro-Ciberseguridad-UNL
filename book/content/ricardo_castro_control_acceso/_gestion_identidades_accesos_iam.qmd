@@ -1,0 +1,61 @@
+
+## Gestión de Identidades y Accesos (IAM)
+
+La Gestión de Identidades y Accesos (IAM, por sus siglas en inglés) es el conjunto de procesos y tecnologías que gestionan la identidad digital de los usuarios y controlan su acceso a los recursos de una organización. IAM abarca la identificación, autenticación y autorización de usuarios, así como la gestión de sus cuentas y privilegios. Su objetivo es garantizar que las personas correctas tengan acceso a los recursos adecuados en el momento y por las razones correctas.
+
+### Componentes Clave de IAM
+
+- **Identificación:** Proceso mediante el cual un usuario o sistema se identifica ante el control de acceso. Permite distinguir de manera única a los usuarios y precede a la autenticación.
+- **Autenticación:** Confirmación de la identidad de un usuario mediante credenciales como contraseñas, datos biométricos o tokens, asegurando que solo usuarios legítimos accedan a los recursos.
+- **Autorización:** Determina qué acciones puede realizar un usuario autenticado, definiendo permisos y privilegios.
+- **Gestión de cuentas de usuario:** Incluye la creación, mantenimiento y revocación de cuentas de usuario, garantizando que solo los usuarios autorizados tengan acceso a los recursos.
+
+### Relación entre IAM y Control de Acceso
+
+- La gestión de identidades y el control de acceso están estrechamente relacionados.
+- IAM se enfoca en confirmar la identidad del usuario, mientras que el control de acceso restringe sus acciones.
+- IAM implementa control de acceso mediante la gestión de identidades, asegurando que las actividades se limiten a acciones autorizadas.
+
+### IAM como servicio (IDaaS)
+
+- **IDaaS (Identity as a Service):** Externalización de la gestión de identidades y accesos, reduciendo costos y complejidad.
+- Permite a las organizaciones delegar la implementación y mantenimiento de infraestructuras técnicas de IAM.
+
+### Factores de Autenticación
+
+La autenticación puede basarse en uno o múltiples factores:
+
+- **Algo que sabes:** Contraseñas, PINs, frases de contraseña.
+- **Algo que tienes:** Tarjetas inteligentes, tokens, smartphones.
+- **Algo que eres:** Biometría (huellas dactilares, reconocimiento facial, iris, etc.).
+- **Autenticación multifactor (MFA):** Utilización de dos o más factores para mayor seguridad.
+
+### Importancia de IAM
+
+- **Seguridad:** Protege los recursos contra accesos no autorizados y violaciones de seguridad.
+- **Cumplimiento normativo:** Ayuda a cumplir con regulaciones como el RGPD.
+- **Eficiencia operativa:** Facilita la administración de usuarios y reduce errores humanos.
+- **Reducción de riesgos:** Minimiza accesos no autorizados y protege la información sensible.
+
+### IAM en la práctica
+
+- **Políticas de IAM:** Definen quién tiene acceso a qué recursos y qué acciones puede realizar.
+- **Gestión del ciclo de vida de identidades:** Desde la creación hasta la eliminación de cuentas.
+- **Auditoría de actividades:** Fundamental para detectar problemas de seguridad y depurar responsabilidades.
+
+### Consideraciones Adicionales
+
+- **IAM y la Nube:** En entornos de computación en la nube, IAM es aún más crítico debido a la naturaleza distribuida de los recursos.
+- **Federación de Identidades:** Un proveedor de identidad permite que las cuentas sean utilizadas en múltiples servicios, facilitando el acceso seguro y eficiente.
+
+## Bibliografía
+
+- Gartner, Michael. "The 2023 State of IT: The Future of Identity and Access Management." Gartner, 2023.
+
+- Hartman, Jennifer, et al. "Identity and Access Management: A Comprehensive Guide." CRC Press, 2021.
+
+- "Introduction to RBAC" (HISSA, January 9, 1995). https://csrc.nist.gov/CSRC/media/Publications/Shared/documents/itl-bulletin/cslbul1995-12.txt (accessed March 19, 2020).
+
+- Harris, S. “Cryptography.” In CISSP All-in-One Exam Guide, 3rd ed. New York: McGraw-Hill/Osborne Media, 2005, pp. 587–683
+
+- Kar Yee, C. y Zolkipli, MF. (2021). Review on Confidentiality, Integrity and Availability in Information Security. Journal of ICT in Education. https://doi.org/10.37134/ jictie.vol8.2.4.2021

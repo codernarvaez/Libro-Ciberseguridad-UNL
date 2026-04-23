@@ -1,0 +1,46 @@
+
+
+## Políticas de Seguridad y Gestión de Contraseñas
+
+Las políticas de seguridad y la gestión de contraseñas son aspectos fundamentales de la ciberseguridad, dirigidos a proteger los activos de información y prevenir accesos no autorizados. Las políticas de seguridad establecen las reglas y directrices que los usuarios deben seguir, mientras que la gestión de contraseñas se enfoca en la creación, uso y almacenamiento seguro de las credenciales de acceso.
+
+### Políticas de Seguridad
+
+- **Definición:** Conjunto formal de reglas que deben seguir las personas con acceso a la tecnología y activos de información de la empresa.
+- **Propósito:** Definir responsabilidades y privilegios de los usuarios, así como identificar amenazas a los activos.
+- **Importancia de la integración:** Es crucial integrar diversas políticas y técnicas de seguridad para garantizar un control coherente sobre dispositivos y redes.
+- **Elementos Clave:**
+  - Recursos a proteger: instalaciones, equipos, reputación, etc.
+  - Evaluación de la importancia de cada recurso y probabilidad de afectación.
+  - Impacto de las amenazas en la organización.
+- **Necesidad de la participación de líderes:** Los líderes de los departamentos deben cooperar en la identificación de riesgos y medidas de resiliencia.
+- **Aceptación:** Para que una política sea efectiva, los usuarios deben comprender su importancia y aplicabilidad.
+
+### Gestión de Contraseñas
+
+- **Importancia:** Controla la frecuencia de cambios de contraseñas, su complejidad y restricciones sobre reutilización.
+- **Recomendaciones para contraseñas seguras:**
+  - No compartir contraseñas.
+  - Utilizar combinaciones de al menos ocho caracteres con números, letras y símbolos.
+  - Aplicar reglas mnemotécnicas para facilitar la memorización.
+  - Evitar palabras comunes e incluir caracteres especiales.
+  - Diferenciar mayúsculas y minúsculas si es compatible con la red.
+  - Evitar restricciones excesivas que puedan incentivar malas prácticas como el almacenamiento inseguro de contraseñas.
+- **Políticas de detección de intrusos:** Activar mecanismos que limiten intentos fallidos y bloqueen cuentas en caso de múltiples intentos incorrectos.
+- **Restricciones de inicio de sesión:** Regular el tiempo de sesión y limitar accesos por dispositivos específicos.
+- **Equilibrio entre seguridad y usabilidad:** Políticas demasiado estrictas pueden llevar a malas prácticas como anotar contraseñas en lugares inseguros.
+- **Administración de contraseñas:** Implementar sistemas de almacenamiento que se alineen con las políticas de seguridad organizacionales.
+
+### Implementación de Políticas y Gestión de Contraseñas
+
+- **Capacitación:** Educar a los usuarios sobre políticas de seguridad y mejores prácticas en gestión de contraseñas.
+- **Auditorías:** Realizar revisiones periódicas para evaluar el cumplimiento de las políticas de seguridad.
+- **Herramientas:** Utilizar gestores de contraseñas para facilitar la administración y el uso seguro de credenciales.
+
+### Relación con la Ciberseguridad
+
+Las políticas de seguridad y la gestión de contraseñas son componentes esenciales de la ciberseguridad. Una política de seguridad bien definida ayuda a reducir el riesgo de ataques, y una buena gestión de contraseñas dificulta el acceso no autorizado a las cuentas y sistemas.
+
+### Conclusión
+
+Las políticas de seguridad y la gestión de contraseñas son elementos críticos para proteger los activos de información de una organización. Implementar políticas sólidas y buenas prácticas en la gestión de contraseñas es esencial para minimizar el riesgo de ataques cibernéticos y garantizar la seguridad de los sistemas e información. Mantener un equilibrio entre seguridad y usabilidad es clave para fomentar el cumplimiento de las políticas por parte de los usuarios.

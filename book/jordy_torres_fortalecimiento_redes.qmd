@@ -1,0 +1,12 @@
+# Fortalecimiento de Redes
+{{< include content/jordy_torres_fotalecimiento_redes/_conceptos_principios_fortalecimiento_redes.qmd >}}
+
+{{< include content/jordy_torres_fotalecimiento_redes/_configuracion_segura_dispositivos_red.qmd >}}
+
+{{< include content/jordy_torres_fotalecimiento_redes/_actualizacion_parcheo_sistemas.qmd >}}
+
+{{< include content/jordy_torres_fotalecimiento_redes/_politicas_seguridad_gestion_contrasenas.qmd >}}
+
+{{< include content/jordy_torres_fotalecimiento_redes/_implementacion_medidas_seguridad_fisicas_logicas.qmd >}}
+
+

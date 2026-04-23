@@ -1,0 +1,54 @@
+
+
+## Conceptos Fundamentales del Control de Acceso
+
+El control de acceso es una medida fundamental en la seguridad de la información que regula la interacción con activos digitales y físicos. Su objetivo es prevenir accesos no autorizados, modificaciones o interrupciones en los sistemas.
+
+### Conceptos Fundamentales del Control de Acceso
+
+- **Acceso:** Capacidad de interactuar con un activo, como información, sistemas o redes.
+- **Control de Acceso:** Proceso para regular quién puede ingresar, salir o reingresar a una propiedad o sistema. Se basa en:
+  - **Ingreso (Ingress):** Derecho a entrar.
+  - **Egreso (Egress):** Derecho a salir.
+  - **Regreso (Regress):** Derecho a reingresar.
+- **Objetivo Principal:** Disuadir a posibles intrusos.
+
+### Importancia del Control de Acceso en la Seguridad de la Información
+
+- **Esencial para la Seguridad de la Información (IA):** Debe aplicarse a todas las infraestructuras de una organización.
+- **Modelos de Aseguramiento:** Guían el diseño de sistemas de control de acceso para garantizar confidencialidad, integridad y disponibilidad.
+
+### Proceso de Autorización y Auditoría
+
+- **Autorización:** Define qué recursos puede usar una identidad autorizada.
+- **Auditabilidad:** Permite registrar y monitorear el uso de recursos para identificar fallas de seguridad y depurar responsabilidades.
+
+### Tipos de Autenticación
+
+- **Basada en Conocimiento:** Uso de contraseñas o PINs.
+- **Basada en Posesión:** Uso de tarjetas o llaves.
+- **Basada en Características Físicas:** Biometría como huellas dactilares o reconocimiento facial.
+
+### Mecanismos de Detección y Prevención
+
+- **Mecanismos Detectivos:** Técnicas avanzadas para detectar intrusiones y accesos no autorizados.
+- **Intrusión:** Secuencia de acciones deshonestas para obtener acceso no autorizado.
+- **Detección de Intrusiones:** Identificación y respuesta ante actividades ilícitas en redes y sistemas.
+
+### Políticas y Prácticas de Seguridad
+
+- **Políticas de Seguridad:** Definen los recursos a proteger y el impacto de amenazas.
+- **Ley de Mínimos Privilegios:** Limita el acceso a lo estrictamente necesario.
+- **Integración de Políticas:** Garantiza un control de seguridad uniforme en diversos dispositivos y redes.
+- **Autenticación y Autorización Mutuas:** Impide accesos no autorizados asegurando la verificación entre usuarios y sistemas.
+- **Importancia de la Educación:** La concienciación en seguridad es un control preventivo clave.
+- **Defensa en Profundidad:** Aplicación de múltiples capas de seguridad para dificultar ataques.
+
+### Consideraciones Adicionales
+
+- **Software Libre:** Aporta transparencia y seguridad.
+- **Madurez y Estabilidad:** Herramientas de seguridad deben ser estables y con políticas de privacidad claras.
+- **Cifrado:** Protege la información en reposo y en tránsito.
+- **Contraseñas:** Implementación de políticas para contraseñas seguras y detección de intentos fallidos.
+
+Un adecuado control de acceso es clave para la protección de la información en cualquier organización, asegurando que solo usuarios autorizados accedan a los recursos críticos.

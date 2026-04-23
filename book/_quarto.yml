@@ -28,8 +28,11 @@ book:
     - ricardo_castro.qmd
     - luis_delgado.qmd
     - jordy_torres.qmd
+    - maria_salazar.qmd
+    - luis_delgado_v2.qmd
+    - jordy_torres_fortalecimiento_redes.qmd
+    - ricardo_castro_control_acceso.qmd
     - dennis_macas_ataque_redes.qmd
-
 
 # format:
 #   html:

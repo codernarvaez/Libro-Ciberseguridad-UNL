@@ -17,3 +17,24 @@ El escalamiento eficiente de incidentes es otra ventaja clave de las arquitectur
 En términos de cultura organizacional, las arquitecturas jerárquicas y la gobernanza de la seguridad promueven un enfoque integral donde todos los empleados, desde los directores hasta los usuarios finales, juegan un papel activo en la protección de la organización. La capacitación y concienciación en seguridad son componentes esenciales de esta cultura, asegurando que cada individuo comprenda sus responsabilidades y esté preparado para actuar en caso de una amenaza.
 
 En conclusión, las arquitecturas jerárquicas y la gobernanza de la seguridad son pilares fundamentales para la gestión de riesgos y la resiliencia organizacional. Al proporcionar una estructura clara y bien definida, este enfoque no solo optimiza la asignación de recursos y fortalece la capacidad de respuesta, sino que también asegura el cumplimiento normativo y fomenta una cultura de seguridad en todos los niveles de la organización. Este marco integrado permite a las organizaciones enfrentar desafíos actuales y futuros con confianza y eficiencia.
+
+### Laboratorio 5
+
+#### **Objetivo**  
+Analizar cómo las arquitecturas jerárquicas y la gobernanza influyen en la gestión de riesgos y el cumplimiento normativo.
+
+#### **Actividades**  
+
+1. **Identificación de riesgos:**  
+   - Realiza una lluvia de ideas para identificar riesgos potenciales en una empresa ficticia (e.g., ciberataques, fallos en la red, violaciones de datos).  
+
+2. **Escalamiento de incidentes:**  
+   - Simula un incidente (e.g., un intento de acceso no autorizado).  
+   - Asigna tareas de respuesta a cada nivel jerárquico, desde el operativo hasta el estratégico.  
+
+3. **Evaluación de controles de seguridad:**  
+   - Revisa si los controles implementados son suficientes para mitigar riesgos.  
+   - Genera un informe de auditoría utilizando herramientas como Excel o Google Sheets para documentar el impacto y las acciones de mitigación.  
+
+4. **Monitoreo y retroalimentación:**  
+   - Utiliza un SIEM o simulador para monitorear eventos en tiempo real y analizar patrones de riesgo.

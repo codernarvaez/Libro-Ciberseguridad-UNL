@@ -1,0 +1,52 @@
+
+
+## Métodos de Autenticación
+
+La autenticación es el proceso de verificar la identidad de un usuario, dispositivo o sistema, asegurando que realmente son quienes o lo que dicen ser. Este proceso es crucial para la seguridad de la información, ya que controla el acceso a los recursos.
+
+### Contraseñas
+
+- **Definición:** Secuencias de caracteres que permiten el acceso a servicios o protegen archivos.
+- **Vulnerabilidad:** Pueden ser comprometidas si son débiles o compartidas.
+- **Fortalecimiento:** Se recomienda el uso de contraseñas largas y complejas.
+- **Salting:** Técnica que añade una cadena aleatoria antes de aplicar hash, dificultando ataques de descifrado.
+- **Limitaciones:** Forzar longitudes específicas puede facilitar ataques de fuerza bruta.
+- **Uso:** A pesar de sus vulnerabilidades, siguen siendo el método más utilizado en servicios web.
+
+### Autenticación Multifactor (MFA)
+
+- **Definición:** Utiliza dos o más factores de autenticación para verificar la identidad.
+- **Factores:**
+  - **Algo que sabes:** Contraseña, PIN.
+  - **Algo que tienes:** Tarjeta inteligente, token, smartphone.
+  - **Algo que eres:** Huella dactilar, reconocimiento facial, iris.
+- **Mayor Seguridad:** Protege contra accesos no autorizados si una credencial es comprometida.
+- **Implementación:** En fintech, la directiva PSD2 exige autenticación robusta.
+- **Alertas:** Se recomienda notificar accesos desde dispositivos desconocidos.
+
+### Biometría
+
+- **Definición:** Usa características físicas únicas para autenticar.
+- **Tipos de Autenticación Biométrica:**
+  - **Huellas dactilares:** Detecta patrones únicos.
+  - **Reconocimiento facial:** Analiza rasgos faciales.
+  - **Voz:** Identifica características vocales.
+  - **Iris:** Analiza patrones del iris.
+  - **Escritura:** Evalúa el estilo de escritura.
+- **Consideraciones:**
+  - Puede ser vulnerable si no se usa de forma robusta.
+  - Requiere protección contra réplicas.
+- **Privacidad:** Se debe obtener consentimiento informado para el uso de datos biométricos.
+
+### Uso Combinado
+
+- **No Excluyentes:** Se pueden combinar distintos métodos en un mismo sistema.
+- **Costo vs Beneficio:** Se debe equilibrar seguridad y conveniencia para los usuarios.
+
+### Consideraciones Adicionales
+
+- **Autenticación Robusta:** Implementar mecanismos que garanticen acceso solo a usuarios legítimos.
+- **Dispositivos Móviles:** Utilizan PIN, patrón gráfico, reconocimiento facial y huella dactilar.
+- **Certificados Digitales:** Permiten garantizar identidad y confianza en diversos casos de uso de seguridad.
+
+El uso adecuado de métodos de autenticación mejora significativamente la seguridad de los sistemas y protege la información contra accesos no autorizados.

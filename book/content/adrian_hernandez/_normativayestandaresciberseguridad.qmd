@@ -139,7 +139,7 @@ Se revisan los resultados obtenidos durante la implementación para garantizar s
 Se implementan mejoras en el SGSI si se detecta desalineación con los objetivos establecidos. Se aplican acciones correctivas y, en algunos casos, acciones de mejora que pueden extenderse a toda la organización. Si los resultados son satisfactorios, se mantiene el enfoque original, aunque generalmente se requieren ajustes. A partir de las evaluaciones realizadas, se ejecutan acciones preventivas y correctivas para optimizar el rendimiento del sistema de gestión de seguridad de la información.
 :::
 
-## Referencias Bibliografícas
+## Referencias Bibliográficas
 ::: {style="text-align: justify;"}
 [1] Universidad EAFIT, NORMAS ISO Y SU COBERTURA, Colombia: Universidad EAFIT, 2016.
 

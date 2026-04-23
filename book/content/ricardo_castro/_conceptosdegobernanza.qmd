@@ -84,3 +84,20 @@ Específicamente en el contexto de la ciberseguridad, implica la implementación
     - Supervisión de incidentes y desempeño de la seguridad.  
 - **Responsabilidad compartida:**
     - Implicación de todos los niveles jerárquicos en la gestión de seguridad.  
+
+### Laboratorio 3
+
+#### **Objetivo**  
+Comprender los conceptos fundamentales de gobernanza y aplicarlos a un entorno real o simulado.
+
+#### **Actividades**  
+
+1. **Definir principios de gobernanza:**  
+   - Describe cómo se aplican los principios de transparencia, responsabilidad y cumplimiento normativo en un contexto organizacional.
+
+2. **Simulación práctica:**  
+   - Divide al equipo en tres grupos: consejo directivo, auditores internos y gerentes operativos.  
+   - Realiza una simulación donde el consejo define una política, los auditores aseguran su cumplimiento y los gerentes operativos ejecutan acciones basadas en la política.  
+
+3. **Evaluación de la efectividad:**  
+   - Discute cómo la comunicación y la colaboración entre los niveles jerárquicos afectan la gobernanza.

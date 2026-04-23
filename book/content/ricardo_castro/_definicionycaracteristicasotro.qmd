@@ -87,3 +87,21 @@ La sinergia entre ambas permite una implementación eficiente de controles de se
 - **Mayor cumplimiento normativo:**  
   - La integración con frameworks establecidos asegura que las políticas estén alineadas con las mejores prácticas globales.  
 
+### Laboratorio 1 
+
+#### **Objetivo**  
+Entender la estructura jerárquica y cómo la gobernanza influye en la seguridad y la toma de decisiones organizacionales.
+
+#### **Actividades**  
+
+1. **Diseñar una jerarquía organizacional:**  
+   - Identifica tres niveles jerárquicos: estratégico, táctico y operativo.  
+   - Define funciones y responsabilidades para cada nivel.  
+   - Representa gráficamente la jerarquía utilizando herramientas como **Draw.io** o **Visio**.
+
+2. **Relacionar gobernanza con la estructura jerárquica:**  
+   - Establece cómo las decisiones estratégicas se traducen en políticas tácticas y acciones operativas.  
+   - Describe ejemplos prácticos (e.g., una política de ciberseguridad escalada desde el nivel estratégico al operativo).
+
+3. **Discusión grupal:**  
+   - Analiza los beneficios y desafíos de trabajar con una estructura jerárquica.

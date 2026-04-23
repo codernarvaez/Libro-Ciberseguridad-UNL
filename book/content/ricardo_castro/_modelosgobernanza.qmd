@@ -117,5 +117,22 @@ Uso en startups para gestionar la innovación tecnológica y responder rápidame
 | Gobernanza basada en riesgos | Identificación y mitigación de riesgos | Banca, seguros, salud                     | Toma de decisiones basada en análisis  |
 | Gobernanza Ágil            | Adaptabilidad e innovación       | Startups, empresas tecnológicas            | Respuesta rápida a cambios             |
 
+### Laboratorio 2
 
+#### **Objetivo**  
+Explorar diferentes modelos de gobernanza y su aplicación práctica.
+
+#### **Actividades**  
+
+1. **Investigación sobre modelos de gobernanza:**  
+   - Asigna a cada participante un modelo de gobernanza (e.g., COBIT, ITIL, TOGAF, ESG).  
+   - Investiga los principios básicos del modelo asignado.  
+
+2. **Aplicación práctica:**  
+   - Diseña un caso de estudio utilizando el modelo asignado.  
+   - Ejemplo: Si se asigna COBIT, describe cómo gestionarías los riesgos de TI en una empresa financiera.  
+
+3. **Comparación y análisis:**  
+   - Presenta los casos en grupo y compara la eficacia de los diferentes modelos según el contexto.  
+   - Discute cuál sería más adecuado para una pequeña empresa vs. una multinacional.
 

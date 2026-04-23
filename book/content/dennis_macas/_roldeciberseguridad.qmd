@@ -106,4 +106,3 @@ Practica obtenida del libro Cybersecurity essentials.
 Steinberg, J. (año). Cybersecurity for Dummies. Wiley.
 
 C. J. Brooks, C. Grow, P. Craig, and D. Short, Cybersecurity essentials. Sybex, 2018.
-
