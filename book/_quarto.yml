@@ -32,6 +32,7 @@ book:
     - luis_delgado_v2.qmd
     - jordy_torres_fortalecimiento_redes.qmd
     - ricardo_castro_control_acceso.qmd
+    - dennis_macas_ataque_redes.qmd
 
 # format:
 #   html:

@@ -1,0 +1,8 @@
+# Ataques en Redes
+
+{{< include content/dennis_macas_ataque_redes/_introduccion.qmd >}}
+
+{{< include content/dennis_macas_ataque_redes/_tiposDeAtaques.qmd >}}
+
+{{< include content/dennis_macas_ataque_redes/_fasesAtaques.qmd >}}
+

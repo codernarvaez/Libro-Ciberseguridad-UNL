@@ -1,0 +1,63 @@
+# Introducción
+
+::: {style="text-align: justify;"}
+Los ataques cibernéticos son acciones deliberadas realizadas por individuos o grupos con el objetivo de comprometer la seguridad de los activos digitales, los ataques pueden dirigirse a organizaciones de todo tipo, desde sistemas gubernamentales hasta empresas privadas, ademas los ataques evolucionan constantemente y con la creciente digitalización, se convierten en un problema cada vez más relevante.
+
+::: {style="text-align: justify;"}
+Los ataques cibernéticos han evolucionado considerablemente a lo largo del tiempo, en sus primeros días los ataques eran relativamente simples y a menudo llevados a cabo por individuos con conocimientos técnicos.
+Por los años 80 y 90 los ataques más conocidos fueron *Flip*, que colocaba los textos del ordenador boca abajo o *Anti-Telefónica*, que solicitaba tarifas telefónicas más bajas.
+
+::: {style="text-align: justify;"}
+Con el desarrollo de internet y las redes informáticas, los ataques se volvieron más sofisticados ya que los ataques comenzaron a utilizar herramientas más complejas y a dirigirse a objetivos más grandes, como empresas e instituciones gubernamentales.
+
+::: {style="text-align: justify;"}
+Con el internet de las cosas (IoT) los ataques cibernéticos se volvieron más comunes y a gran escala, por ejemplo el malware *Mirai* fue capaz de tomar el control de dispositivos IoT con poca seguridad, como cámaras de seguridad, grabadoras de vídeo digital y enrutadores para usarlos en ataques en línea a gran escala.
+
+::: {style="text-align: justify;"}
+El primer punto de inflexión fue el uso del malware *Stuxnet* que fue usada para atacar la central nuclear de Irán, debido a esto se la consideró como la primera ciberarma puesta en marcha por el gobierno de un país contra otro marcando el inicio de la era de la ciberguerra.
+
+::: {style="text-align: justify;"}
+En los últimos años los ataques se han centrado en ataques dirigidos a infraestructuras críticas, como el ataque al oleoducto Colonial en Estados Unidos en 2021. Dichos ataques tienen graves consecuencias para la economia y seguriadad de un pais.
+
+En la actualidad siguen cuatro tendencias:
+
+::: {style="text-align: justify;"}
+- **Ataques "Living off the land":** Se trata de ataques que aprovechan las herramientas que ya existen en los sistemas, en lugar de introducir nuevos archivos maliciosos.
+
+::: {style="text-align: justify;"}
+- **Ataques a sistemas de tecnología operativa:** Los ataques dirigidos a redes a través de redes domésticas comprometidas y de los dispositivos de los trabajadores que se conectan remotamente.
+
+::: {style="text-align: justify;"}
+- **Ataques de ransomware:** El *ransomware* es un tipo de malware que cifra los archivos de la víctima y exige un rescate para recuperarlos. Estos ataques han aumentado en frecuencia y sofisticación, y a menudo se aprovechan de situaciones de crisis, como la pandemia de COVID-19, para intensificar el impacto en las víctimas.
+
+::: {style="text-align: justify;"}
+- **Ataques a la cadena de suministro:** Los ataques dirigidos a los proveedores de software o hardware de una organización se han convertido en una forma cada vez más común de comprometer la seguridad de una empresa o institución.
+
+::: {style="text-align: justify;"}
+Para empezar a entender los tipos de ataques, es importante comprender algunos conceptos básicos de ciberseguridad ya que las amenazas a la ciberseguridad pueden originarse tanto dentro como fuera de una organización, los atacantes internos pueden ser empleados o socios, mientras que los externos incluyen ciberdelincuentes o estados c inluso los ataques pueden ser dirigidos o indiscriminados.
+
+
+
+## Clasificación de los ciberataques
+
+::: {style="text-align: justify;"}
+Para la clasificación de los ciberataques se tiene que considerar los siguientes puntos importantes:
+
+::: {style="text-align: justify;"}
+- **Ataques no estructurados** aquellos en los que el atacante no tiene conocimiento previo del sistema que ataca y utiliza herramientas disponibles públicamente.
+
+::: {style="text-align: justify;"}
+- **Los ataques de denegación de servicio (DoS)** buscan reducir o anular la capacidad de un servidor o recurso informático para ofrecer un servicio, pueden variar desde bloquear una página web hasta inutilizar el ordenador de un usuario.
+
+::: {style="text-align: justify;"}
+- **Ingeniería social** implica manipular a las personas para que revelen información confidencial, a través de correos electrónicos, llamadas telefónicas o programas maliciosos.
+
+::: {style="text-align: justify;"}
+Los ataques también se pueden clasificar según su objetivo, unos buscan robar información personal o datos, patrones de comportamiento, o información para campañas de phishing mientras que otros buscan obtener acceso a un sistema como administrador, o instalar malware o simplemente los haym que solo buscan interrumpir servicios esenciales.
+
+::: {style="text-align: justify;"}
+- **Ataques pasivos** dedicados a la monitorización y recopilación de información.
+- **Ataques activos** buscan penetrar la infraestructura para robar información, sabotear o instalar malware.
+
+::: {style="text-align: justify;"}
+Cabe mencionar que los ataques pueden ser clasificados según las fases de la cadena de ataque, que incluyen reconocimiento, armamento, distribución, explotación, instalación, comando y control, y acciones. Ademas, los ataques son dinámicos y evolucionan constantemente debido a que los atacantes buscan las vulnerabilidades en los sistemas, que pueden ser fallos de diseño, configuración o implementación, ademas estas vulnerabilidades pueden ser de tipo físico (como desastres naturales) o lógico.
